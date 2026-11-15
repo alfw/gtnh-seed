@@ -396,10 +396,9 @@ fn sec_chunkgen() -> Card {
         for cz in 0..w {
             for cx in 0..w {
                 let ch = g2.generate(&p2, &TableHeights, x0 + cx, z0 + cz).unwrap();
-                for idx in 0..256usize {
+                for (idx, &g) in ch.gen.iter().enumerate().take(256) {
                     let k = ((cz * w + cx) as usize) * 256 + idx;
-                    bad2 +=
-                        (u16::from_le_bytes([bin[k * 2], bin[k * 2 + 1]]) != ch.gen[idx]) as usize;
+                    bad2 += (u16::from_le_bytes([bin[k * 2], bin[k * 2 + 1]]) != g) as usize;
                 }
             }
         }

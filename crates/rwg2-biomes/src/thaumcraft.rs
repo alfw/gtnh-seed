@@ -301,10 +301,8 @@ impl TcGen<'_, '_> {
         }
         let b = self.biome(x, z)?;
         let d = self.climate.dict(b);
-        if has(d, "MESA") || (!sand_ok && (has(d, "SANDY") || has(d, "BEACH"))) {
-            return Some(false);
-        }
-        Some(true)
+        let bad_top = has(d, "MESA") || (!sand_ok && (has(d, "SANDY") || has(d, "BEACH")));
+        Some(!bad_top)
     }
 
     /// Trees put the heightmap on the canopy; with `swamp`, marsh ponds/vines count too (hilltop stones and mounds
