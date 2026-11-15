@@ -4,8 +4,10 @@ The viewer is a static site (`viewer/dist`): HTML, JS, CSS, one `.wasm`, the sou
 
 ## GitHub Pages (simplest)
 
-`.github/workflows/pages.yml` tests, builds and deploys on every push to `main` / `master`
-(Settings → Pages → Source: GitHub Actions). It sets `VITE_SITE_URL` (link previews), `VITE_SOURCE_URL` (the exact
+`.github/workflows/pages.yml` tests, builds and deploys on every push to `main` / `master`. It is off until Pages is
+set up: Settings → Pages → Source: GitHub Actions (a free plan needs a public repo for this), then add the repository
+variable `PAGES_ENABLED` = `true` (Settings → Secrets and variables → Actions → Variables). Without the variable the
+jobs are skipped instead of failing on the missing Pages site. It sets `VITE_SITE_URL` (link previews), `VITE_SOURCE_URL` (the exact
 commit) and `VITE_ISSUES_URL` (the repo's issue form, pre-filled from the viewer's "Report a bug" link). Pages serves
 `.wasm` with the right type and compresses on the fly; it cannot send the CSP / cache headers below.
 
