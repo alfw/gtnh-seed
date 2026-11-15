@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About · GTNH Seed Map</title>
+<meta name="description" content="What the GTNH Seed Map predicts exactly, what it estimates, which packs it supports, privacy and licences." />
+<style>
+  :root { color-scheme: dark; --bg: #0e1216; --fg: #e8edf2; --dim: #9aa7b4; --line: #2a313a; --accent: #f0b04a; --ok: #7fd18b; --est: #e8c26a; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 18px 60px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 30px 0 8px; padding-bottom: 4px; border-bottom: 1px solid var(--line); }
+  a { color: #8fc1ff; }
+  .dim { color: var(--dim); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  td, th { text-align: left; vertical-align: top; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--dim); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+  td:first-child { white-space: nowrap; }
+  .ok { color: var(--ok); } .est { color: var(--est); }
+  ul { padding-left: 20px; }
+  li { margin: 3px 0; }
+  .back { display: inline-block; margin-bottom: 16px; }
+  code { background: #1b222a; padding: 1px 5px; border-radius: 4px; font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./index.html">← Back to the map</a>
+<h1>GTNH Seed Map</h1>
+<p class="dim">A seed and biome viewer with seed search for GT New Horizons worlds. It runs a Rust port of the pack's
+world generation in your browser.</p>
+
+<h2>Supported worlds</h2>
+<ul>
+  <li><b>GT New Horizons 2.9 and 2.10</b>, world types <b>RWG2_CONTINENTS</b> (the pack default) and <b>RWG2</b>.
+    Pack data comes from 2.9.0, and the predictions are checked against real 2.9.0 and 2.10.0 worlds.</li>
+  <li>Not supported: worlds made before 2.9 that kept their old generator (Realistic World Gen 1), other world types,
+    and modified worldgen configs.</li>
+  <li>Dimensions: Overworld, Nether, Twilight Forest and the End.</li>
+  <li>A new pack release can change generation. It is checked with a dump from the new pack before it is marked as supported.</li>
+</ul>
+
+<h2>What is exact and what is estimated</h2>
+<p class="dim"><span class="ok">Exact</span> means it was compared with real generated worlds with no mismatches.
+<span class="est">Estimated</span> means the result depends on things a seed alone does not fix, such as the order chunks
+were loaded in, or on a model that is only partly certain. The map says “est.”, “~” or gives a percentage where it estimates.</p>
+<table>
+  <tr><th>Feature</th><th>Accuracy</th></tr>
+  <tr><td>Biomes</td><td class="ok">Exact, including the per-block biome you see in F3, Thaumcraft and Forestry.</td></tr>
+  <tr><td>Terrain and surface blocks</td><td class="ok">Exact when zoomed in, before trees and ores. <span class="dim">Zoomed out, heights are a blend that is usually within 2 blocks.</span></td></tr>
+  <tr><td>Strongholds, villages, mineshafts</td><td class="ok">Exact positions. Includes the stronghold portal room and village style. <span class="dim">Village layouts are not predictable from the seed.</span></td></tr>
+  <tr><td>Spawn point</td><td class="ok">Exact on every checked world.</td></tr>
+  <tr><td>Nether fortresses</td><td class="ok">Exact layout, blaze spawners, wart rooms and chest loot.</td></tr>
+  <tr><td>Nether, Twilight Forest and End terrain</td><td class="ok">Exact before decoration. Twilight Forest structures are exact.</td></tr>
+  <tr><td>HEE End islands and towers</td><td class="ok">Exact positions, island biomes and tower rooms.</td></tr>
+  <tr><td>GT underground fluids</td><td class="ok">Exact (every checked chunk).</td></tr>
+  <tr><td>Bee climate, LootGames dungeons</td><td class="ok">Exact.</td></tr>
+  <tr><td>GT ore veins</td><td class="est">About 9 in 10. The vein type and height are exact, but whether a vein generates depends on which nearby chunk loaded first.</td></tr>
+  <tr><td>Monster rooms, chest carts, geodes, lakes</td><td class="est">Usually right. They depend on terrain and on what generated before them.</td></tr>
+  <tr><td>Roguelike dungeons</td><td class="est">The search ring is exact. The likely spot is an estimate.</td></tr>
+  <tr><td>Thaumcraft nodes and structures</td><td class="est">Usually right. They depend on trees and on the order neighbouring chunks generated in.</td></tr>
+  <tr><td>Oil deposits</td><td class="est">About 50–80%. The popup gives the confidence.</td></tr>
+  <tr><td>Trees and plants</td><td class="est">Plausible, not block-exact. Exact load order is only modelled around spawn.</td></tr>
+</table>
+
+<h2>Privacy</h2>
+<p>Everything runs in your browser. Seeds, searches, markers and settings never leave your device. The page sends no
+analytics and sets no cookies. Saved views, markers and settings live in your browser's local storage.</p>
+
+<h2>Licences</h2>
+<ul>
+  <li>The world generation port (<code>rwg2-biomes</code>, <code>rwg2-wasm</code>) is <b>GPL-3.0-or-later</b>. It is
+    derived from <a href="https://github.com/GTNewHorizons/Realistic-World-Gen-2">Realistic-World-Gen-2</a> (GPL-3.0).
+    It contains ports of CellNoise (libnoiseforjava, GPL-3.0+) and PerlinNoise (J3D.org, LGPL-2.1).
+    <a href="./source/index.html">Source code of this build</a>.</li>
+  <li>Bundled libraries: <a href="https://github.com/mrdoob/three.js">three.js</a> (MIT),
+    <a href="https://github.com/sveltejs/svelte">Svelte</a> (MIT) and the Rust crates serde, serde_json and itoa
+    (MIT or Apache-2.0), memchr (Unlicense or MIT) and zmij (MIT). Their licence texts: <a href="./source/files/THIRD_PARTY_LICENSES.txt.txt">THIRD_PARTY_LICENSES.txt</a>.</li>
+  <li>The world generation of the pack's other mods is reimplemented to predict it. No mod files are included. These
+    mods include Biomes O' Plenty, Twilight Forest, GregTech, Thaumcraft, Hardcore Ender Expansion, Draconic Evolution,
+    Roguelike Dungeons and LootGames. Mod names identify the mods; this project is not affiliated with their authors or
+    with the GT New Horizons team.</li>
+  <li>Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</li>
+</ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "gtnh-seedmap-viewer",
+  "license": "GPL-3.0-or-later",
+  "repository": { "type": "git", "url": "git+https://github.com/alfw/gtnh-seed.git" },
+  "private": true,
+  "version": "1.67.1",
+  "type": "module",
+  "scripts": {
+    "wasm": "cd .. && cargo build --release -p rwg2-wasm --target wasm32-unknown-unknown && cp target/wasm32-unknown-unknown/release/rwg2_wasm.wasm viewer/src/lib/rwg2.wasm",
+    "dev": "vite",
+    "build": "npm run wasm && npm run source && vite build",
+    "preview": "vite preview",
+    "source": "sh ../tools/source-bundle.sh"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "svelte": "^5.0.0",
+    "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "three": "^0.187.0"
+  }
+}

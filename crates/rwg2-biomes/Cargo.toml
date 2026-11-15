@@ -1,0 +1,46 @@
+[package]
+name = "rwg2-biomes"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+# Derivative of GTNewHorizons/Realistic-World-Gen-2 (GPL-3.0); PerlinNoise from J3D.org (LGPL-2.1).
+license = "GPL-3.0-or-later"
+repository = "https://github.com/alfw/gtnh-seed"
+description = "Bit-exact Rust port of the RWG2 (GT New Horizons) biome provider"
+
+[features]
+json = ["dep:serde_json"]
+
+[dependencies]
+serde_json = { version = "1", optional = true }
+
+[dev-dependencies]
+serde_json = "1"
+
+[[test]]
+name = "pack_dump"
+required-features = ["json"]
+
+[[test]]
+name = "dims_dump28"
+required-features = ["json"]
+
+[[test]]
+name = "dims_dump29"
+required-features = ["json"]
+
+[[test]]
+name = "speed"
+required-features = ["json"]
+
+[[test]]
+name = "gtdims"
+required-features = ["json"]
+
+[[test]]
+name = "carve"
+required-features = ["json"]
+
+[[test]]
+name = "end"
+required-features = ["json"]

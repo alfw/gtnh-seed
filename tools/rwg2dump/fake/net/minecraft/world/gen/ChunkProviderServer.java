@@ -1,0 +1,1 @@
+package net.minecraft.world.gen; public class ChunkProviderServer implements net.minecraft.world.chunk.IChunkProvider { private net.minecraft.world.chunk.IChunkProvider field_73246_d = new rwg2.world.ChunkGeneratorRealistic(); }

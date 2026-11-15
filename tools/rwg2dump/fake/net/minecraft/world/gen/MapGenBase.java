@@ -1,0 +1,2 @@
+package net.minecraft.world.gen; import net.minecraft.world.chunk.IChunkProvider; import net.minecraft.world.World; import net.minecraft.block.Block;
+public class MapGenBase { public int calls; public void func_151539_a(IChunkProvider p, World w, int cx, int cz, Block[] b){ calls++; for(int x=cx-8;x<=cx+8;x++) for(int z=cz-8;z<=cz+8;z++) func_151538_a(w,x,z,cx,cz,b);} protected void func_151538_a(World w,int x,int z,int a,int c,Block[] b){} }

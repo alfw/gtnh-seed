@@ -1,0 +1,11 @@
+{
+  "_comment": "Response headers for the viewer, shared by deploy/serve.mjs; nginx.conf and Caddyfile repeat them. wasm-unsafe-eval = WebAssembly.instantiate; style-src unsafe-inline = Svelte style attributes; blob: = PNG export and worker / canvas blobs.",
+  "all": {
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()"
+  },
+  "assets": { "Cache-Control": "public, max-age=31536000, immutable" },
+  "other": { "Cache-Control": "no-cache" }
+}

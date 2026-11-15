@@ -1,0 +1,1 @@
+package net.minecraft.world.gen.structure; public class MapGenVillage extends MapGenStructure { protected boolean func_75047_a(int x,int z){ return Math.floorMod(x,24)==3 && Math.floorMod(z,24)==5; } }

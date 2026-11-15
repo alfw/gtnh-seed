@@ -1,0 +1,18 @@
+[package]
+name = "pack-tool"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80"
+license = "GPL-3.0-or-later"
+description = "Diff a new rwg2dump against the pack facts the port depends on, and import a dump into data/gtnh-<version>/"
+publish = false
+
+# Standalone (not a member of the root workspace): builds natively only, never for wasm32.
+[workspace]
+
+[dependencies]
+rwg2-biomes = { path = "../../crates/rwg2-biomes", features = ["json"] }
+serde_json = { version = "1", features = ["preserve_order"] }
+
+[profile.release]
+lto = false

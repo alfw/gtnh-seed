@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "rwg2dump",
+    "name": "RWG2 Dump",
+    "description": "Server-side: /rwg2dump exports RWG2 biome lists, terrain parameters, landmark heights, structure ground truth and golden grids for the GTNH seed viewer.",
+    "version": "2.18.0",
+    "mcversion": "1.7.10",
+    "authorList": ["Alf"],
+    "dependencies": ["rwg2"]
+  }
+]

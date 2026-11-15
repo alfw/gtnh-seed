@@ -1,0 +1,16 @@
+# Caddy site for the viewer (automatic HTTPS). Build as in nginx.conf, copy viewer/dist to /srv/gtnh-seedmap.
+# Headers mirror deploy/headers.json.
+seedmap.example {
+	root * /srv/gtnh-seedmap
+	file_server {
+		precompressed br gzip
+	}
+	header {
+		Content-Security-Policy "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'self'"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+		Cache-Control no-cache
+	}
+	header /assets/* Cache-Control "public, max-age=31536000, immutable"
+}

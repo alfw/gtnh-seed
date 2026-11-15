@@ -1,0 +1,6156 @@
+seed 0
+int -1155484576
+long -3109364765729502342
+double 3fe3672e15196e4f
+float 3e9e3be0
+bool true
+intb 1 0
+intb 1024 611
+gauss 3fe9d520758292db
+int -1661998771
+long -279624296851435688
+double 3fec2243602f4588
+float 3f70f5b4
+bool false
+intb 920 383
+intb 1024 320
+gauss bfe6af2e53d68fbe
+int 553609048
+long 6787954838522539928
+double 3fe690caa02f9778
+float 3ab5c000
+bool true
+intb 839 594
+intb 1024 987
+gauss 3fd9ed5fa1ffc0ee
+int 1227951724
+long 7577852396602278602
+double 3fe8d78cdfd046f4
+float 3f7da002
+bool true
+intb 758 305
+intb 1024 888
+gauss bff971f61c5139da
+int -1089884900
+long -351499755283555692
+double 3fe23db89689d30d
+float 3c51d2c0
+bool true
+intb 677 571
+intb 1024 539
+gauss 3fc91566771c8512
+int 1318001577
+long -5121607137339136235
+double 3fe6e188b883a1e1
+float 3e12a85c
+bool false
+intb 596 202
+intb 1024 280
+gauss bff5582c7163249d
+int 19265476
+long -6145544798027794782
+double 3fe6106aaac9908a
+float 3f50e148
+bool false
+intb 515 397
+intb 1024 879
+gauss 3fc22858fc2f2a34
+int -2002123957
+long -7146617210012600256
+double 3fc6e91409f6d00c
+float 3e5ecac4
+bool false
+intb 434 87
+intb 1024 84
+gauss 3fb488500cfbcddc
+int 41547336
+long 7651256723494804825
+double 3fd01cc2ec574c40
+float 3f72bc3c
+bool true
+intb 353 297
+intb 1024 216
+gauss bfe11555577b53ea
+int -996341162
+long 262614321976477250
+double 3fd93aa189c95248
+float 3f5a9208
+bool false
+intb 272 66
+intb 1024 952
+gauss bfbfb244eedf0488
+int -28037702
+long 5834692085903729021
+double 3fdea4da82b9839e
+float 3e1331e4
+bool true
+intb 191 109
+intb 1024 741
+gauss 3fe0ff94694530d9
+int -1474241772
+long 8142886840698975765
+double 3fdd92d98189c608
+float 3f5a52e6
+bool false
+intb 110 41
+intb 1024 730
+gauss bfd1e5a6059ed7d1
+int -34604646
+long -7967076592325094724
+double 3fe2187122d32946
+float 3ec03a04
+bool false
+intb 29 21
+intb 1024 73
+gauss bfd08842b7a5ca59
+int 1502566715
+long -4289936086616402019
+double 3fe00b72751cc101
+float 3e82d436
+bool false
+intb 948 263
+intb 1024 760
+gauss bf83855325b6a8bf
+int -651630279
+long -5042812318525331017
+double 3fc82b4660535b7c
+float 3e4747d4
+bool false
+intb 867 703
+intb 1024 88
+gauss 3fefd4cbb15a8966
+int 1299386162
+long -1497613613979078270
+double 3fd1bdcf1f05a8b8
+float 3f5fcfa5
+bool true
+intb 786 361
+intb 1024 559
+gauss 3fec46b251c8a3a3
+int -392391576
+long 2741291855007431857
+double 3fef46ae452c7d95
+float 3ea40750
+bool false
+intb 705 152
+intb 1024 518
+gauss bfa513941bd7f076
+int 1625767564
+long 8810845966659683448
+double 3fe686eb79ba48ae
+float 3ea541d2
+bool false
+intb 624 557
+intb 1024 979
+gauss bff6e4107a11e5ae
+int -1284027987
+long -4405314919712460340
+double 3fe7ae4e54dbb9f1
+float 3ef6928e
+bool false
+intb 543 205
+intb 1024 398
+gauss bfe5bf9ecbd780e4
+int -1800042595
+long 72191801432025792
+double 3fd0f40da0f0559a
+float 3f648fa6
+bool true
+intb 462 308
+intb 1024 225
+gauss bfd1b4f98be255ce
+int 1842130704
+long 6868279302035825250
+double 3fd84f987689338c
+float 3f2e4b45
+bool false
+intb 381 93
+intb 1024 687
+gauss bfdb173c4aced74b
+int -694901410
+long -7748411135601385678
+double 3fe0581be0542d8b
+float 3e9fba7e
+bool true
+intb 300 194
+intb 1024 628
+gauss 3feec67301cc5a02
+int -115501757
+long 370037956609006257
+double 3fda734ef06f48d0
+float 3f60c26c
+bool true
+intb 219 186
+intb 1024 645
+gauss bffb91918d2422c8
+int -898816007
+long -4605199251911937283
+double 3fc8591ecd246b74
+float 3dfae1f8
+bool true
+intb 138 75
+intb 1024 233
+gauss bfea5d644d73c62f
+int -287577538
+long -6296395133744786671
+double 3fe2d942c43c7baf
+float 3cb53700
+bool false
+intb 57 19
+intb 1024 116
+gauss bfe4844c22351ec4
+int -779918512
+long -7518357113470038567
+double 3fee19789a0d8202
+float 3f08bdc3
+bool false
+intb 976 575
+intb 1024 635
+gauss 3fef0d3f5d30bbee
+int 1433358016
+long -8873913589402754146
+double 3fc8f799d7898bf4
+float 3ea3dad4
+bool false
+intb 895 313
+intb 1024 270
+gauss c0007d86d20205b5
+int 330772320
+long -4455425718838312134
+double 3fa7da62da957340
+float 3db044b0
+bool true
+intb 814 267
+intb 1024 724
+gauss bffe092c1ac8aaa7
+int -1998711323
+long -1086313394771023970
+double 3fe78d22544035c3
+float 3f399eec
+bool false
+intb 733 438
+intb 1024 181
+gauss bfe0263898322635
+int 1026162883
+long -8980117487222947788
+double 3fee3b4fecf644a5
+float 3e5ef9f8
+bool false
+intb 652 414
+intb 1024 388
+gauss 3fb9401158842268
+int 83168215
+long -4608767170360207893
+double 3fe4cbea8559b065
+float 3f724938
+bool false
+intb 571 20
+intb 1024 65
+gauss bfcba3975fc5e4e8
+int -646267509
+long -7311352842601082005
+double 3fe749b5c458ad56
+float 3e9b9410
+bool false
+intb 490 178
+intb 1024 124
+gauss 3fe48f4d3ccd1f1f
+int 153728813
+long 4173604630505488621
+double 3fcff46f62f72790
+float 3d20c2d0
+bool true
+intb 409 153
+intb 1024 444
+gauss bfedc4fdb6d094b4
+int -713629100
+long -6046014611969325073
+double 3fdccde9174a07fc
+float 3eb06a44
+bool true
+intb 328 64
+intb 1024 572
+gauss 3fc9b7fff90a19a4
+int -1094584616
+long -938508313874192214
+double 3f9611e42647aa60
+float 3f34a4d2
+bool true
+intb 247 109
+intb 1024 704
+gauss bffc6600062003fe
+int 869823999
+long 3600025259063640689
+double 3fe26ea55e6d59a2
+float 3f77093d
+bool false
+intb 166 157
+intb 1024 938
+gauss bfcf9d0798e08ac7
+int 593534002
+long 7538656160340557658
+double 3fa94dc068ebb7f0
+float 3f3ed5db
+bool true
+intb 85 18
+intb 1024 439
+gauss bff8f83371fea968
+int 834930750
+long -8494028184443550129
+double 3fe2b3707efe527c
+float 3f18ee60
+bool false
+intb 4 1
+intb 1024 713
+gauss bfd80ac27bbd0528
+int 7046458
+long -7450990338237030514
+double 3fef3cff85b5c12e
+float 3e1b92f8
+bool false
+intb 923 574
+intb 1024 515
+gauss 3fd3a1c44529d062
+int -188173652
+long -5135266989296457665
+double 3fd5db709ab3f81a
+float 3d829278
+bool true
+intb 842 708
+intb 1024 305
+gauss 3fd706b93a078d36
+int -2057734606
+long -3633026240743431204
+double 3fd247f49b169aee
+float 3ebaf0a8
+bool false
+intb 761 559
+intb 1024 517
+gauss bff53ddf3197dd2a
+int 575224572
+long 598328575014092232
+double 3fd0a46921618538
+float 3eee0a74
+bool true
+intb 680 626
+intb 1024 226
+gauss 3fdb83ceeca06a01
+int 796591014
+long -4513395991245529464
+double 3fdf317f7936442a
+float 3ec45cfe
+bool false
+intb 599 407
+intb 1024 380
+gauss 3fcc5b9982ba1ae9
+int 1186734360
+long -2998428632519719896
+double 3fe5770acba14c0c
+float 3ddf6208
+bool false
+intb 518 154
+intb 1024 466
+gauss 3fed98df1db2a12c
+int -535550357
+long 840678944920088765
+double 3fd786cc864f6f38
+float 3eb7086c
+bool false
+intb 437 272
+intb 1024 538
+gauss 3fed631b8757cb06
+int -1078680217
+long -3932241021960221178
+double 3fd15d1b89864b46
+float 3f38c19b
+bool true
+intb 356 171
+intb 1024 194
+gauss bff709fa1d9923f0
+int 1248991463
+long 2739544783431522162
+double 3fd7cb69f200f7f2
+float 3f66e198
+bool false
+intb 275 240
+intb 1024 345
+gauss 3fe7a2b6639512f3
+int -798447888
+long 4815349556090146136
+double 3fe3d8fbd1e038f4
+float 3efb3fee
+bool true
+intb 194 46
+intb 1024 470
+gauss 3ffab5bc81ac5d40
+int -624946848
+long 3193005513163068918
+double 3fdef82f10cb9a10
+float 3f4783f1
+bool false
+intb 113 52
+intb 1024 860
+gauss bfd9da0951af7177
+int 866933502
+long -2281078010550439077
+double 3fd2bae32ba29b78
+float 3f7bb0b0
+bool false
+intb 32 26
+intb 1024 775
+gauss bfedf344fcc9e8bc
+int -982944228
+long -4297025996816338022
+double 3feb6b7799404232
+float 3e6b35dc
+bool false
+intb 951 555
+intb 1024 258
+gauss 3fe892afbab8cf84
+int -970129109
+long 4450747936512676115
+double 3fbe58d3697ccaa8
+float 3f498805
+bool true
+intb 870 808
+intb 1024 20
+gauss bfd27d40c8f964b6
+int 901069556
+long -7026589491848888493
+double 3fc527d9417d7748
+float 3f28d2f0
+bool true
+intb 789 692
+intb 1024 418
+gauss 3ffc0bcb878d19a2
+int 782750073
+long 2679013805589617441
+double 3feb453eb309274e
+float 3e818a0a
+bool false
+intb 708 219
+intb 1024 198
+gauss bfc74c5d873ff24a
+int 609668531
+long -7837092873829664922
+double 3fe16f7cc287b86a
+float 3f42f313
+bool true
+intb 627 332
+intb 1024 529
+gauss 3fddd169805ab440
+int 1774717699
+long 2682327445485680171
+double 3fcbde2f07f5d840
+float 3ec089e0
+bool true
+intb 546 424
+intb 1024 266
+gauss bfa1e938cde7dbe4
+int -1852232652
+long -8696438313914426564
+double 3fbab3aae9c33860
+float 3f163390
+bool false
+intb 465 185
+intb 1024 427
+gauss bfd099d6ce6514c9
+int -1908590536
+long 3041333973510398629
+double 3fe7c7dfbba6fa25
+float 3f6da625
+bool true
+intb 384 335
+intb 1024 686
+gauss 3ff2742f105d076c
+int 1606344316
+long 2469034496709113938
+double 3fee11bfe0ffa60c
+float 3e9cc864
+bool true
+intb 303 243
+intb 1024 953
+gauss bf84d1ecb1b26415
+int -788161766
+long -7699420010600227299
+double 3fd7129fa5ffac14
+float 3d27d550
+bool true
+intb 222 19
+intb 1024 416
+gauss bff4920f47052829
+int 128158532
+long -4458911783195149940
+double 3fc30fefec60f4ec
+float 3f22a18c
+bool true
+intb 141 117
+intb 1024 626
+gauss bff5805dafeed670
+int 1221719814
+long -94187287130004140
+double 3fd2a2a349274c9a
+float 3e0b92f4
+bool true
+intb 60 5
+intb 1024 524
+gauss 3feb53354b570451
+int -1751971924
+long 3184805687319614540
+double 3fd5db056e129e92
+float 3e4f56fc
+bool false
+intb 979 6
+intb 1024 543
+gauss 3feb503c74a17ed1
+int -1543117095
+long -1160421466163642931
+double 3fd7e16ec1f04832
+float 3d6e1980
+bool false
+intb 898 578
+intb 1024 163
+gauss bfec278b30d3a3a1
+seed 1
+int -1155869325
+long 1853403699951111791
+double 3fda137e6352ccce
+float 3d146b80
+bool false
+intb 1 0
+intb 1024 990
+gauss 3fde4480bdf508ba
+int 685382526
+long -1109287713991315740
+double 3fee4f6bb749a067
+float 3f6fe49d
+bool false
+intb 920 736
+intb 1024 935
+gauss bfe8f01ef7c6f14c
+int 1492578621
+long 2939296080422457956
+double 3fd79dbce81a8e92
+float 3f5d4d72
+bool false
+intb 839 577
+intb 1024 789
+gauss 3fb8a0b90d11e25c
+int -1023599386
+long 6976596177944619528
+double 3fc1e3be5c22ec14
+float 3f31e81c
+bool false
+intb 758 205
+intb 1024 4
+gauss bfe0e7751ae4b62e
+int 21582955
+long -2725440695943024712
+double 3f97fae7be75c440
+float 3f347b88
+bool false
+intb 677 86
+intb 1024 493
+gauss bfe6621f7e0aff7e
+int -193570837
+long 3779987867844568136
+double 3fe3f298a98588bd
+float 3e3d23d8
+bool false
+intb 596 386
+intb 1024 699
+gauss 3fc751b63dd373ed
+int 691675816
+long 8969906174733648019
+double 3fdf337238a57764
+float 3e019cdc
+bool true
+intb 515 263
+intb 1024 251
+gauss bfd9ddf7d953629d
+int 1746079594
+long 7969120158891947125
+double 3fcdd80c90aa3908
+float 3f63d10f
+bool false
+intb 434 15
+intb 1024 277
+gauss 3fde70c1f3dfef86
+int -1750717778
+long 2081176313610728755
+double 3fcd496223d5b8ac
+float 3f7debfc
+bool true
+intb 353 210
+intb 1024 1007
+gauss bfd44e818b998505
+int 1248685248
+long 8175826803456981118
+double 3fe021e0e977e3ea
+float 3f7fbd34
+bool true
+intb 272 167
+intb 1024 284
+gauss 3fec065a0778b757
+int -388333581
+long 6288771570310971427
+double 3fd102b237dcfbf2
+float 3deef0d0
+bool false
+intb 191 118
+intb 1024 315
+gauss 400880c1f86947b3
+int 66075398
+long 3864458965704708566
+double 3fc6195b47c261ec
+float 3f0c8826
+bool true
+intb 110 45
+intb 1024 112
+gauss bfd6e25f6128fa3f
+int -1770317568
+long -8876815705081092607
+double 3fe0daf0759790c8
+float 3eb8591c
+bool false
+intb 29 24
+intb 1024 261
+gauss 3fe15bc8559f08c0
+int -1290244369
+long -311691390498039484
+double 3fe9b73e5de96345
+float 3f5618bc
+bool false
+intb 948 805
+intb 1024 447
+gauss bfec51d6c1e629e3
+int -1556936681
+long 5917428622741610338
+double 3fe4f10ed50cad48
+float 3ebee940
+bool false
+intb 867 315
+intb 1024 901
+gauss bfe33c55c953e0d2
+int 1835464617
+long -9048258330105186985
+double 3fef9657391dedd8
+float 3e1cec94
+bool true
+intb 786 221
+intb 1024 969
+gauss 3fee49a021a9c153
+int -755996415
+long -9050211698116859170
+double 3fe4f0276cef8434
+float 3f35304b
+bool false
+intb 705 204
+intb 1024 102
+gauss bfe5338cf49a4902
+int 1219810066
+long -7536618281581788192
+double 3fb2b1d5509353a0
+float 3d97a670
+bool false
+intb 624 180
+intb 1024 657
+gauss 3fc1a710eeb9e39f
+int 1202597766
+long 6517957657068743901
+double 3fc3d6387b3041e8
+float 3ebbc972
+bool false
+intb 543 221
+intb 1024 612
+gauss 3ff49caa3757888c
+int -1538299695
+long 6932437597733693250
+double 3fd15cdeadcfe764
+float 3f3ad5bd
+bool true
+intb 462 322
+intb 1024 863
+gauss 3fc420a2390f0838
+int 187701662
+long 8050798245630957284
+double 3fd5ac873dcc981c
+float 3e992712
+bool true
+intb 381 358
+intb 1024 63
+gauss 3fd96d16d2643bb3
+int -1732216817
+long -15063047445053702
+double 3fafb197d0b347f0
+float 3f16191b
+bool true
+intb 300 276
+intb 1024 556
+gauss bffa38f921460986
+int -1451587417
+long 3720926972118013035
+double 3fefeab351f8cd74
+float 3f358263
+bool false
+intb 219 199
+intb 1024 723
+gauss 3fe059aa72108ebd
+int 929459541
+long 5818523204758407422
+double 3f990f38d5392e60
+float 3ee6ea96
+bool false
+intb 138 91
+intb 1024 590
+gauss 3fd9a65aee5a3320
+int 1992168040
+long 2417780126975510394
+double 3fa5871f568b3400
+float 3f5304ed
+bool true
+intb 57 51
+intb 1024 761
+gauss 3fda8a88d3290933
+int -1530246690
+long -6566813981172607238
+double 3fbc491022f7ca80
+float 3f464c74
+bool true
+intb 976 188
+intb 1024 763
+gauss 3fccbf4713f57d42
+int -512824823
+long 6815557938281839888
+double 3fe1c2ebb76e5fd3
+float 3f60c17f
+bool false
+intb 895 620
+intb 1024 772
+gauss bff8241f507f6808
+int -1868245355
+long 6984359371816035275
+double 3fe92be7272ba6a4
+float 3f3676ed
+bool false
+intb 814 255
+intb 1024 816
+gauss bfdc4718e72804d6
+int -1021630684
+long -8724646941189564601
+double 3fdaba89d510ec2a
+float 3f5c498c
+bool true
+intb 733 338
+intb 1024 436
+gauss bfa780a41e8e2c63
+int -1944657997
+long 6738701484706097438
+double 3fe870ae1d358b55
+float 3ea534e4
+bool true
+intb 652 46
+intb 1024 807
+gauss bfe73902fdc2ca42
+int 2055897241
+long 147458202203867058
+double 3fa5039b0411e830
+float 3ee63d18
+bool false
+intb 571 338
+intb 1024 708
+gauss 3fe082f4a3675632
+int 119942735
+long 5314520057811676541
+double 3fe900dba4706c1e
+float 3f775c6b
+bool true
+intb 490 139
+intb 1024 799
+gauss bfc2a25337c0c36f
+int 1026954330
+long 5848077066133005827
+double 3fe7f823790ab1cb
+float 3f2820c4
+bool false
+intb 409 66
+intb 1024 671
+gauss bfd8d0a9e31262c9
+int 1685647855
+long -5095890738279829053
+double 3fe8dd1c285c2b2e
+float 3e78173c
+bool true
+intb 328 311
+intb 1024 582
+gauss bfba6de5ecdf016f
+int 1910375699
+long 8376099065932719350
+double 3fde102399a1713e
+float 3ee6e4bc
+bool true
+intb 247 222
+intb 1024 310
+gauss bfc8a1c65f262f3c
+int 1439110646
+long 4914520655968408745
+double 3fcd557cb0af4834
+float 3e9ba2cc
+bool false
+intb 166 103
+intb 1024 343
+gauss 3ff6b029d9bcb8b6
+int -613634679
+long 2543450464739692185
+double 3faa6815b1c1e190
+float 3dcb68f0
+bool false
+intb 85 55
+intb 1024 33
+gauss bfd1d45b38143bb1
+int 2099563519
+long -7210074501640255752
+double 3fc6de687f58b044
+float 3cf2c140
+bool false
+intb 4 2
+intb 1024 952
+gauss bff247bc847cad6a
+int 1193048624
+long 8476473784308879269
+double 3feb7d369d87a177
+float 3dc78c28
+bool false
+intb 923 604
+intb 1024 233
+gauss bff0ff699f999c6c
+int -713831370
+long -3506913595212098426
+double 3fe07a4cad76763b
+float 3eb2adb0
+bool false
+intb 842 449
+intb 1024 73
+gauss bffa2951fedf55ad
+int -1691400224
+long -516214465726217072
+double 3fe52b769cab819d
+float 3f62a1f9
+bool false
+intb 761 190
+intb 1024 968
+gauss 3fe4c9de0ba32201
+int 1348422200
+long 8201412039385703835
+double 3fe6a4c528d8f4f9
+float 3cf41a40
+bool true
+intb 680 255
+intb 1024 615
+gauss 3fffdaf12debae5f
+int 1356855360
+long -8655404759264112200
+double 3fc82aecc4fa8008
+float 3eeee2f2
+bool false
+intb 599 413
+intb 1024 327
+gauss 3ffa3196d2e50418
+int -1101153639
+long 1750179170939337200
+double 3feeae8e3aede8a3
+float 3e04ca30
+bool true
+intb 518 153
+intb 1024 464
+gauss 3fd30f0c0c7a51f1
+int 363873178
+long 5065199135924479289
+double 3fda92b12784ee10
+float 3e482278
+bool true
+intb 437 142
+intb 1024 992
+gauss bfd49ae63587f8ef
+int 222275237
+long 207129654281617929
+double 3fe968a3a48f8ab9
+float 3dcd9198
+bool false
+intb 356 154
+intb 1024 368
+gauss 3fed8858be2b899d
+int -1082933877
+long 1796208054132192546
+double 3fccfc8ba3725068
+float 3eec3944
+bool true
+intb 275 240
+intb 1024 213
+gauss bff49129e7988f95
+int 2034696979
+long -4668443384577100854
+double 3fe45cc81c011bda
+float 3f704411
+bool false
+intb 194 65
+intb 1024 147
+gauss 3fe57f4e1f217e66
+int -173163405
+long -8475632104143877520
+double 3fe046ceb1b7ee45
+float 3f32dd4a
+bool true
+intb 113 75
+intb 1024 261
+gauss 3febff82ee66dd61
+int 682317806
+long -3656460452452032586
+double 3fdd874b5778daf2
+float 3df505b0
+bool true
+intb 32 16
+intb 1024 61
+gauss bfe14ff784ab8ce3
+int -1104102078
+long -7986827514455586545
+double 3fd7be6568f51bec
+float 3f6f242a
+bool false
+intb 951 742
+intb 1024 903
+gauss 3fd919e78ae44bd2
+int 607203293
+long 1323840302848279311
+double 3fcd582bb526df5c
+float 3e63f6b0
+bool false
+intb 870 157
+intb 1024 720
+gauss 3fc71c4c4138bab4
+int 1258348082
+long -1153435956281315480
+double 3fa8c908c5ad0cf0
+float 3dd95598
+bool true
+intb 789 614
+intb 1024 187
+gauss bfddd8fc613f935f
+int 1162781971
+long -5387793921075426543
+double 3fddd471ab7d866e
+float 3f4da660
+bool true
+intb 708 462
+intb 1024 435
+gauss 3ff276b7d6938c9c
+int 2059890204
+long -111912734637948053
+double 3feceda879e7a80b
+float 3f674eba
+bool false
+intb 627 77
+intb 1024 492
+gauss 4000c7aeeb687c79
+int -1176314392
+long -1969405985713957728
+double 3feba8f8c3f99b22
+float 3f4c85e6
+bool true
+intb 546 125
+intb 1024 171
+gauss bffe6d5843754b3d
+int 558211038
+long 6100750715630237567
+double 3fe02b230374a9fa
+float 3e288c6c
+bool false
+intb 465 47
+intb 1024 685
+gauss c0026768922b0f48
+int 867812737
+long 3182019010553149164
+double 3fc10f1003adbae4
+float 3ef4ed30
+bool true
+intb 384 97
+intb 1024 817
+gauss 3fd6299e518ff611
+int 1771421828
+long -7708478228230484856
+double 3fe0b2cc45107ce0
+float 3ede4f26
+bool false
+intb 303 138
+intb 1024 252
+gauss bff169581f71d4cb
+int 63334278
+long -2032353952270255578
+double 3f9c5397b7975c40
+float 3f1ca8b1
+bool true
+intb 222 208
+intb 1024 393
+gauss bfed17f1eacc4cec
+int 350588678
+long -6300852783834793868
+double 3fcd36440b7fb3c4
+float 3e765a34
+bool true
+intb 141 40
+intb 1024 375
+gauss bffe9c5baf4064fa
+int 1486783679
+long -6318341073491982972
+double 3fe495b8d8ded829
+float 3d8adb00
+bool false
+intb 60 35
+intb 1024 26
+gauss bfd1ef06177d3404
+int -1923303523
+long 33198776626765481
+double 3fd0ce39be9b91c6
+float 3ea43b9a
+bool true
+intb 979 56
+intb 1024 956
+gauss 3fdefb233fe74d09
+int 415729660
+long -1433168339968175998
+double 3fefdfbe00c2d9e0
+float 3f3c8b49
+bool false
+intb 898 381
+intb 1024 841
+gauss 3ff579ac39d90e24
+seed -1
+int 1155099827
+long 8108487875070533655
+double 3fe1897ff54bf2f3
+float 3f19cdbb
+bool false
+intb 1 0
+intb 1024 845
+gauss bfd62d00547f6c0f
+int 299040393
+long 1519476466405487669
+double 3fe72242b7388ef3
+float 3f0f2e80
+bool true
+intb 920 97
+intb 1024 359
+gauss bfc30688e9ad0d4b
+int -299592770
+long 8379439471558954800
+double 3fd578b9e3b8e0ca
+float 3b3f3600
+bool false
+intb 839 391
+intb 1024 830
+gauss 3fd443a5985ad732
+int -1303581130
+long -7447080493522954834
+double 3fee3c901a4d3caa
+float 3e602b70
+bool false
+intb 758 587
+intb 1024 534
+gauss bfe49645c0ae07d1
+int -1083869439
+long 7973047448984492570
+double 3fec0eafe106f1ea
+float 3e9f5f64
+bool true
+intb 677 58
+intb 1024 185
+gauss c002582aec07edb5
+int 853122606
+long 7029545294719827195
+double 3fd8f62f51d6a3ac
+float 3f585bdd
+bool true
+intb 596 195
+intb 1024 736
+gauss bfab047caaa0d7b6
+int 1783406999
+long -1541158572446550759
+double 3fe1e618bbadc4f7
+float 3f6e6629
+bool true
+intb 515 38
+intb 1024 26
+gauss bffd968188546da4
+int 1406432571
+long -2900411868977439929
+double 3fca7fd16269f578
+float 3f1313d0
+bool false
+intb 434 302
+intb 1024 21
+gauss 3fe42e94f18bcab4
+int 1766147796
+long -5272196055419845572
+double 3fdcbe98a46284b6
+float 3f69892e
+bool false
+intb 353 15
+intb 1024 12
+gauss 3fe2329da87efd90
+int -1187942437
+long 7928288779715802138
+double 3fd8420fe26102e6
+float 3e9e4186
+bool false
+intb 272 183
+intb 1024 485
+gauss 3fbdbcbb14e20f92
+int 959981161
+long 6006167188221647362
+double 3fbc338afd5d3b68
+float 3f170bf1
+bool false
+intb 191 102
+intb 1024 447
+gauss bfd032cc18f889b4
+int -1606206620
+long 2439718831233910023
+double 3fe5bff1b4698160
+float 3e929c10
+bool true
+intb 110 13
+intb 1024 649
+gauss bfbc2a8bd597640a
+int 894603643
+long -1689276233052009337
+double 3fd34d3277d3b032
+float 3e226f74
+bool true
+intb 29 23
+intb 1024 684
+gauss 3fe26d9c2299fe4f
+int 847017642
+long -1818304647099180720
+double 3fe36c4e3dc6724b
+float 3f609763
+bool true
+intb 948 255
+intb 1024 897
+gauss 3ff04b553b7d9f9d
+int -1811071410
+long 7628815446648996993
+double 3fc9c664135464f0
+float 3f385131
+bool true
+intb 867 144
+intb 1024 945
+gauss 3ff551546854d9af
+int 45605988
+long -5844487579312997289
+double 3fe73c88cdf7398d
+float 3f72df93
+bool false
+intb 786 261
+intb 1024 850
+gauss 3ff16c7c6a165edf
+int -344534710
+long -839120057110797142
+double 3fe83e34b1be2736
+float 3e4f2a34
+bool true
+intb 705 446
+intb 1024 503
+gauss bfe569bfa8e62a2e
+int 896616379
+long -2875303809414224835
+double 3fee92a76bc946f2
+float 3e6934a8
+bool true
+intb 624 551
+intb 1024 374
+gauss 40006d6cb2e648a4
+int 1008255370
+long -1696764796903876242
+double 3fcfa15b9c3720d0
+float 3e1d0c44
+bool false
+intb 543 182
+intb 1024 32
+gauss bfde0bf40aeb63eb
+int 1439186374
+long -2803091638632943104
+double 3fe2129e0ec0b10b
+float 3f2f1867
+bool true
+intb 462 77
+intb 1024 584
+gauss bfc2ebb0d354a867
+int -1517824971
+long 3291452872394627065
+double 3fd42a3f51fa5dd0
+float 3d0d82a0
+bool false
+intb 381 176
+intb 1024 416
+gauss 3fe4eb30299dcfa2
+int -1168785692
+long 5731623185202910960
+double 3fea21001308fea8
+float 3f724cd0
+bool true
+intb 300 15
+intb 1024 116
+gauss bfe7faaa9ccdff41
+int 1033545034
+long 5587749650258764023
+double 3fe49511ad7c5008
+float 3f2a7750
+bool true
+intb 219 205
+intb 1024 787
+gauss 3fe7289f8f53dec3
+int -91383499
+long 3207765449232162649
+double 3fe516ba81362ee0
+float 3f0a08e8
+bool true
+intb 138 76
+intb 1024 216
+gauss 3fb2c567c42f168f
+int 572319151
+long 8219571079731973798
+double 3fde363da276f9cc
+float 3ebf2770
+bool true
+intb 57 6
+intb 1024 696
+gauss 3fdfbd5486abbe77
+int 652290383
+long 3717262814995286581
+double 3feaa88cbc971a2c
+float 3f15daed
+bool false
+intb 976 577
+intb 1024 745
+gauss bfdd23afc29f9f77
+int -641212587
+long -5718757234632614613
+double 3fd495c57846dc20
+float 3f3fc22a
+bool false
+intb 895 112
+intb 1024 611
+gauss 3ff67f63fc3c2196
+int -520716489
+long 7417471426044797986
+double 3fc057a19714bfa0
+float 3efa5292
+bool false
+intb 814 645
+intb 1024 499
+gauss bf9c58d2dc80f62e
+int 1666649909
+long 2417526487630875825
+double 3fcfeba9044b1758
+float 3f078f1d
+bool false
+intb 733 679
+intb 1024 234
+gauss 3fd2a9603d7e6136
+int -446070146
+long -4581779337403336416
+double 3fe013b9e4ff1cbf
+float 3f5cb8d7
+bool false
+intb 652 212
+intb 1024 505
+gauss bfd9f74537405884
+int 552347052
+long -3975563084827578511
+double 3fd2ec53f640d276
+float 3f70612e
+bool true
+intb 571 394
+intb 1024 680
+gauss 3fcdff6a7c409dc2
+int -1902842306
+long -7403140012432759566
+double 3feaba1a7e09c1d9
+float 3f24ff6e
+bool true
+intb 490 128
+intb 1024 414
+gauss bfe141b09e7af2f8
+int -1348364689
+long 5271366184876821329
+double 3fc29c9208164634
+float 3f629f74
+bool false
+intb 409 182
+intb 1024 807
+gauss bfc5111164545521
+int -773203234
+long 3405258480851330508
+double 3fb9f9fcd50f8ea8
+float 3f4b7d41
+bool true
+intb 328 280
+intb 1024 413
+gauss bfc03ebb86ecb4e8
+int -1024861724
+long 953818724445902925
+double 3fc76302f6b7ae18
+float 3ee94112
+bool false
+intb 247 28
+intb 1024 881
+gauss bfe77361fcac9373
+int 929887985
+long 3590512432392729196
+double 3fe02a7703827eca
+float 3de42fd8
+bool false
+intb 166 73
+intb 1024 834
+gauss 3feea00c7d9a6886
+int -1877480035
+long 1701548034792822430
+double 3f9d3ed03c159140
+float 3f0334a4
+bool false
+intb 85 13
+intb 1024 662
+gauss 3ff01e5a8386586a
+int -2035790571
+long 5897253353270453052
+double 3fdc7bea32993c60
+float 3f2eab2d
+bool true
+intb 4 0
+intb 1024 478
+gauss 3ff12d961ffe0ce1
+int -1044117113
+long -347976521814359211
+double 3fe0c3eb708f7e7d
+float 3d98b370
+bool true
+intb 923 479
+intb 1024 590
+gauss bff7ada22b0b7bec
+int -422261131
+long -3124593764161347907
+double 3fb79e8918b11820
+float 3e84a0ae
+bool true
+intb 842 745
+intb 1024 976
+gauss 3fdfd478840cad40
+int 2043498670
+long 4170839229615591180
+double 3fb0ee6e8fc49d40
+float 3e94c118
+bool true
+intb 761 234
+intb 1024 193
+gauss 3fdbd60a5525533b
+int 1847721709
+long 2848642633200655101
+double 3fe8e5e2d668efb5
+float 3f663eb2
+bool true
+intb 680 267
+intb 1024 793
+gauss bfcb9d37e5f7fdad
+int -1596785103
+long 8681125709956728081
+double 3fd1552fa57d7448
+float 3f106278
+bool true
+intb 599 275
+intb 1024 688
+gauss bff58b1aecaa6f6d
+int 1239528964
+long -2507685057499011568
+double 3fc02ff0c4ef5da0
+float 3f7d45b8
+bool false
+intb 518 405
+intb 1024 660
+gauss 3ff46781039f9b97
+int 365817915
+long 3960123563450496158
+double 3fcf23717422804c
+float 3f3a8c8a
+bool false
+intb 437 266
+intb 1024 95
+gauss bff616599316804c
+int 287071296
+long 8207513568230512067
+double 3fea612078cb71bc
+float 3ec58e0c
+bool true
+intb 356 256
+intb 1024 444
+gauss 3fd2ec502ee94c4b
+int 1877285396
+long -1397760469854681360
+double 3fe8c9c73fcd60b7
+float 3f15efcd
+bool false
+intb 275 127
+intb 1024 482
+gauss bfefc1973b6d843b
+int -482349450
+long 7159562748587199226
+double 3fe285981e217272
+float 3f40eb30
+bool true
+intb 194 42
+intb 1024 269
+gauss 3fd0cfb52d8501f4
+int 921936811
+long -5960914593104212893
+double 3fe4b80456434909
+float 3f5df8eb
+bool true
+intb 113 30
+intb 1024 260
+gauss 3fe6eba31ae8e319
+int 283734310
+long -763987481988485253
+double 3fb2841a017f7ce8
+float 3f101d02
+bool false
+intb 32 3
+intb 1024 648
+gauss 3fbf9e6b0469d684
+int 585048111
+long 3463841444728307680
+double 3fe267aee4bb7725
+float 3ddd7ab0
+bool true
+intb 951 666
+intb 1024 318
+gauss 3fe9ad3ac9b9049e
+int 1625877516
+long 1475539116639849760
+double 3fe2fe6b1df6895a
+float 3f5212fe
+bool false
+intb 870 704
+intb 1024 137
+gauss 3ff6ca4610031590
+int 232627846
+long -509476497652196557
+double 3febd18d2bcea552
+float 3ece883e
+bool true
+intb 789 622
+intb 1024 706
+gauss 3fec970d4914f4b1
+int 1632622865
+long -8325401482079314317
+double 3fde630015a8215a
+float 3f03d635
+bool true
+intb 708 47
+intb 1024 91
+gauss bfddd0405ceb1bdc
+int -1635795081
+long 1946424641849467242
+double 3fc9d540844a1224
+float 3e7a0eb0
+bool true
+intb 627 217
+intb 1024 420
+gauss bff84b268bbc1dee
+int 336626076
+long -8938930487625709989
+double 3feb1667098db5d4
+float 3df49638
+bool false
+intb 546 315
+intb 1024 221
+gauss bff1f29ce1d2ec69
+int 1038070691
+long 8402063225212034872
+double 3fef320bb4e3595b
+float 3f0d6f99
+bool false
+intb 465 26
+intb 1024 530
+gauss 3ffbaf7e57377266
+int 1262481639
+long 6254781914872453386
+double 3fe51d70f7734a79
+float 3f29983d
+bool true
+intb 384 210
+intb 1024 56
+gauss 3fb7dff45eafcd4d
+int -2085838334
+long -3192030390639206223
+double 3fc3cd1c6eeb0e74
+float 3f3bfbc5
+bool true
+intb 303 34
+intb 1024 478
+gauss 3fd723d68f49d62b
+int 1641711944
+long 1061743796266980194
+double 3fde98a19dd6d192
+float 3f6431ed
+bool true
+intb 222 74
+intb 1024 191
+gauss 3fcc8400ebefe384
+int 1984212928
+long -8786120089776755011
+double 3fdde01e64e6642a
+float 3ea57bf0
+bool true
+intb 141 38
+intb 1024 316
+gauss 3fe8efabc079183b
+int 604499101
+long -1313835926916262551
+double 3fed2b232e870d20
+float 3e169dac
+bool false
+intb 60 52
+intb 1024 185
+gauss 3fe8d482c74632b5
+int -888458513
+long -4307472947740827731
+double 3fd6b457bf4458cc
+float 3f7281bd
+bool true
+intb 979 39
+intb 1024 725
+gauss bfc4360c14a91e5a
+int 479988103
+long 5372502785701798507
+double 3fd2e8d38c17b760
+float 3f6cda47
+bool true
+intb 898 676
+intb 1024 87
+gauss 3fc5b3b114695eeb
+seed 42
+int -1170105035
+long 1008396158678580193
+double 3fa88b8027841e70
+float 3f712bbb
+bool false
+intb 1 0
+intb 1024 681
+gauss bfec092356e9621a
+int 1639144584
+long 5086654115216342560
+double 3fddac800c318574
+float 3f486c40
+bool true
+intb 920 520
+intb 1024 155
+gauss bfbac025be83b726
+int 1874714453
+long 8112874650460608982
+double 3fedc7bb0b17b05e
+float 3f4c5c83
+bool false
+intb 839 503
+intb 1024 608
+gauss bfe91e058a6f2f57
+int 1568355455
+long 3176860285874836986
+double 3fe2cc3482318166
+float 3f4053e9
+bool true
+intb 758 601
+intb 1024 82
+gauss bff35dbc5c4162d9
+int -1803779346
+long 1672464855319477743
+double 3fe98e4538405834
+float 3ea2108c
+bool false
+intb 677 294
+intb 1024 837
+gauss bfea862dfbb6b469
+int -543521657
+long 5380112710085299282
+double 3fee654114c45ebe
+float 3f520bc0
+bool false
+intb 596 303
+intb 1024 387
+gauss 3fb0b3cfe401652d
+int 1585364780
+long 2516571677013944794
+double 3fdbec0f26f45f2e
+float 3f261757
+bool false
+intb 515 445
+intb 1024 484
+gauss 3fe3dc7130f43b0c
+int 160514285
+long 2786040548068544931
+double 3feaaf083e4f151e
+float 3eebad46
+bool true
+intb 434 245
+intb 1024 646
+gauss 3fb13d67be0b05b8
+int 841659846
+long 6360960769326374158
+double 3feeccb146eced32
+float 3ef6709e
+bool false
+intb 353 224
+intb 1024 431
+gauss 3fc86b1e5417bbbe
+int 1475105044
+long 6843968935032545040
+double 3febe5e7b93b059e
+float 3f4e4462
+bool false
+intb 272 246
+intb 1024 393
+gauss bfe405492f035261
+int 1607861213
+long 2119615141514241165
+double 3fc2c8373d135ee0
+float 3e954844
+bool false
+intb 191 115
+intb 1024 828
+gauss bfe6e5d24a9ee296
+int -1472570951
+long 5636940461969593464
+double 3fe146f0265e446e
+float 3f2296a2
+bool true
+intb 110 47
+intb 1024 94
+gauss 3fede0dd2831b0a8
+int 2136002747
+long -3860734252442316894
+double 3fe57536984ab865
+float 3eeff5bc
+bool false
+intb 29 14
+intb 1024 670
+gauss bffb864817581b93
+int 585081510
+long 7094817657563592054
+double 3fe4adeeafd21675
+float 3f453d3c
+bool true
+intb 948 544
+intb 1024 404
+gauss bfca7f68b6aabf3c
+int -1722981815
+long 5237546058537329955
+double 3fe3af52789ddecd
+float 3eb885e2
+bool true
+intb 867 577
+intb 1024 285
+gauss 3fd938d2a0d2cef3
+int -850316612
+long 5813444792121706410
+double 3fdc55c922018a4e
+float 3dc58808
+bool false
+intb 786 498
+intb 1024 907
+gauss bfcab132569f5c15
+int 733836984
+long -1611156621429434867
+double 3fd29071923c9402
+float 3f705004
+bool false
+intb 705 119
+intb 1024 27
+gauss 3fe97ece57a68590
+int 1739353337
+long -599605523670828760
+double 3fecf1ac3f3044fa
+float 3eb0192e
+bool true
+intb 624 526
+intb 1024 9
+gauss bff38abfa1c8102c
+int -817786995
+long 315024622061921936
+double 3fd365d5cd5ccc10
+float 3f0f52be
+bool true
+intb 543 488
+intb 1024 704
+gauss 3ff1c6f19be12a22
+int 1334375686
+long -7590675875771744094
+double 3feca5016f1bfdd8
+float 3f2060ad
+bool true
+intb 462 255
+intb 1024 723
+gauss bfae8641698a9183
+int -413927059
+long -7552444878262806955
+double 3fc2cb4de853819c
+float 3bf8d900
+bool true
+intb 381 15
+intb 1024 407
+gauss 3ff3d442097ac4d6
+int -239241454
+long -3288214137512041658
+double 3fe51807f108774a
+float 3f1d3619
+bool true
+intb 300 281
+intb 1024 212
+gauss bfcf5af680e27752
+int 1552504506
+long 3700012061207321863
+double 3fefdf056ed7c7c3
+float 3f78187c
+bool false
+intb 219 33
+intb 1024 776
+gauss bfed22e06d2b6dff
+int -620063081
+long -4142955940382701892
+double 3fd811d06a879774
+float 3f5ce20b
+bool false
+intb 138 110
+intb 1024 411
+gauss 3f9410c853ac3e43
+int 687756372
+long 216619303235013143
+double 3fe0a1740dcdb87f
+float 3edd9750
+bool true
+intb 57 24
+intb 1024 842
+gauss 3ffdf39120f70611
+int -1999618115
+long 2381966877469433813
+double 3fe3a6aa305278c3
+float 3f0af9d5
+bool false
+intb 976 203
+intb 1024 611
+gauss bff0122a90ca6932
+int -1998980813
+long -4689414126579295665
+double 3fe81b0952a0e40a
+float 3f7845f1
+bool true
+intb 895 99
+intb 1024 397
+gauss 4000a0f302bbd248
+int -2065287419
+long 1915821566234865877
+double 3fc62c420ea6f4d0
+float 3f65cb54
+bool false
+intb 814 441
+intb 1024 702
+gauss bfebe1bd9a397d1d
+int -655156521
+long 8147939556258581244
+double 3fdd5cd786c56f20
+float 3e031414
+bool false
+intb 733 186
+intb 1024 617
+gauss 3fd756d60f20cefe
+int 16138274
+long -7881338959173699615
+double 3fe08db94c4a6532
+float 3f360f14
+bool true
+intb 652 469
+intb 1024 56
+gauss bfb8acc74fa13c50
+int -639475282
+long 4915006434829793879
+double 3fd5c287a4a3660a
+float 3f1af65f
+bool false
+intb 571 422
+intb 1024 517
+gauss bff4e9ae351f9248
+int -1569979831
+long 8017019655103589570
+double 3fe192cb19bdae4f
+float 3f13a4ee
+bool true
+intb 490 415
+intb 1024 269
+gauss 3ff2fb5b82208e36
+int -1734934104
+long 8430233791459235455
+double 3fbb87ef788f92e8
+float 3f714eef
+bool false
+intb 409 338
+intb 1024 661
+gauss 3ff141c003382a17
+int 1107985985
+long -1599065251699696142
+double 3fe3a1283c597949
+float 3f1618b6
+bool true
+intb 328 187
+intb 1024 1021
+gauss 40025d8026909081
+int -1308432
+long 384124268120100096
+double 3fe440f0c63bce9f
+float 3eddac38
+bool true
+intb 247 5
+intb 1024 76
+gauss 3fe10e3d6458288d
+int -1269611009
+long 9174170212827787346
+double 3fe60ce3c3b8795c
+float 3f271f9d
+bool true
+intb 166 154
+intb 1024 477
+gauss bff4e09c8c2acc39
+int -1928974622
+long -570208101259405904
+double 3fbb6bdea1a59a38
+float 3e6bceec
+bool false
+intb 85 50
+intb 1024 729
+gauss bfc77f9226bd3349
+int -1536651746
+long 6252754672330147600
+double 3fa4fd7b261d03e0
+float 3f4c2d46
+bool false
+intb 4 2
+intb 1024 461
+gauss 3ff4f4ee0674b495
+int 1304325572
+long 7974449108166581687
+double 3fdd6ad1b90d97aa
+float 3e350b0c
+bool true
+intb 923 262
+intb 1024 548
+gauss 3ff5ffc1d89680f4
+int 1403132403
+long -5549320458464213275
+double 3fd929975e31cad0
+float 3ee8ca22
+bool false
+intb 842 821
+intb 1024 778
+gauss 3ff6e80a35906121
+int 2072025729
+long 6977351683266756044
+double 3fdc024fd96b6d54
+float 3f5a61e5
+bool false
+intb 761 249
+intb 1024 266
+gauss bff7b9e2e2c37c5a
+int -2077795803
+long -6781060186668660933
+double 3fd5bed67c925176
+float 3f27d8d5
+bool true
+intb 680 240
+intb 1024 503
+gauss bfca893d7ef5b5c6
+int -62252445
+long -5032963982324780709
+double 3fe57b8fcf972379
+float 3dca3cf8
+bool false
+intb 599 544
+intb 1024 659
+gauss c00618dd50e7cae3
+int 1332834095
+long -4694162290944742679
+double 3fc0e5a2372b1330
+float 3f31d83b
+bool false
+intb 518 284
+intb 1024 877
+gauss 3fe14c1b77c109fc
+int -1986877949
+long 186939963671933974
+double 3feae53de5cd69e7
+float 3f13b737
+bool true
+intb 437 382
+intb 1024 860
+gauss bfe3e37407b4c9d9
+int -1177917428
+long -3535710941434084165
+double 3fe92b184fd13acf
+float 3e949c22
+bool true
+intb 356 72
+intb 1024 471
+gauss bfcea6f7d6da4563
+int 1812649450
+long -1841352097424129257
+double 3fd3af343f1bb1b8
+float 3f0e1486
+bool true
+intb 275 167
+intb 1024 840
+gauss bfd3cb7ba89d6616
+int 808659131
+long -2550498105516502785
+double 3fdaec01e8692064
+float 3f19d263
+bool true
+intb 194 93
+intb 1024 118
+gauss bff3ab34b8c461e8
+int -144920675
+long -5021128258852003052
+double 3fe262702961adaf
+float 3f32219e
+bool false
+intb 113 77
+intb 1024 60
+gauss 3feddb5830c58b87
+int 485582174
+long 1853367645030652111
+double 3fed524752bbf10d
+float 3e4f08ec
+bool false
+intb 32 18
+intb 1024 463
+gauss 3ffd5fc5d181cfd0
+int -1882480120
+long 4376396070935945058
+double 3fd01593a6ab8d16
+float 3dc6dda0
+bool true
+intb 951 56
+intb 1024 102
+gauss bfd9001315a7ba0b
+int -950063588
+long 621829796050146516
+double 3fc6f7721792e238
+float 3f7f5997
+bool false
+intb 870 366
+intb 1024 249
+gauss 3fc3e9a2b1329829
+int 271378053
+long 3660734488996119987
+double 3fe699911d0e5069
+float 3d1abc80
+bool true
+intb 789 482
+intb 1024 29
+gauss 3fd2ebd00a728a0f
+int 1638697871
+long -3451626522190653444
+double 3fefa2317f1d13f7
+float 3f0cc81f
+bool false
+intb 708 95
+intb 1024 194
+gauss bfc96036f21cc80d
+int 665784746
+long 2739268479124314274
+double 3fe37ed97d660616
+float 3f73d575
+bool true
+intb 627 151
+intb 1024 942
+gauss 3fd0a352383a9bca
+int 1339685581
+long -1237070897898761869
+double 3fc2793d568fe1d0
+float 3ee81dc6
+bool false
+intb 546 240
+intb 1024 387
+gauss bfe995149e84db1d
+int -1126769707
+long 6992253067378776991
+double 3fed29ff7846b2fc
+float 3e558404
+bool true
+intb 465 463
+intb 1024 544
+gauss bff259d93c46dba4
+int -1772922140
+long 8432561595244595009
+double 3fd3cd04ff81f72a
+float 3e1f329c
+bool false
+intb 384 12
+intb 1024 748
+gauss 3ff20e2b1abd34b9
+int 1982884443
+long -1370623816140270258
+double 3fe97d542c948fec
+float 3e663188
+bool true
+intb 303 113
+intb 1024 725
+gauss bf959e4f40189c60
+int 978414922
+long -5634373961902636265
+double 3fcfccb3e75f02ec
+float 3e4e9bc4
+bool true
+intb 222 21
+intb 1024 868
+gauss 3fdde55583c78d3f
+int -1621159759
+long 3016536444072733594
+double 3fd8f3c398b8f1e0
+float 3f368f5d
+bool true
+intb 141 52
+intb 1024 142
+gauss bfea2d759709b877
+int -1886015872
+long -6187747557547707144
+double 3fd2fe426a62e60e
+float 3e6e5a70
+bool false
+intb 60 35
+intb 1024 941
+gauss bfbfe5ab459a4306
+int -1506199831
+long 5423981635323891858
+double 3fddfdb042c20364
+float 3eefe516
+bool false
+intb 979 343
+intb 1024 665
+gauss bfa0f8af8f8822cb
+int 800682562
+long -6336226546723047105
+double 3fc932c04891ecec
+float 3bce6d00
+bool false
+intb 898 178
+intb 1024 541
+gauss bfef9f0a1aa75c51
+seed -9223372036854775808
+int -1155484576
+long -3109364765729502342
+double 3fe3672e15196e4f
+float 3e9e3be0
+bool true
+intb 1 0
+intb 1024 611
+gauss 3fe9d520758292db
+int -1661998771
+long -279624296851435688
+double 3fec2243602f4588
+float 3f70f5b4
+bool false
+intb 920 383
+intb 1024 320
+gauss bfe6af2e53d68fbe
+int 553609048
+long 6787954838522539928
+double 3fe690caa02f9778
+float 3ab5c000
+bool true
+intb 839 594
+intb 1024 987
+gauss 3fd9ed5fa1ffc0ee
+int 1227951724
+long 7577852396602278602
+double 3fe8d78cdfd046f4
+float 3f7da002
+bool true
+intb 758 305
+intb 1024 888
+gauss bff971f61c5139da
+int -1089884900
+long -351499755283555692
+double 3fe23db89689d30d
+float 3c51d2c0
+bool true
+intb 677 571
+intb 1024 539
+gauss 3fc91566771c8512
+int 1318001577
+long -5121607137339136235
+double 3fe6e188b883a1e1
+float 3e12a85c
+bool false
+intb 596 202
+intb 1024 280
+gauss bff5582c7163249d
+int 19265476
+long -6145544798027794782
+double 3fe6106aaac9908a
+float 3f50e148
+bool false
+intb 515 397
+intb 1024 879
+gauss 3fc22858fc2f2a34
+int -2002123957
+long -7146617210012600256
+double 3fc6e91409f6d00c
+float 3e5ecac4
+bool false
+intb 434 87
+intb 1024 84
+gauss 3fb488500cfbcddc
+int 41547336
+long 7651256723494804825
+double 3fd01cc2ec574c40
+float 3f72bc3c
+bool true
+intb 353 297
+intb 1024 216
+gauss bfe11555577b53ea
+int -996341162
+long 262614321976477250
+double 3fd93aa189c95248
+float 3f5a9208
+bool false
+intb 272 66
+intb 1024 952
+gauss bfbfb244eedf0488
+int -28037702
+long 5834692085903729021
+double 3fdea4da82b9839e
+float 3e1331e4
+bool true
+intb 191 109
+intb 1024 741
+gauss 3fe0ff94694530d9
+int -1474241772
+long 8142886840698975765
+double 3fdd92d98189c608
+float 3f5a52e6
+bool false
+intb 110 41
+intb 1024 730
+gauss bfd1e5a6059ed7d1
+int -34604646
+long -7967076592325094724
+double 3fe2187122d32946
+float 3ec03a04
+bool false
+intb 29 21
+intb 1024 73
+gauss bfd08842b7a5ca59
+int 1502566715
+long -4289936086616402019
+double 3fe00b72751cc101
+float 3e82d436
+bool false
+intb 948 263
+intb 1024 760
+gauss bf83855325b6a8bf
+int -651630279
+long -5042812318525331017
+double 3fc82b4660535b7c
+float 3e4747d4
+bool false
+intb 867 703
+intb 1024 88
+gauss 3fefd4cbb15a8966
+int 1299386162
+long -1497613613979078270
+double 3fd1bdcf1f05a8b8
+float 3f5fcfa5
+bool true
+intb 786 361
+intb 1024 559
+gauss 3fec46b251c8a3a3
+int -392391576
+long 2741291855007431857
+double 3fef46ae452c7d95
+float 3ea40750
+bool false
+intb 705 152
+intb 1024 518
+gauss bfa513941bd7f076
+int 1625767564
+long 8810845966659683448
+double 3fe686eb79ba48ae
+float 3ea541d2
+bool false
+intb 624 557
+intb 1024 979
+gauss bff6e4107a11e5ae
+int -1284027987
+long -4405314919712460340
+double 3fe7ae4e54dbb9f1
+float 3ef6928e
+bool false
+intb 543 205
+intb 1024 398
+gauss bfe5bf9ecbd780e4
+int -1800042595
+long 72191801432025792
+double 3fd0f40da0f0559a
+float 3f648fa6
+bool true
+intb 462 308
+intb 1024 225
+gauss bfd1b4f98be255ce
+int 1842130704
+long 6868279302035825250
+double 3fd84f987689338c
+float 3f2e4b45
+bool false
+intb 381 93
+intb 1024 687
+gauss bfdb173c4aced74b
+int -694901410
+long -7748411135601385678
+double 3fe0581be0542d8b
+float 3e9fba7e
+bool true
+intb 300 194
+intb 1024 628
+gauss 3feec67301cc5a02
+int -115501757
+long 370037956609006257
+double 3fda734ef06f48d0
+float 3f60c26c
+bool true
+intb 219 186
+intb 1024 645
+gauss bffb91918d2422c8
+int -898816007
+long -4605199251911937283
+double 3fc8591ecd246b74
+float 3dfae1f8
+bool true
+intb 138 75
+intb 1024 233
+gauss bfea5d644d73c62f
+int -287577538
+long -6296395133744786671
+double 3fe2d942c43c7baf
+float 3cb53700
+bool false
+intb 57 19
+intb 1024 116
+gauss bfe4844c22351ec4
+int -779918512
+long -7518357113470038567
+double 3fee19789a0d8202
+float 3f08bdc3
+bool false
+intb 976 575
+intb 1024 635
+gauss 3fef0d3f5d30bbee
+int 1433358016
+long -8873913589402754146
+double 3fc8f799d7898bf4
+float 3ea3dad4
+bool false
+intb 895 313
+intb 1024 270
+gauss c0007d86d20205b5
+int 330772320
+long -4455425718838312134
+double 3fa7da62da957340
+float 3db044b0
+bool true
+intb 814 267
+intb 1024 724
+gauss bffe092c1ac8aaa7
+int -1998711323
+long -1086313394771023970
+double 3fe78d22544035c3
+float 3f399eec
+bool false
+intb 733 438
+intb 1024 181
+gauss bfe0263898322635
+int 1026162883
+long -8980117487222947788
+double 3fee3b4fecf644a5
+float 3e5ef9f8
+bool false
+intb 652 414
+intb 1024 388
+gauss 3fb9401158842268
+int 83168215
+long -4608767170360207893
+double 3fe4cbea8559b065
+float 3f724938
+bool false
+intb 571 20
+intb 1024 65
+gauss bfcba3975fc5e4e8
+int -646267509
+long -7311352842601082005
+double 3fe749b5c458ad56
+float 3e9b9410
+bool false
+intb 490 178
+intb 1024 124
+gauss 3fe48f4d3ccd1f1f
+int 153728813
+long 4173604630505488621
+double 3fcff46f62f72790
+float 3d20c2d0
+bool true
+intb 409 153
+intb 1024 444
+gauss bfedc4fdb6d094b4
+int -713629100
+long -6046014611969325073
+double 3fdccde9174a07fc
+float 3eb06a44
+bool true
+intb 328 64
+intb 1024 572
+gauss 3fc9b7fff90a19a4
+int -1094584616
+long -938508313874192214
+double 3f9611e42647aa60
+float 3f34a4d2
+bool true
+intb 247 109
+intb 1024 704
+gauss bffc6600062003fe
+int 869823999
+long 3600025259063640689
+double 3fe26ea55e6d59a2
+float 3f77093d
+bool false
+intb 166 157
+intb 1024 938
+gauss bfcf9d0798e08ac7
+int 593534002
+long 7538656160340557658
+double 3fa94dc068ebb7f0
+float 3f3ed5db
+bool true
+intb 85 18
+intb 1024 439
+gauss bff8f83371fea968
+int 834930750
+long -8494028184443550129
+double 3fe2b3707efe527c
+float 3f18ee60
+bool false
+intb 4 1
+intb 1024 713
+gauss bfd80ac27bbd0528
+int 7046458
+long -7450990338237030514
+double 3fef3cff85b5c12e
+float 3e1b92f8
+bool false
+intb 923 574
+intb 1024 515
+gauss 3fd3a1c44529d062
+int -188173652
+long -5135266989296457665
+double 3fd5db709ab3f81a
+float 3d829278
+bool true
+intb 842 708
+intb 1024 305
+gauss 3fd706b93a078d36
+int -2057734606
+long -3633026240743431204
+double 3fd247f49b169aee
+float 3ebaf0a8
+bool false
+intb 761 559
+intb 1024 517
+gauss bff53ddf3197dd2a
+int 575224572
+long 598328575014092232
+double 3fd0a46921618538
+float 3eee0a74
+bool true
+intb 680 626
+intb 1024 226
+gauss 3fdb83ceeca06a01
+int 796591014
+long -4513395991245529464
+double 3fdf317f7936442a
+float 3ec45cfe
+bool false
+intb 599 407
+intb 1024 380
+gauss 3fcc5b9982ba1ae9
+int 1186734360
+long -2998428632519719896
+double 3fe5770acba14c0c
+float 3ddf6208
+bool false
+intb 518 154
+intb 1024 466
+gauss 3fed98df1db2a12c
+int -535550357
+long 840678944920088765
+double 3fd786cc864f6f38
+float 3eb7086c
+bool false
+intb 437 272
+intb 1024 538
+gauss 3fed631b8757cb06
+int -1078680217
+long -3932241021960221178
+double 3fd15d1b89864b46
+float 3f38c19b
+bool true
+intb 356 171
+intb 1024 194
+gauss bff709fa1d9923f0
+int 1248991463
+long 2739544783431522162
+double 3fd7cb69f200f7f2
+float 3f66e198
+bool false
+intb 275 240
+intb 1024 345
+gauss 3fe7a2b6639512f3
+int -798447888
+long 4815349556090146136
+double 3fe3d8fbd1e038f4
+float 3efb3fee
+bool true
+intb 194 46
+intb 1024 470
+gauss 3ffab5bc81ac5d40
+int -624946848
+long 3193005513163068918
+double 3fdef82f10cb9a10
+float 3f4783f1
+bool false
+intb 113 52
+intb 1024 860
+gauss bfd9da0951af7177
+int 866933502
+long -2281078010550439077
+double 3fd2bae32ba29b78
+float 3f7bb0b0
+bool false
+intb 32 26
+intb 1024 775
+gauss bfedf344fcc9e8bc
+int -982944228
+long -4297025996816338022
+double 3feb6b7799404232
+float 3e6b35dc
+bool false
+intb 951 555
+intb 1024 258
+gauss 3fe892afbab8cf84
+int -970129109
+long 4450747936512676115
+double 3fbe58d3697ccaa8
+float 3f498805
+bool true
+intb 870 808
+intb 1024 20
+gauss bfd27d40c8f964b6
+int 901069556
+long -7026589491848888493
+double 3fc527d9417d7748
+float 3f28d2f0
+bool true
+intb 789 692
+intb 1024 418
+gauss 3ffc0bcb878d19a2
+int 782750073
+long 2679013805589617441
+double 3feb453eb309274e
+float 3e818a0a
+bool false
+intb 708 219
+intb 1024 198
+gauss bfc74c5d873ff24a
+int 609668531
+long -7837092873829664922
+double 3fe16f7cc287b86a
+float 3f42f313
+bool true
+intb 627 332
+intb 1024 529
+gauss 3fddd169805ab440
+int 1774717699
+long 2682327445485680171
+double 3fcbde2f07f5d840
+float 3ec089e0
+bool true
+intb 546 424
+intb 1024 266
+gauss bfa1e938cde7dbe4
+int -1852232652
+long -8696438313914426564
+double 3fbab3aae9c33860
+float 3f163390
+bool false
+intb 465 185
+intb 1024 427
+gauss bfd099d6ce6514c9
+int -1908590536
+long 3041333973510398629
+double 3fe7c7dfbba6fa25
+float 3f6da625
+bool true
+intb 384 335
+intb 1024 686
+gauss 3ff2742f105d076c
+int 1606344316
+long 2469034496709113938
+double 3fee11bfe0ffa60c
+float 3e9cc864
+bool true
+intb 303 243
+intb 1024 953
+gauss bf84d1ecb1b26415
+int -788161766
+long -7699420010600227299
+double 3fd7129fa5ffac14
+float 3d27d550
+bool true
+intb 222 19
+intb 1024 416
+gauss bff4920f47052829
+int 128158532
+long -4458911783195149940
+double 3fc30fefec60f4ec
+float 3f22a18c
+bool true
+intb 141 117
+intb 1024 626
+gauss bff5805dafeed670
+int 1221719814
+long -94187287130004140
+double 3fd2a2a349274c9a
+float 3e0b92f4
+bool true
+intb 60 5
+intb 1024 524
+gauss 3feb53354b570451
+int -1751971924
+long 3184805687319614540
+double 3fd5db056e129e92
+float 3e4f56fc
+bool false
+intb 979 6
+intb 1024 543
+gauss 3feb503c74a17ed1
+int -1543117095
+long -1160421466163642931
+double 3fd7e16ec1f04832
+float 3d6e1980
+bool false
+intb 898 578
+intb 1024 163
+gauss bfec278b30d3a3a1
+seed 9223372036854775807
+int 1155099827
+long 8108487875070533655
+double 3fe1897ff54bf2f3
+float 3f19cdbb
+bool false
+intb 1 0
+intb 1024 845
+gauss bfd62d00547f6c0f
+int 299040393
+long 1519476466405487669
+double 3fe72242b7388ef3
+float 3f0f2e80
+bool true
+intb 920 97
+intb 1024 359
+gauss bfc30688e9ad0d4b
+int -299592770
+long 8379439471558954800
+double 3fd578b9e3b8e0ca
+float 3b3f3600
+bool false
+intb 839 391
+intb 1024 830
+gauss 3fd443a5985ad732
+int -1303581130
+long -7447080493522954834
+double 3fee3c901a4d3caa
+float 3e602b70
+bool false
+intb 758 587
+intb 1024 534
+gauss bfe49645c0ae07d1
+int -1083869439
+long 7973047448984492570
+double 3fec0eafe106f1ea
+float 3e9f5f64
+bool true
+intb 677 58
+intb 1024 185
+gauss c002582aec07edb5
+int 853122606
+long 7029545294719827195
+double 3fd8f62f51d6a3ac
+float 3f585bdd
+bool true
+intb 596 195
+intb 1024 736
+gauss bfab047caaa0d7b6
+int 1783406999
+long -1541158572446550759
+double 3fe1e618bbadc4f7
+float 3f6e6629
+bool true
+intb 515 38
+intb 1024 26
+gauss bffd968188546da4
+int 1406432571
+long -2900411868977439929
+double 3fca7fd16269f578
+float 3f1313d0
+bool false
+intb 434 302
+intb 1024 21
+gauss 3fe42e94f18bcab4
+int 1766147796
+long -5272196055419845572
+double 3fdcbe98a46284b6
+float 3f69892e
+bool false
+intb 353 15
+intb 1024 12
+gauss 3fe2329da87efd90
+int -1187942437
+long 7928288779715802138
+double 3fd8420fe26102e6
+float 3e9e4186
+bool false
+intb 272 183
+intb 1024 485
+gauss 3fbdbcbb14e20f92
+int 959981161
+long 6006167188221647362
+double 3fbc338afd5d3b68
+float 3f170bf1
+bool false
+intb 191 102
+intb 1024 447
+gauss bfd032cc18f889b4
+int -1606206620
+long 2439718831233910023
+double 3fe5bff1b4698160
+float 3e929c10
+bool true
+intb 110 13
+intb 1024 649
+gauss bfbc2a8bd597640a
+int 894603643
+long -1689276233052009337
+double 3fd34d3277d3b032
+float 3e226f74
+bool true
+intb 29 23
+intb 1024 684
+gauss 3fe26d9c2299fe4f
+int 847017642
+long -1818304647099180720
+double 3fe36c4e3dc6724b
+float 3f609763
+bool true
+intb 948 255
+intb 1024 897
+gauss 3ff04b553b7d9f9d
+int -1811071410
+long 7628815446648996993
+double 3fc9c664135464f0
+float 3f385131
+bool true
+intb 867 144
+intb 1024 945
+gauss 3ff551546854d9af
+int 45605988
+long -5844487579312997289
+double 3fe73c88cdf7398d
+float 3f72df93
+bool false
+intb 786 261
+intb 1024 850
+gauss 3ff16c7c6a165edf
+int -344534710
+long -839120057110797142
+double 3fe83e34b1be2736
+float 3e4f2a34
+bool true
+intb 705 446
+intb 1024 503
+gauss bfe569bfa8e62a2e
+int 896616379
+long -2875303809414224835
+double 3fee92a76bc946f2
+float 3e6934a8
+bool true
+intb 624 551
+intb 1024 374
+gauss 40006d6cb2e648a4
+int 1008255370
+long -1696764796903876242
+double 3fcfa15b9c3720d0
+float 3e1d0c44
+bool false
+intb 543 182
+intb 1024 32
+gauss bfde0bf40aeb63eb
+int 1439186374
+long -2803091638632943104
+double 3fe2129e0ec0b10b
+float 3f2f1867
+bool true
+intb 462 77
+intb 1024 584
+gauss bfc2ebb0d354a867
+int -1517824971
+long 3291452872394627065
+double 3fd42a3f51fa5dd0
+float 3d0d82a0
+bool false
+intb 381 176
+intb 1024 416
+gauss 3fe4eb30299dcfa2
+int -1168785692
+long 5731623185202910960
+double 3fea21001308fea8
+float 3f724cd0
+bool true
+intb 300 15
+intb 1024 116
+gauss bfe7faaa9ccdff41
+int 1033545034
+long 5587749650258764023
+double 3fe49511ad7c5008
+float 3f2a7750
+bool true
+intb 219 205
+intb 1024 787
+gauss 3fe7289f8f53dec3
+int -91383499
+long 3207765449232162649
+double 3fe516ba81362ee0
+float 3f0a08e8
+bool true
+intb 138 76
+intb 1024 216
+gauss 3fb2c567c42f168f
+int 572319151
+long 8219571079731973798
+double 3fde363da276f9cc
+float 3ebf2770
+bool true
+intb 57 6
+intb 1024 696
+gauss 3fdfbd5486abbe77
+int 652290383
+long 3717262814995286581
+double 3feaa88cbc971a2c
+float 3f15daed
+bool false
+intb 976 577
+intb 1024 745
+gauss bfdd23afc29f9f77
+int -641212587
+long -5718757234632614613
+double 3fd495c57846dc20
+float 3f3fc22a
+bool false
+intb 895 112
+intb 1024 611
+gauss 3ff67f63fc3c2196
+int -520716489
+long 7417471426044797986
+double 3fc057a19714bfa0
+float 3efa5292
+bool false
+intb 814 645
+intb 1024 499
+gauss bf9c58d2dc80f62e
+int 1666649909
+long 2417526487630875825
+double 3fcfeba9044b1758
+float 3f078f1d
+bool false
+intb 733 679
+intb 1024 234
+gauss 3fd2a9603d7e6136
+int -446070146
+long -4581779337403336416
+double 3fe013b9e4ff1cbf
+float 3f5cb8d7
+bool false
+intb 652 212
+intb 1024 505
+gauss bfd9f74537405884
+int 552347052
+long -3975563084827578511
+double 3fd2ec53f640d276
+float 3f70612e
+bool true
+intb 571 394
+intb 1024 680
+gauss 3fcdff6a7c409dc2
+int -1902842306
+long -7403140012432759566
+double 3feaba1a7e09c1d9
+float 3f24ff6e
+bool true
+intb 490 128
+intb 1024 414
+gauss bfe141b09e7af2f8
+int -1348364689
+long 5271366184876821329
+double 3fc29c9208164634
+float 3f629f74
+bool false
+intb 409 182
+intb 1024 807
+gauss bfc5111164545521
+int -773203234
+long 3405258480851330508
+double 3fb9f9fcd50f8ea8
+float 3f4b7d41
+bool true
+intb 328 280
+intb 1024 413
+gauss bfc03ebb86ecb4e8
+int -1024861724
+long 953818724445902925
+double 3fc76302f6b7ae18
+float 3ee94112
+bool false
+intb 247 28
+intb 1024 881
+gauss bfe77361fcac9373
+int 929887985
+long 3590512432392729196
+double 3fe02a7703827eca
+float 3de42fd8
+bool false
+intb 166 73
+intb 1024 834
+gauss 3feea00c7d9a6886
+int -1877480035
+long 1701548034792822430
+double 3f9d3ed03c159140
+float 3f0334a4
+bool false
+intb 85 13
+intb 1024 662
+gauss 3ff01e5a8386586a
+int -2035790571
+long 5897253353270453052
+double 3fdc7bea32993c60
+float 3f2eab2d
+bool true
+intb 4 0
+intb 1024 478
+gauss 3ff12d961ffe0ce1
+int -1044117113
+long -347976521814359211
+double 3fe0c3eb708f7e7d
+float 3d98b370
+bool true
+intb 923 479
+intb 1024 590
+gauss bff7ada22b0b7bec
+int -422261131
+long -3124593764161347907
+double 3fb79e8918b11820
+float 3e84a0ae
+bool true
+intb 842 745
+intb 1024 976
+gauss 3fdfd478840cad40
+int 2043498670
+long 4170839229615591180
+double 3fb0ee6e8fc49d40
+float 3e94c118
+bool true
+intb 761 234
+intb 1024 193
+gauss 3fdbd60a5525533b
+int 1847721709
+long 2848642633200655101
+double 3fe8e5e2d668efb5
+float 3f663eb2
+bool true
+intb 680 267
+intb 1024 793
+gauss bfcb9d37e5f7fdad
+int -1596785103
+long 8681125709956728081
+double 3fd1552fa57d7448
+float 3f106278
+bool true
+intb 599 275
+intb 1024 688
+gauss bff58b1aecaa6f6d
+int 1239528964
+long -2507685057499011568
+double 3fc02ff0c4ef5da0
+float 3f7d45b8
+bool false
+intb 518 405
+intb 1024 660
+gauss 3ff46781039f9b97
+int 365817915
+long 3960123563450496158
+double 3fcf23717422804c
+float 3f3a8c8a
+bool false
+intb 437 266
+intb 1024 95
+gauss bff616599316804c
+int 287071296
+long 8207513568230512067
+double 3fea612078cb71bc
+float 3ec58e0c
+bool true
+intb 356 256
+intb 1024 444
+gauss 3fd2ec502ee94c4b
+int 1877285396
+long -1397760469854681360
+double 3fe8c9c73fcd60b7
+float 3f15efcd
+bool false
+intb 275 127
+intb 1024 482
+gauss bfefc1973b6d843b
+int -482349450
+long 7159562748587199226
+double 3fe285981e217272
+float 3f40eb30
+bool true
+intb 194 42
+intb 1024 269
+gauss 3fd0cfb52d8501f4
+int 921936811
+long -5960914593104212893
+double 3fe4b80456434909
+float 3f5df8eb
+bool true
+intb 113 30
+intb 1024 260
+gauss 3fe6eba31ae8e319
+int 283734310
+long -763987481988485253
+double 3fb2841a017f7ce8
+float 3f101d02
+bool false
+intb 32 3
+intb 1024 648
+gauss 3fbf9e6b0469d684
+int 585048111
+long 3463841444728307680
+double 3fe267aee4bb7725
+float 3ddd7ab0
+bool true
+intb 951 666
+intb 1024 318
+gauss 3fe9ad3ac9b9049e
+int 1625877516
+long 1475539116639849760
+double 3fe2fe6b1df6895a
+float 3f5212fe
+bool false
+intb 870 704
+intb 1024 137
+gauss 3ff6ca4610031590
+int 232627846
+long -509476497652196557
+double 3febd18d2bcea552
+float 3ece883e
+bool true
+intb 789 622
+intb 1024 706
+gauss 3fec970d4914f4b1
+int 1632622865
+long -8325401482079314317
+double 3fde630015a8215a
+float 3f03d635
+bool true
+intb 708 47
+intb 1024 91
+gauss bfddd0405ceb1bdc
+int -1635795081
+long 1946424641849467242
+double 3fc9d540844a1224
+float 3e7a0eb0
+bool true
+intb 627 217
+intb 1024 420
+gauss bff84b268bbc1dee
+int 336626076
+long -8938930487625709989
+double 3feb1667098db5d4
+float 3df49638
+bool false
+intb 546 315
+intb 1024 221
+gauss bff1f29ce1d2ec69
+int 1038070691
+long 8402063225212034872
+double 3fef320bb4e3595b
+float 3f0d6f99
+bool false
+intb 465 26
+intb 1024 530
+gauss 3ffbaf7e57377266
+int 1262481639
+long 6254781914872453386
+double 3fe51d70f7734a79
+float 3f29983d
+bool true
+intb 384 210
+intb 1024 56
+gauss 3fb7dff45eafcd4d
+int -2085838334
+long -3192030390639206223
+double 3fc3cd1c6eeb0e74
+float 3f3bfbc5
+bool true
+intb 303 34
+intb 1024 478
+gauss 3fd723d68f49d62b
+int 1641711944
+long 1061743796266980194
+double 3fde98a19dd6d192
+float 3f6431ed
+bool true
+intb 222 74
+intb 1024 191
+gauss 3fcc8400ebefe384
+int 1984212928
+long -8786120089776755011
+double 3fdde01e64e6642a
+float 3ea57bf0
+bool true
+intb 141 38
+intb 1024 316
+gauss 3fe8efabc079183b
+int 604499101
+long -1313835926916262551
+double 3fed2b232e870d20
+float 3e169dac
+bool false
+intb 60 52
+intb 1024 185
+gauss 3fe8d482c74632b5
+int -888458513
+long -4307472947740827731
+double 3fd6b457bf4458cc
+float 3f7281bd
+bool true
+intb 979 39
+intb 1024 725
+gauss bfc4360c14a91e5a
+int 479988103
+long 5372502785701798507
+double 3fd2e8d38c17b760
+float 3f6cda47
+bool true
+intb 898 676
+intb 1024 87
+gauss 3fc5b3b114695eeb
+seed 81985529216486895
+int -332795332
+long 8684876118963598339
+double 3fe61dd21bb24045
+float 3ef99432
+bool true
+intb 1 0
+intb 1024 811
+gauss bfc084dafbe8a23a
+int 1487656997
+long 2044041027102081106
+double 3fc5a9c0c9ca8588
+float 3e95291e
+bool true
+intb 920 110
+intb 1024 374
+gauss 3ff033c235037494
+int -607982462
+long 7210592238282114653
+double 3fe6bbb3b6185f1c
+float 3f3cfd6d
+bool false
+intb 839 685
+intb 1024 180
+gauss bfb54861854032c3
+int -1647970953
+long -8308499085435507239
+double 3fe10a3cef8ff2b5
+float 3f3e13d3
+bool false
+intb 758 86
+intb 1024 859
+gauss bfcc34192d0ef3de
+int -1612126353
+long 5251203415707540619
+double 3fbb5339184ac468
+float 3eb0c20c
+bool false
+intb 677 154
+intb 1024 390
+gauss bf705e7ca40a6c57
+int 148866279
+long 8242659041146693455
+double 3febc699959fd9df
+float 3eadc938
+bool false
+intb 596 359
+intb 1024 465
+gauss bffe1e7e4b55a5e6
+int 1903454601
+long -8725799516991245361
+double 3fef5121171cb829
+float 3ed010bc
+bool true
+intb 515 436
+intb 1024 320
+gauss 3fda0c9323d1e75d
+int 1669919627
+long 1165112760493266508
+double 3fcc22fb8eff8490
+float 3f4854fb
+bool false
+intb 434 388
+intb 1024 404
+gauss bfe4a9b0d71a0103
+int 844818887
+long 7670608624377267178
+double 3fa2faf4baad2510
+float 3eb2f456
+bool false
+intb 353 254
+intb 1024 856
+gauss 3fad5201412864d1
+int 1795183830
+long 3589400111082017029
+double 3fa60631b986d720
+float 3f1c5109
+bool true
+intb 272 24
+intb 1024 826
+gauss 3fe6f21d8d5fa1f6
+int 631338171
+long 7822947249851255810
+double 3fe90a7e50425212
+float 3eb97d4e
+bool false
+intb 191 13
+intb 1024 454
+gauss 3ff54e6b9c1f1d98
+int -1179587386
+long -6157443462280716880
+double 3fc26a63d499a4e4
+float 3f4ae403
+bool false
+intb 110 103
+intb 1024 1010
+gauss bfec91ee48328460
+int 1520752179
+long -4298614357740289159
+double 3fe8599ca0f7803d
+float 3f62c15f
+bool false
+intb 29 4
+intb 1024 661
+gauss 3fc35094e48d9c33
+int 612187723
+long 3884997920050484648
+double 3fc723b0957832c0
+float 3efcc686
+bool true
+intb 948 258
+intb 1024 252
+gauss 3fd29e231f85ed3d
+int -642440529
+long -464449174983961375
+double 3fbd4de87f51e668
+float 3f140312
+bool true
+intb 867 221
+intb 1024 57
+gauss 3ff38f817c5daecf
+int -1709116598
+long -1035541390761278960
+double 3fe3f9bc9b4407a8
+float 3ea24bf8
+bool true
+intb 786 658
+intb 1024 136
+gauss bffc4b05de532dc6
+int -901777016
+long 125857194782185630
+double 3fc5565cc20ca5cc
+float 3ed00bb0
+bool true
+intb 705 539
+intb 1024 166
+gauss 3fcce2da25889368
+int 1647630938
+long -4313438763826362833
+double 3fe1a9caab73e84c
+float 3df13fa8
+bool false
+intb 624 255
+intb 1024 678
+gauss 3fe84935aebd10d2
+int 1459328073
+long 4237271692611419527
+double 3fe05bf24e2427fd
+float 3e39b9cc
+bool false
+intb 543 0
+intb 1024 88
+gauss 3ff0206db8869b8f
+int -95059650
+long 582416275794866743
+double 3fd142b5f2ed73ac
+float 3f510360
+bool false
+intb 462 350
+intb 1024 952
+gauss bfea6e582496fd57
+int 412134214
+long 2298530994076284491
+double 3fe8351a2d160f59
+float 3f50d32b
+bool true
+intb 381 224
+intb 1024 171
+gauss 3ffa539556d4a261
+int 65343526
+long -3030562317862326472
+double 3fe1cdac0595bab2
+float 3f1332e4
+bool false
+intb 300 197
+intb 1024 541
+gauss 3fd248f3a82891ac
+int -40088838
+long 2466000665162231009
+double 3fef39dae891d919
+float 3ed4fba4
+bool false
+intb 219 145
+intb 1024 487
+gauss bffe83ecce33b69a
+int 1307060198
+long 3849479812194721078
+double 3fda3b4637b53ebc
+float 3f6e2f18
+bool false
+intb 138 31
+intb 1024 447
+gauss bfeac7b9d4ef10f1
+int -1821704442
+long 4445051748693887150
+double 3fe34c38c5bd6655
+float 3e183fa8
+bool true
+intb 57 48
+intb 1024 756
+gauss 3ff13af24b35c76f
+int -1836833247
+long -1340657664501472994
+double 3fe747aaa7e81eac
+float 3f18e359
+bool false
+intb 976 782
+intb 1024 877
+gauss 4001851e753e0329
+int 2118551785
+long -5513135941535119515
+double 3fd76fe9bc422c30
+float 3ef061f0
+bool false
+intb 895 349
+intb 1024 489
+gauss bff4a5881e7b46ad
+int -1223256502
+long -6743878693987865016
+double 3fe06e5bc2cb5e61
+float 3f766461
+bool true
+intb 814 613
+intb 1024 625
+gauss c008b856c9113400
+int 2048390533
+long 3993447841058745583
+double 3fe0da4f11925538
+float 3ea3fb9e
+bool true
+intb 733 465
+intb 1024 774
+gauss bff0cc325db45102
+int -2030382256
+long 8841035417708833844
+double 3fe0fd6e7b2986b4
+float 3ec4e108
+bool true
+intb 652 285
+intb 1024 212
+gauss 3fea8263e9361805
+int -2122780721
+long -7252193091079206481
+double 3fdba207aab16d12
+float 3e0843d8
+bool false
+intb 571 507
+intb 1024 202
+gauss 3ffce5cfe9638f5e
+int 868568561
+long 2064808301950372160
+double 3fdad073585bc23a
+float 3f199f91
+bool true
+intb 490 70
+intb 1024 337
+gauss bfe748efdfef8186
+int 228302055
+long -3476264006285711277
+double 3fd2be5a682eb6f6
+float 3d6ac720
+bool false
+intb 409 228
+intb 1024 146
+gauss 3ff05f3c94b0b881
+int 634247118
+long 8123016889867430828
+double 3fed4236bd2ffa2c
+float 3eb45eca
+bool true
+intb 328 210
+intb 1024 923
+gauss 3feb8c1f897bbd5d
+int 141696885
+long -3990993445077346967
+double 3fdc60918149f8a8
+float 3f0a6a3a
+bool true
+intb 247 89
+intb 1024 811
+gauss 3ff036499d2b87d3
+int -1785668077
+long -658400782791828689
+double 3fd195fd5e4ca06e
+float 3e6453b4
+bool true
+intb 166 21
+intb 1024 910
+gauss 3fe59c9098a6c728
+int -345957877
+long -1202914921586143051
+double 3fe4d46955963e67
+float 3e16aedc
+bool true
+intb 85 81
+intb 1024 871
+gauss 3fdbddf79b760ef1
+int 869289144
+long -6375834165358043514
+double 3fd46e6e1301a334
+float 3e672840
+bool true
+intb 4 0
+intb 1024 409
+gauss 3fbaea50ff9a454f
+int 468617403
+long 1348786823305888254
+double 3fb4cd5e107631d8
+float 3efaa178
+bool true
+intb 923 853
+intb 1024 440
+gauss bfe484f41a2d02e6
+int 1052218782
+long 5423976473675728660
+double 3fe1be0e2a81d236
+float 3e533bc0
+bool true
+intb 842 325
+intb 1024 761
+gauss 3fda0f4341c343c9
+int -2060600402
+long -1862546493786740003
+double 3fefabf1484faa0c
+float 3f05202c
+bool true
+intb 761 492
+intb 1024 127
+gauss bfdc88930867a247
+int 589247883
+long 2555012154121502008
+double 3fe8279f21d24b4f
+float 3e6c568c
+bool false
+intb 680 248
+intb 1024 453
+gauss bf811c4f7553243d
+int -1111441042
+long 6255748239897983848
+double 3fe0c955fe472c2c
+float 3e43e6bc
+bool true
+intb 599 468
+intb 1024 919
+gauss 3fa20ee2251edbc3
+int 657129371
+long 1473816601146387656
+double 3fcedc1adcfb6c68
+float 3e7c7e80
+bool true
+intb 518 164
+intb 1024 488
+gauss bfed05881a0969bf
+int 365561360
+long 7889744027724080565
+double 3fda00144d859d26
+float 3f21774b
+bool false
+intb 437 371
+intb 1024 328
+gauss 3fbaf20645661397
+int 1381673801
+long -174060203344363687
+double 3fccdd989699c354
+float 3d1935c0
+bool false
+intb 356 113
+intb 1024 127
+gauss bfd77f21b0ca51d8
+int -631076994
+long -1835418773589579226
+double 3fdd85d332cff956
+float 3de4fa28
+bool false
+intb 275 137
+intb 1024 414
+gauss 3fe19b4970db655b
+int 1758772662
+long 256327351225965582
+double 3fd4eddc9d2de34e
+float 3d533180
+bool true
+intb 194 171
+intb 1024 38
+gauss 3fb3878a7948e556
+int 366388447
+long -2486914694050299927
+double 3fd8d1572fde65d0
+float 3e38b4b4
+bool false
+intb 113 5
+intb 1024 1010
+gauss bff040151fd44015
+int 550324898
+long -8956362480436749839
+double 3feeedaeb14103d9
+float 3e025544
+bool false
+intb 32 26
+intb 1024 23
+gauss 3ff61d65cb3d7699
+int 68915931
+long 6746188397663702297
+double 3fb1ca851c151a30
+float 3f22a2aa
+bool false
+intb 951 653
+intb 1024 250
+gauss bff0ab1ebdf94e82
+int -1239536570
+long -4533404561775299259
+double 3fd596104959760e
+float 3f556adb
+bool true
+intb 870 84
+intb 1024 750
+gauss 3fe8ffb9b139a6f9
+int 296767796
+long -186786897900881430
+double 3fcfd889db2d4dc4
+float 3f6665ec
+bool true
+intb 789 447
+intb 1024 753
+gauss 3fea422778342bd6
+int 1924199532
+long 8220278018828939551
+double 3fe91a6d0e28ce92
+float 3f69bc84
+bool true
+intb 708 515
+intb 1024 356
+gauss 3fcbfcfd1edc9ccd
+int 1817835823
+long -393679893598729209
+double 3fee18f69f2bc76c
+float 3f45719c
+bool false
+intb 627 403
+intb 1024 947
+gauss 3fe03f3396ae0d02
+int -1958511406
+long 1804135719936567843
+double 3fe21a6517d7a615
+float 3f523e8b
+bool false
+intb 546 31
+intb 1024 104
+gauss 3ff9528d4082bd51
+int -825645378
+long -1504469444291864341
+double 3fee3083865b20d4
+float 3f0ce80a
+bool true
+intb 465 338
+intb 1024 662
+gauss 3ff898063686fccc
+int -1221521224
+long 1668560403475852364
+double 3fd866301447c506
+float 3f595997
+bool true
+intb 384 351
+intb 1024 382
+gauss 3ff950cf74e547fd
+int -2067515394
+long 1320732880960234031
+double 3fd1268985cf0552
+float 3f10330f
+bool true
+intb 303 143
+intb 1024 70
+gauss bfe998cb6618a198
+int 1818458720
+long -729104253674667786
+double 3fe2029e54e16a06
+float 3f6033c0
+bool false
+intb 222 95
+intb 1024 2
+gauss 3fe62b2eb763c61e
+int -529052435
+long 3130253610382804302
+double 3fee09cfc8008722
+float 3ea6576a
+bool false
+intb 141 116
+intb 1024 879
+gauss 3ffeaab357c5a24a
+int -1290749822
+long 2823703468053555751
+double 3fbc6a8f8f4ffb38
+float 3e27b940
+bool false
+intb 60 25
+intb 1024 583
+gauss 3fc0fd66753a33ce
+int 899181501
+long 3468251670810862839
+double 3fda2deac834c5c4
+float 3f7856b4
+bool false
+intb 979 255
+intb 1024 117
+gauss bfe0120ff5fee5cd
+int 1562518299
+long -5957123633635321187
+double 3fd5e80934e0baca
+float 3e6ceafc
+bool true
+intb 898 828
+intb 1024 390
+gauss bfdcd3f3de117be3
+seed -4172144997902289642
+int 1377526227
+long 9118602035333792926
+double 3fe40851c4bf9785
+float 3e27d800
+bool true
+intb 1 0
+intb 1024 689
+gauss bfd777026d5cfa5e
+int -921999307
+long -7029339735425275527
+double 3fde7568d23b7404
+float 3ee06d9e
+bool true
+intb 920 476
+intb 1024 503
+gauss 3fe117b02d971bc3
+int -1362773922
+long -6662353770540586749
+double 3fa0782d62ce29e0
+float 3e922514
+bool true
+intb 839 296
+intb 1024 299
+gauss 3fe10befa73742b7
+int -291312585
+long 1909634093438934236
+double 3fbac3ff04641e10
+float 3f60bcc8
+bool true
+intb 758 229
+intb 1024 695
+gauss bff580865f3fe2ae
+int -1733392528
+long -7352772728749838644
+double 3fd48c0be5b48368
+float 3f773c5a
+bool false
+intb 677 189
+intb 1024 382
+gauss bfce3f3a5388b91e
+int -1959057036
+long 5983162028271727302
+double 3fd1d4b28a332afa
+float 3f14d4ce
+bool true
+intb 596 380
+intb 1024 1
+gauss 3ff51ad542d67d14
+int 777695631
+long 7821614933608603080
+double 3fc0814c8764c678
+float 3e297864
+bool true
+intb 515 31
+intb 1024 344
+gauss bfe332bf6d4ed800
+int 1188244212
+long -5583115562110083771
+double 3fbb5e9ee29291c8
+float 3f1566f1
+bool false
+intb 434 326
+intb 1024 724
+gauss 3ff0bf1a9bd30a85
+int 62131885
+long 7810776732688565224
+double 3fc467977038afd8
+float 3f7b723b
+bool false
+intb 353 234
+intb 1024 500
+gauss 3ff070c73164c5f4
+int -1254984668
+long -1847295794649378708
+double 3fe9925133f4f757
+float 3ea76e4a
+bool true
+intb 272 58
+intb 1024 684
+gauss bffaa767d3149914
+int -736318829
+long -9023390647804519664
+double 3fd83efb0eb894e2
+float 3eca9444
+bool false
+intb 191 161
+intb 1024 209
+gauss 3fb06b36a666d9b6
+int 1004395631
+long -646910296983331739
+double 3fd1644fd01fcf04
+float 3f2918b9
+bool false
+intb 110 10
+intb 1024 736
+gauss bfeb8b6647a93571
+int 1592789079
+long -2405905646624761447
+double 3fd252587ebd5f42
+float 3eca2880
+bool false
+intb 29 8
+intb 1024 214
+gauss 3fef9faa3d1a452f
+int 1241955740
+long 5885245731482938448
+double 3fa65757a3a8a790
+float 3f0af852
+bool true
+intb 948 705
+intb 1024 374
+gauss 3fe22a34a5972977
+int 621796566
+long 6031390747019828284
+double 3fdd89456e2563c8
+float 3d7d7480
+bool true
+intb 867 834
+intb 1024 848
+gauss bfe14208907d01cd
+int 852396044
+long 5842880445842124483
+double 3fe51c5753814b10
+float 3eb2b9c2
+bool true
+intb 786 271
+intb 1024 830
+gauss bff0c99ba1cd6f1f
+int 461234275
+long -6203395323619766180
+double 3fd88fbb6ee897cc
+float 3f0fe7b0
+bool false
+intb 705 195
+intb 1024 725
+gauss bfc59c7c34beaf74
+int 78354797
+long 9166016925780271922
+double 3fcad6e05397b49c
+float 3f4588a4
+bool false
+intb 624 279
+intb 1024 879
+gauss bfea5178dc3e36c7
+int 467636521
+long -1850186663767576600
+double 3fd12f671aabab7a
+float 3e16bb70
+bool false
+intb 543 442
+intb 1024 160
+gauss 3fee0e50dad101f3
+int -1704945081
+long -4396724415753431416
+double 3fdc82ef3e8d3c90
+float 3d38c510
+bool true
+intb 462 284
+intb 1024 715
+gauss bfe0d7d2ed33ff47
+int 279995137
+long -1767485477909682550
+double 3fe927e7de80f024
+float 3f153585
+bool false
+intb 381 118
+intb 1024 138
+gauss bfe091d7ca26a392
+int -1376512183
+long -7377506650871546602
+double 3fcd2e61657a5278
+float 3b7ff500
+bool true
+intb 300 98
+intb 1024 181
+gauss bfd84c9e346220a3
+int -1141928894
+long -4664623974459625711
+double 3fb0e96e8a1daca0
+float 3f39267a
+bool false
+intb 219 12
+intb 1024 329
+gauss bff0c32765aa54a2
+int -1250231213
+long -4227588090109284714
+double 3fdad7ef7b8e6020
+float 3e7657cc
+bool true
+intb 138 48
+intb 1024 947
+gauss 3fc1f91513ed74a7
+int 113040089
+long -3262743402490292385
+double 3fe104f2dedbc879
+float 3dcf3528
+bool true
+intb 57 28
+intb 1024 569
+gauss bfad818a5afc2ba3
+int 859798041
+long -1710591195846688434
+double 3fb0b708605de598
+float 3ed99776
+bool true
+intb 976 687
+intb 1024 220
+gauss 4006160586468c8a
+int -216933378
+long 5230608787057265677
+double 3fe80572d1abb397
+float 3f649fca
+bool true
+intb 895 10
+intb 1024 180
+gauss 3ff39246fed5be51
+int 115175856
+long -4265462313507459633
+double 3fdf9a0c5b930364
+float 3e9ee19c
+bool true
+intb 814 459
+intb 1024 542
+gauss bfefc8745cec6a0d
+int 870319578
+long 2925061244180296512
+double 3fe7cc11724cb46a
+float 3eab7066
+bool true
+intb 733 401
+intb 1024 373
+gauss bffd955da51b3bff
+int 1590088019
+long -1585423049089809377
+double 3fd88492886d8bb8
+float 3ea22534
+bool true
+intb 652 11
+intb 1024 835
+gauss bfe5111756b4bdb1
+int -545629958
+long -5853932206039215332
+double 3feb03a7c423145b
+float 3daa1cc0
+bool true
+intb 571 277
+intb 1024 49
+gauss 3ff26a81e8835f7f
+int 908939438
+long -219203293765503402
+double 3fe36a90fd2f5f10
+float 3eecd484
+bool false
+intb 490 45
+intb 1024 360
+gauss bfe0b4417ba9adad
+int -1310027831
+long -9109882961330224730
+double 3fa9de3a08010e90
+float 3dbabee0
+bool true
+intb 409 352
+intb 1024 311
+gauss 3fc5bb1e8c109cb4
+int 297875451
+long -67903841442727409
+double 3fe371c81ac0caea
+float 3e591884
+bool false
+intb 328 265
+intb 1024 1017
+gauss bfc2b35fe5934773
+int -1711569089
+long -5090786188107660007
+double 3fcc04c4d4f8b81c
+float 3e9ef42e
+bool true
+intb 247 94
+intb 1024 30
+gauss 3ff2d8fe26112975
+int 283079647
+long 1293250665692045231
+double 3fe010190edc8ff4
+float 3db32320
+bool true
+intb 166 164
+intb 1024 70
+gauss 3fd1bf06b318ccb7
+int -657385485
+long -9180121875851427496
+double 3feceb0a77e5581b
+float 3e889faa
+bool false
+intb 85 72
+intb 1024 147
+gauss bff0a32d5c7c6451
+int 742520087
+long -5348845174364889323
+double 3fac2c5afa5581d0
+float 3f4e88a4
+bool true
+intb 4 1
+intb 1024 106
+gauss 3fd8443dc756a406
+int 35935543
+long -8127559867424659880
+double 3fe650b75e7889f7
+float 3ed3c82e
+bool false
+intb 923 502
+intb 1024 183
+gauss bfe92cf4ec8bc580
+int -46588309
+long -7131908109269577898
+double 3fe64c701d27f3fb
+float 3f6abbb0
+bool true
+intb 842 458
+intb 1024 442
+gauss 3fdf8aa5de49ae86
+int -698951940
+long 6236257148443626944
+double 3fe8408f042e6a8c
+float 3df29840
+bool false
+intb 761 89
+intb 1024 2
+gauss 3fd263adb28ca0f6
+int 866317182
+long 1214030547997438463
+double 3fe12fc250bc1928
+float 3f625c21
+bool false
+intb 680 110
+intb 1024 227
+gauss 3fde29eebb47f57a
+int -830016435
+long 5730459978369290242
+double 3fe4a34283a4ade7
+float 3ddcd998
+bool true
+intb 599 404
+intb 1024 97
+gauss bfcbf5c4f9425cfd
+int -380184744
+long -3279635238148886961
+double 3fe10f965cfb767d
+float 3ed5f7c8
+bool true
+intb 518 28
+intb 1024 675
+gauss 3fe61aad1a0fdea0
+int -1952062331
+long -5396751409133970462
+double 3fe0b9a9401dfd87
+float 3f437a74
+bool false
+intb 437 391
+intb 1024 485
+gauss bfdf1e73d339c922
+int -1615170672
+long 3927921673157735534
+double 3fe679014405ce84
+float 3ecba136
+bool false
+intb 356 238
+intb 1024 46
+gauss bfb462b57af5a671
+int -1880876159
+long -3964520718541491644
+double 3fa3d1398a6a1ab0
+float 3ebaa83c
+bool true
+intb 275 262
+intb 1024 722
+gauss 3ff1a377be8d5160
+int -323494076
+long 7619612299918664623
+double 3fef19fbf56d05c1
+float 3ef4fba2
+bool false
+intb 194 19
+intb 1024 734
+gauss 3ff66e39f7fefaab
+int 1260985447
+long -3550805584417894945
+double 3fddbfe481273d3c
+float 3e932910
+bool false
+intb 113 105
+intb 1024 82
+gauss 3ff3f8c00edf0a65
+int -934124852
+long -8999908883214781273
+double 3fec228afb1c1b89
+float 3f20f5ea
+bool false
+intb 32 9
+intb 1024 637
+gauss bfdc2f28e6fc9a9d
+int 273545792
+long -703578883259788961
+double 3fe46bbf7c86a625
+float 3f59131e
+bool true
+intb 951 593
+intb 1024 471
+gauss 3fde0421371cabdb
+int -1079972337
+long 2673504860034363933
+double 3fbc5af83f494b80
+float 3f546eca
+bool false
+intb 870 151
+intb 1024 675
+gauss 4004f69699cc179d
+int -482245243
+long 5073129141334425789
+double 3fc880bac4977364
+float 3e7df598
+bool false
+intb 789 495
+intb 1024 1012
+gauss 3fb412899cac5f82
+int -1895972430
+long -2422297031502322543
+double 3fe7d6c6a1b5c005
+float 3e60419c
+bool true
+intb 708 178
+intb 1024 208
+gauss 3fff4e95abc2fe32
+int 2114961809
+long -1204966185414255975
+double 3fe4e23b7326a90f
+float 3f3320be
+bool false
+intb 627 389
+intb 1024 759
+gauss bff36663e062983d
+int -1409662393
+long -4881690057639411708
+double 3fee8920a66824ac
+float 3f630c3e
+bool true
+intb 546 21
+intb 1024 666
+gauss bfe8828af80cedaa
+int 722618012
+long -1568550484591110940
+double 3fe988ec83843bb4
+float 3f7571bc
+bool true
+intb 465 91
+intb 1024 903
+gauss 4000acc528b47da0
+int -983619940
+long -2990686993193703959
+double 3f8009b1cd257100
+float 3f24ff4d
+bool true
+intb 384 60
+intb 1024 523
+gauss 3fa0215b12d51670
+int 2104829849
+long -2016856297778234673
+double 3fc5ea1dfb1f8c94
+float 3f7a78bb
+bool false
+intb 303 218
+intb 1024 791
+gauss 3ff37ef6d54eaa4d
+int -1960974000
+long 2417982308953398558
+double 3fe098603daa3796
+float 3ea7277e
+bool false
+intb 222 42
+intb 1024 231
+gauss 3ff3e760ef617071
+int 1943129384
+long -5953818910583321606
+double 3fdcdd6407ae14fc
+float 3ea13b1e
+bool false
+intb 141 40
+intb 1024 362
+gauss bff0feb2c8730f05
+int 1467329974
+long -3770071507367035309
+double 3fe8900340d08ccb
+float 3f0c333b
+bool false
+intb 60 5
+intb 1024 437
+gauss 3fd807d931f395a9
+int 916389591
+long -9113210590573850310
+double 3febbcb9e495b39f
+float 3efbbcee
+bool false
+intb 979 495
+intb 1024 608
+gauss 3fdcbea11da83830
+int 319243893
+long -2837223433482358023
+double 3fab010d749bb2b0
+float 3edc12ec
+bool false
+intb 898 579
+intb 1024 306
+gauss 3ff4a86335503cfa
+seed -4942790177534073029
+int 742363205
+long 5148745412772390588
+double 3fdc85b5d810ef36
+float 3f073430
+bool false
+intb 1 0
+intb 1024 777
+gauss 3faf971fcb91dc3b
+int -1833204991
+long -7590721713343537870
+double 3fdbb1ab91b18a5c
+float 3f32f9e1
+bool true
+intb 920 453
+intb 1024 245
+gauss 3ff5656ccb115aa9
+int 1428288130
+long 1920477979835045971
+double 3fe781fafa980bad
+float 3dadc2e0
+bool false
+intb 839 152
+intb 1024 431
+gauss bfd4cf027f9d14ca
+int -402849582
+long 5427411121849114110
+double 3fd920b15f56f0d4
+float 3e16809c
+bool true
+intb 758 374
+intb 1024 88
+gauss 3fde6ebad29cfe7d
+int 1119543080
+long -4951359733318401445
+double 3fcadbb0333ff370
+float 3eaea632
+bool false
+intb 677 231
+intb 1024 354
+gauss bfe3abfd0e5049a4
+int 1976244711
+long 7281263704121121658
+double 3fe1e169ccfe6caa
+float 3eacfab6
+bool false
+intb 596 18
+intb 1024 142
+gauss 3fd5c5ddce3d40cb
+int 667682502
+long 7313059105095774628
+double 3fc1fd242f7029c4
+float 3f4a4b88
+bool true
+intb 515 376
+intb 1024 413
+gauss 3ff04a2ef5ba2bd5
+int -739996512
+long 1636143406340439910
+double 3fe6a40d117c7d20
+float 3f1267b9
+bool false
+intb 434 94
+intb 1024 578
+gauss 3ff776334d435548
+int -1671853184
+long -4965562569117650090
+double 3fd2e936e789d9a6
+float 3eaba01a
+bool false
+intb 353 283
+intb 1024 836
+gauss bfbb580feb42738b
+int 214222026
+long -6853504848062232638
+double 3fe70ac9428e4dce
+float 3f02beda
+bool false
+intb 272 92
+intb 1024 483
+gauss bfe2ac10159e4a29
+int -521125872
+long -7842472330801991323
+double 3fe31d9a5a65e242
+float 3f38f67c
+bool true
+intb 191 179
+intb 1024 69
+gauss 3fda57e97ffddf17
+int 974889141
+long -7920484604595224686
+double 3fe778f5607279a5
+float 3cca9ec0
+bool true
+intb 110 41
+intb 1024 784
+gauss 3fc78c82d2f3f175
+int 1022859959
+long 8445868123602853487
+double 3fe5ff1ba926a4b6
+float 3f7b8918
+bool false
+intb 29 16
+intb 1024 58
+gauss bfe16f350abdf65a
+int 303057497
+long 7561078802409277535
+double 3feeb224624c44a3
+float 3f4d6849
+bool true
+intb 948 929
+intb 1024 346
+gauss 3fe3a79ad2788f59
+int -175228324
+long 467125445415963834
+double 3fbca15508d45680
+float 3f062438
+bool false
+intb 867 145
+intb 1024 28
+gauss 400274ff64872b4e
+int 1975272765
+long 1245652357084216474
+double 3fee7733cf71a290
+float 3ef08ff4
+bool true
+intb 786 574
+intb 1024 285
+gauss 3ff25933324f802e
+int 908628560
+long 2297667931299745349
+double 3fe7dcf7a30e883e
+float 3ea60eec
+bool false
+intb 705 666
+intb 1024 875
+gauss 3fe4b01a1fe55a6c
+int 38765354
+long 354369379638293493
+double 3fe043592208e98c
+float 3f30108a
+bool true
+intb 624 27
+intb 1024 671
+gauss bfec32dd41629284
+int 1783393056
+long -2082768201822965812
+double 3feb729fb961142c
+float 3f083220
+bool false
+intb 543 76
+intb 1024 51
+gauss bfcfde3c96ad42ad
+int -86979284
+long -1530786692051850432
+double 3fe7063eca9bda6b
+float 3e6092b8
+bool true
+intb 462 369
+intb 1024 421
+gauss c001ccf9b61a07b7
+int 30342547
+long 5014781924686600239
+double 3fedc523964275b6
+float 3ecb79cc
+bool true
+intb 381 1
+intb 1024 742
+gauss 3ff0689c698e2539
+int 1741930460
+long -1145905590445338174
+double 3fa67d9d65c67f80
+float 3e4c6b10
+bool false
+intb 300 107
+intb 1024 126
+gauss 3feb5d7c82274d8b
+int 1713709392
+long 3025445104246793885
+double 3fa8f5f4cac1aa40
+float 3f7430d9
+bool false
+intb 219 191
+intb 1024 788
+gauss 3f7472d7cae1d574
+int -52532038
+long 3380273976136938307
+double 3fd52e9ccc64a162
+float 3f5675fa
+bool false
+intb 138 11
+intb 1024 910
+gauss bfe46905001a9fca
+int -1506560587
+long -6447693949337772268
+double 3fe13562183da16a
+float 3da3e988
+bool false
+intb 57 55
+intb 1024 961
+gauss 3fa7ff0ab522c62c
+int 634579992
+long 3826085983637469125
+double 3fe60c8eeafef6ae
+float 3ea62884
+bool true
+intb 976 590
+intb 1024 603
+gauss bfd666781bc51d90
+int 1085456777
+long 9209833391461200780
+double 3fe3516eed97847e
+float 3ef8810c
+bool false
+intb 895 195
+intb 1024 350
+gauss 3fc5262093543b51
+int -1956454096
+long -9216980137290679269
+double 3fb7f68a87bb74c0
+float 3f75dc01
+bool true
+intb 814 16
+intb 1024 793
+gauss 3fc57731bfdd70db
+int -1661688178
+long 6572746842066811940
+double 3fd90c1228087066
+float 3f1b8677
+bool true
+intb 733 183
+intb 1024 999
+gauss 3ff3288f7edc949a
+int 871028286
+long 8406397743619328198
+double 3f76b2a377a63600
+float 3f1b53bd
+bool false
+intb 652 600
+intb 1024 653
+gauss 3ff7cd3532dd28ff
+int -199779900
+long 7098176184634263540
+double 3feafd6289374a82
+float 3e980d66
+bool true
+intb 571 34
+intb 1024 649
+gauss 3fd8302f4fbfc06f
+int 756945260
+long -8892950569609022691
+double 3fce7cc90c7feb6c
+float 3f68e84b
+bool true
+intb 490 184
+intb 1024 768
+gauss 3fefc643c56571d7
+int -507224922
+long -5812643302730019231
+double 3fea4af8cadf76ef
+float 3ee5dd02
+bool true
+intb 409 274
+intb 1024 848
+gauss 3ff25abaa2dc7c7c
+int -1357119426
+long 4682751953775479527
+double 3fa63845be3ca2d0
+float 3f647302
+bool false
+intb 328 195
+intb 1024 315
+gauss bfe5ae957d7eaf56
+int -826003475
+long 7207968289194495282
+double 3fe65981eb253273
+float 3f5a34c3
+bool true
+intb 247 176
+intb 1024 1012
+gauss bff71cb77b2940cc
+int 1350491172
+long -4731519382666730783
+double 3fe6fce3502a7c44
+float 3f2e6a88
+bool true
+intb 166 123
+intb 1024 886
+gauss bff3e88046d14ea6
+int 82253069
+long 3617634031176704539
+double 3fe5a7958a9ba96b
+float 3ef42da8
+bool false
+intb 85 18
+intb 1024 633
+gauss bfe0a2f3eceeedb5
+int 435792207
+long -3055203206035659274
+double 3fe036c0e145ac16
+float 3e7769b4
+bool true
+intb 4 2
+intb 1024 205
+gauss 3ff60458cdafbeea
+int 681836152
+long -4265712364002086237
+double 3fd35283b6bfb798
+float 3e9f213c
+bool false
+intb 923 521
+intb 1024 926
+gauss bff678cd6c34957d
+int 1622886965
+long 4818158376275713904
+double 3feb45f4caefea2d
+float 3e27d210
+bool false
+intb 842 726
+intb 1024 235
+gauss bfd579d9d63b89e5
+int -556092576
+long -662165823782470475
+double 3fc1f83ae08d58f0
+float 3d49fbe0
+bool true
+intb 761 250
+intb 1024 114
+gauss 3fe2835c289400e6
+int 180487441
+long -9148954827610979515
+double 3fc7d2536e5cf764
+float 3efce392
+bool true
+intb 680 430
+intb 1024 764
+gauss 3f91721df21d49a0
+int 71661908
+long -4716151029193365825
+double 3fb79ca56345b840
+float 3c37d2c0
+bool true
+intb 599 284
+intb 1024 180
+gauss 3ff2cd6510d60663
+int 558639545
+long -5324682281180418931
+double 3feed3b0c5baaa0a
+float 3f715eb5
+bool false
+intb 518 112
+intb 1024 830
+gauss 3fd1b9a6e4c6bab5
+int 722902800
+long 6735989722581513551
+double 3fe9e2e33bb2c04d
+float 3e73ef04
+bool false
+intb 437 39
+intb 1024 940
+gauss bfd686f59fd74fcc
+int -1243408146
+long 1021315567663637359
+double 3fc0a75376d96ad0
+float 3eb531fc
+bool false
+intb 356 3
+intb 1024 984
+gauss bfdfbbcb534e5609
+int 2049184408
+long -581761237030244588
+double 3fcbaa5d5c9a1fa0
+float 3f4f0d65
+bool true
+intb 275 75
+intb 1024 148
+gauss 3fe262490233605f
+int 970896611
+long -694317798983937755
+double 3fe3bc50b4cee006
+float 3f4aec1b
+bool false
+intb 194 90
+intb 1024 980
+gauss bff767c2685f983f
+int 16419477
+long -4599884579930347528
+double 3fd733074511f186
+float 3f5ae3d5
+bool true
+intb 113 39
+intb 1024 343
+gauss bfda979657522023
+int -1998599050
+long -1549981778967606015
+double 3fed62a66b7bbbec
+float 3e1e57ec
+bool false
+intb 32 15
+intb 1024 13
+gauss 3fd1fd9f90899d62
+int -262767452
+long 4129482544910176944
+double 3fc00cc581fb01d0
+float 3f17db5a
+bool false
+intb 951 3
+intb 1024 976
+gauss bff322f49d2e66da
+int 185891991
+long -2539333948696406952
+double 3fdba12d7036a666
+float 3f1f2f47
+bool false
+intb 870 750
+intb 1024 672
+gauss bfc367227346fed3
+int 1352168367
+long 7499050280744495398
+double 3fe4774788f25a6f
+float 3c98dc60
+bool false
+intb 789 189
+intb 1024 218
+gauss bfcafa79ba1636ba
+int 434991426
+long 3719046510146017372
+double 3fab5c9ee6ed03d0
+float 3da307d0
+bool false
+intb 708 654
+intb 1024 88
+gauss 3fedd88d48c64f58
+int -784295942
+long -8658407084127926119
+double 3faebfbcad76b530
+float 3d4edc50
+bool true
+intb 627 458
+intb 1024 630
+gauss 3fd0997a6c43ebdf
+int -1733447303
+long 1056488804977330737
+double 3fb849b1695b9ef8
+float 3f379b53
+bool false
+intb 546 109
+intb 1024 112
+gauss bfe9dd3529f72184
+int -588737464
+long 6823234688450055825
+double 3fcb916ebea914d4
+float 3e7731fc
+bool false
+intb 465 455
+intb 1024 570
+gauss 3ffa8ebafddab2e2
+int -1454099347
+long 1071053316773790479
+double 3feb5b88d0c57701
+float 3f1aca6e
+bool false
+intb 384 0
+intb 1024 934
+gauss bf7bb1313e3e97fb
+int -805494559
+long 6485203003223080330
+double 3fe355618e40f404
+float 3ec40ef0
+bool true
+intb 303 40
+intb 1024 7
+gauss 3ff0e0eb8530cd98
+int 748047822
+long 765167739281455763
+double 3fe00ed05f101a19
+float 3f54f3ad
+bool false
+intb 222 78
+intb 1024 290
+gauss 3ffae93abb8afc5f
+int 905660206
+long 2121224937047254667
+double 3fd0ac532cc3bc52
+float 3d2ea9c0
+bool true
+intb 141 34
+intb 1024 134
+gauss 3fff3a4e9ec2fbbc
+int 1260128030
+long 6850503895397963443
+double 3fc9045e03e8b964
+float 3f742dbe
+bool true
+intb 60 34
+intb 1024 211
+gauss bfcba376d62df43c
+int 1999892050
+long 8959222505999970349
+double 3fc561ee4cd479e8
+float 3d5aa320
+bool false
+intb 979 460
+intb 1024 464
+gauss bfcbfb232e92cac1
+int -1321570595
+long 6047731186691964356
+double 3fe98e1236e4f33a
+float 3e8396fa
+bool true
+intb 898 481
+intb 1024 381
+gauss 40000f771f8f7626
+seed 5840696475078001361
+int 706361149
+long -346176976375620833
+double 3fec6774e6188694
+float 3f01063b
+bool true
+intb 1 0
+intb 1024 486
+gauss 3fecece987abb796
+int -1175666292
+long -280905823281692258
+double 3fe3621dd736f8d0
+float 3f602f0e
+bool true
+intb 920 486
+intb 1024 931
+gauss bff694557e46b2a6
+int -139411306
+long -8484307303517885168
+double 3fe6ef24aaaf50d1
+float 3e01d5a8
+bool true
+intb 839 247
+intb 1024 918
+gauss bff0a8da14d192e3
+int -1435419753
+long -1261858746324047760
+double 3f91524534de7960
+float 3ec23eb2
+bool true
+intb 758 749
+intb 1024 577
+gauss c00207d1ea4005ec
+int 321138949
+long -5434865298246134693
+double 3fad31beeffee130
+float 3dc0b5c8
+bool true
+intb 677 176
+intb 1024 913
+gauss 3fa628744e8a1ce3
+int -1163386182
+long 8825652258322496495
+double 3fe21d03f7d13a7c
+float 3f1c0740
+bool true
+intb 596 462
+intb 1024 241
+gauss 3fdc1c051b94b46e
+int -14132304
+long -4581684724031983282
+double 3fbecd36e8ece8d8
+float 3f1a693f
+bool true
+intb 515 180
+intb 1024 804
+gauss bf6c9f8e0357ab1c
+int -2002268250
+long 3386066074087655518
+double 3feec38fd26794b3
+float 3e0a46fc
+bool true
+intb 434 102
+intb 1024 448
+gauss bfdfeb3063d24303
+int 1995912878
+long -3680427089080619116
+double 3feab7576df905c5
+float 3ea9b940
+bool true
+intb 353 169
+intb 1024 625
+gauss bfb1499adbbac31a
+int -56312663
+long 8658717053282490643
+double 3fd835b9f4d3ea9e
+float 3f64cac5
+bool true
+intb 272 109
+intb 1024 638
+gauss 3fdf320b3aff93fa
+int -1931085083
+long 5601150154527009014
+double 3feb17ac90f0a93a
+float 3f001e8e
+bool true
+intb 191 118
+intb 1024 535
+gauss 3ff06636c487a239
+int 1345631186
+long 6478244562087655199
+double 3feae2a6aedab356
+float 3f062d79
+bool true
+intb 110 27
+intb 1024 564
+gauss bfd49790d8f0f251
+int 1377901791
+long 4776475705632369106
+double 3fdfaa3b6d8c0900
+float 3f5b7cbd
+bool false
+intb 29 10
+intb 1024 537
+gauss 3fd427c50b208ba7
+int 1023103357
+long 8278545102496489727
+double 3fed94a86a9daf92
+float 3f0c3b5d
+bool false
+intb 948 298
+intb 1024 584
+gauss 3ff665c0308730bb
+int 174050812
+long -3572703924163136898
+double 3fd60fe9caaf9f98
+float 3f6f2f11
+bool true
+intb 867 452
+intb 1024 487
+gauss 3fc31544ca1aed79
+int -191914068
+long 6627784392433055624
+double 3fc2455dccdf27c4
+float 3e9e14a0
+bool true
+intb 786 283
+intb 1024 146
+gauss 3fe07ed105e1e714
+int 1512681624
+long -1174079416584090240
+double 3fc9e6605eda5cb8
+float 3ee09664
+bool false
+intb 705 179
+intb 1024 613
+gauss bff36e0b926303d3
+int -1938887292
+long 1993377225014336841
+double 3fb6f7fa9d239360
+float 3f7a38fa
+bool true
+intb 624 381
+intb 1024 240
+gauss bfe39c1c010309da
+int 1716378740
+long -6015601233438221184
+double 3fbc2e4348a8f980
+float 3f47afba
+bool false
+intb 543 87
+intb 1024 517
+gauss bfde8458bce7c4aa
+int 308046411
+long 1838964463533138868
+double 3fe96d801642e306
+float 3e74a868
+bool false
+intb 462 109
+intb 1024 735
+gauss 3fe3642df2875029
+int 1219565533
+long 4569141329667792570
+double 3fea4fb83ef7b91a
+float 3f7e07d8
+bool true
+intb 381 178
+intb 1024 783
+gauss bffe4b83f81cf5c9
+int -893591155
+long -531031406774141162
+double 3fe0f5d74d94cdb8
+float 3e7f997c
+bool false
+intb 300 298
+intb 1024 413
+gauss bfd0ab75944004cd
+int 354769236
+long 2245886084317004411
+double 3f93cfcf453e30a0
+float 3ec840fc
+bool true
+intb 219 172
+intb 1024 500
+gauss 3ffa44bb9cb44e56
+int 166353455
+long 7621620520999805348
+double 3fc41b8e91ce199c
+float 3ee22564
+bool true
+intb 138 122
+intb 1024 109
+gauss bfec2b99176564ce
+int 926335345
+long -6499814847788077409
+double 3fe0679293703380
+float 3f55add5
+bool true
+intb 57 38
+intb 1024 636
+gauss bff93f123e871658
+int -1877962944
+long -8474627819172263474
+double 3fdaaa63b80c4ae6
+float 3bff0500
+bool false
+intb 976 213
+intb 1024 403
+gauss bff0d4cb41fcf634
+int -977223392
+long -8826098215567299109
+double 3fd89305fb48c668
+float 3e233ae4
+bool true
+intb 895 695
+intb 1024 518
+gauss bff1c2bf629c6e3b
+int 1608517941
+long 4185576700730748794
+double 3fece051e48f8e8d
+float 3f39ad36
+bool true
+intb 814 537
+intb 1024 808
+gauss 3fe6c063bc64296d
+int -2107290270
+long 5270484731389061850
+double 3fd67ab9726954a0
+float 3db5e1f0
+bool false
+intb 733 428
+intb 1024 561
+gauss bfee54290b27d913
+int -1011971083
+long -626888387874231521
+double 3fdd4979bfe0e374
+float 3eb6df3c
+bool false
+intb 652 583
+intb 1024 26
+gauss 3ff33046086ca615
+int 2093993855
+long -2260122346849868858
+double 3feb4f841620ac66
+float 3f238dcd
+bool true
+intb 571 86
+intb 1024 495
+gauss 3ffdb0e7a8234561
+int -878953981
+long 358858757291759610
+double 3fefccaf81c9161b
+float 3f6420ec
+bool true
+intb 490 293
+intb 1024 440
+gauss bfe9a6b09359e71d
+int 1006895016
+long -8750859367963284201
+double 3fdea6b947a225e6
+float 3f0646e7
+bool true
+intb 409 67
+intb 1024 884
+gauss 3ffca2e4175c1641
+int 2122393499
+long -221502793812117802
+double 3fe210f4c5fa3bd8
+float 3f6abd23
+bool false
+intb 328 248
+intb 1024 758
+gauss bfd307c32462c5f0
+int -142004870
+long 7456959889271345858
+double 3fed5f4956df2413
+float 3e2bdf60
+bool false
+intb 247 121
+intb 1024 664
+gauss bff83e1a82d6974a
+int -1717751631
+long 8672454113643645207
+double 3feaa4a21c611d95
+float 3e8080c6
+bool true
+intb 166 62
+intb 1024 405
+gauss bfdb387ef0ef7d21
+int 1153660132
+long 9067689602454762521
+double 3feda05f9f588270
+float 3db93398
+bool false
+intb 85 77
+intb 1024 184
+gauss 3fe8403bdac53322
+int -1791669503
+long -8926289257756996595
+double 3fd97b2053a8cbfc
+float 3ed30202
+bool false
+intb 4 0
+intb 1024 680
+gauss bfbd1941ca94a9a1
+int 460476248
+long -62387733825377801
+double 3faa63d2baf93030
+float 3f426e99
+bool false
+intb 923 216
+intb 1024 795
+gauss bfd2bd881d827dfb
+int -1379970631
+long -2989856065359283523
+double 3fcdafc8339471c4
+float 3c864a40
+bool true
+intb 842 177
+intb 1024 500
+gauss bfe9514c6bbb44c6
+int -1422088104
+long -5782778139351093225
+double 3fd3ce7f92a1d97c
+float 3f3355c1
+bool false
+intb 761 288
+intb 1024 432
+gauss 3feba7bd821fe4b3
+int -893650330
+long 4505416504604203159
+double 3fe6250f75ab083e
+float 3f215f17
+bool false
+intb 680 120
+intb 1024 387
+gauss 3feac98cf98548cf
+int 727280055
+long -7406684664407737947
+double 3fe93fe48c4c2922
+float 3e26ef48
+bool false
+intb 599 16
+intb 1024 91
+gauss bfe9b81956c8c693
+int -1541828348
+long 8621340113937519225
+double 3fd9458791fb14a6
+float 3e3abd08
+bool true
+intb 518 482
+intb 1024 627
+gauss bfdc96e0ba9c828a
+int -1390980611
+long -9174122611231140753
+double 3fe852e091076453
+float 3d540680
+bool true
+intb 437 340
+intb 1024 100
+gauss bfd8c980b69800b0
+int 279859464
+long 9149452468626082492
+double 3fd487b5640e2ea8
+float 3f69ad28
+bool false
+intb 356 73
+intb 1024 539
+gauss bfb72845c8280f06
+int 1206059936
+long -3199653697197785338
+double 3fdc475af7e44dc6
+float 3ee672da
+bool false
+intb 275 189
+intb 1024 763
+gauss 4001e40d0d02ac27
+int -1375550087
+long -7926855917455930515
+double 3fd0ac6e0e3581c4
+float 3eb79bbc
+bool false
+intb 194 154
+intb 1024 142
+gauss bffa515262b44b7f
+int -1132087305
+long 2874638326998640162
+double 3feb1c9c1ad9b2a6
+float 3f73184c
+bool true
+intb 113 83
+intb 1024 483
+gauss 3ffa76c908813d91
+int 1745395955
+long 2512970899880440280
+double 3fe0f9ed2d36947f
+float 3df7d068
+bool true
+intb 32 22
+intb 1024 401
+gauss c00011c7494c695f
+int -892348335
+long -5157372736946016442
+double 3feeafd4974161fa
+float 3ef1bf82
+bool true
+intb 951 38
+intb 1024 153
+gauss bff25ba672964b6a
+int 47123471
+long 4708965066158308550
+double 3fd295ce7977086c
+float 3f310e3b
+bool true
+intb 870 829
+intb 1024 537
+gauss 3fee216449679934
+int -559684263
+long 4246321208184687897
+double 3feb8eb9d2ae29e7
+float 3d3cf560
+bool true
+intb 789 77
+intb 1024 211
+gauss bfd3e6c78905e77e
+int 821602258
+long 8947018025654080937
+double 3fd90abefd085cf6
+float 3df7f0b0
+bool false
+intb 708 294
+intb 1024 120
+gauss 3fecfe85f07039b4
+int -1388239559
+long -5158212699978179712
+double 3fe67053a1545fcb
+float 3e73a138
+bool false
+intb 627 409
+intb 1024 62
+gauss 3f525959382dfb5d
+int -1626204104
+long 2234941127242029205
+double 3fdb1627d71ee3b0
+float 3f1fdfed
+bool false
+intb 546 179
+intb 1024 662
+gauss bfee170869194308
+int -576701151
+long 2484941614510945304
+double 3fa35c9b7cc9df40
+float 3ea91f9c
+bool true
+intb 465 175
+intb 1024 659
+gauss bff627027092839e
+int -29495119
+long -6683680384508768588
+double 3fed0f8f4d82d6ab
+float 3f7059cc
+bool false
+intb 384 54
+intb 1024 953
+gauss bfec11743f919afd
+int 1255290534
+long 7476658842198465673
+double 3fe493ad7652b64e
+float 3f6a22c8
+bool true
+intb 303 17
+intb 1024 401
+gauss 3ff250b1c4504eea
+int -328395133
+long 1464571616624023691
+double 3fe91d22b55b6334
+float 3ecbf792
+bool true
+intb 222 163
+intb 1024 234
+gauss 3fe74b73ba108d0c
+int -802067683
+long -6493066278083182475
+double 3f8d2f038022be80
+float 3f3d4525
+bool false
+intb 141 117
+intb 1024 14
+gauss bfee4b639573a9ca
+int 1856834043
+long -4941613138543188559
+double 3fe9eee48bbcda04
+float 3e8cf590
+bool true
+intb 60 17
+intb 1024 390
+gauss 3ff444e132aaebef
+int -6444779
+long -110705955879465026
+double 3fd72c3379e4e510
+float 3f1fc5c8
+bool false
+intb 979 707
+intb 1024 389
+gauss bffe9a699286d602
+int 99758130
+long -7515066190628798980
+double 3fbcb4fd5874af40
+float 3f1e824b
+bool false
+intb 898 804
+intb 1024 574
+gauss 3fb61a1e1b7bed14
+seed 7640891576956012809
+int -2005156376
+long -6039782937996398544
+double 3f729d8f79702a00
+float 3dfbb690
+bool false
+intb 1 0
+intb 1024 757
+gauss 3fe36ac2c63cc84d
+int 130980852
+long 8540644324993297676
+double 3fe614d0c77d4496
+float 3e98de08
+bool true
+intb 920 277
+intb 1024 337
+gauss 3ff1c5361e86928b
+int -1450612770
+long -402023195956596733
+double 3fd9837d6265fdc8
+float 3da18170
+bool true
+intb 839 170
+intb 1024 216
+gauss bff6b63b4329188f
+int 1550323395
+long 4692364906217836989
+double 3fe78bb0cfd03e71
+float 3e997c18
+bool true
+intb 758 40
+intb 1024 589
+gauss bffbf74381b03f82
+int 279136895
+long 1349825393496001223
+double 3fca643a563900bc
+float 3f4a3a5f
+bool false
+intb 677 136
+intb 1024 392
+gauss 3fd74e267c877783
+int 863302891
+long 5579688591525653991
+double 3fb2333a4f9c9c30
+float 3f638871
+bool true
+intb 596 548
+intb 1024 97
+gauss 3ff6733ef2ac2d9f
+int 875057835
+long 5284863733410461346
+double 3fb13006558020f0
+float 3ec778c0
+bool true
+intb 515 324
+intb 1024 282
+gauss bfc1030359a9953c
+int -2127287443
+long 7016087868352056985
+double 3fad3089a97996c0
+float 3f270bee
+bool false
+intb 434 228
+intb 1024 670
+gauss bff82b0a14779a6c
+int -935988355
+long -7825136918815980842
+double 3fe35887aa6d77b0
+float 3f763843
+bool false
+intb 353 317
+intb 1024 705
+gauss bff5eae9ea8f76cf
+int -1340961919
+long -6417915782957430610
+double 3fdda0d8aade3768
+float 3f3201a2
+bool true
+intb 272 51
+intb 1024 565
+gauss bfd63e722082062c
+int 1927907840
+long -2829539822266341451
+double 3fcb25997ec5f960
+float 3d0c5db0
+bool true
+intb 191 0
+intb 1024 361
+gauss bfe5ac7d4d6a7d90
+int 2081736099
+long -8346207496232969152
+double 3fdc7aaab39bfafc
+float 3d1208f0
+bool true
+intb 110 103
+intb 1024 951
+gauss 3ffbbdfa47434b84
+int -1987702263
+long 2042768832316816769
+double 3fe063176a529488
+float 3f5ebf7d
+bool false
+intb 29 16
+intb 1024 793
+gauss 3fd8512f47f19a26
+int 234258650
+long 3241464398299443140
+double 3fd0be32c44f7be0
+float 3e99e844
+bool false
+intb 948 728
+intb 1024 149
+gauss bff2c142e5ffed9a
+int -38440321
+long 9031549284865072254
+double 3fed8a9e64787268
+float 3f1fd194
+bool true
+intb 867 239
+intb 1024 637
+gauss 3fcc58468dc5f22f
+int -556408165
+long 3301408572609376019
+double 3feec42ba81cdb63
+float 3f27dd17
+bool true
+intb 786 349
+intb 1024 824
+gauss bfe172b404aa249d
+int -797540346
+long -7684362295240633262
+double 3fe7a4ade721cada
+float 3eb0f67a
+bool true
+intb 705 365
+intb 1024 113
+gauss bfa2eb1c9b51cad8
+int 1972664369
+long 8845432915370071961
+double 3fe7dcbdc13a27f8
+float 3f3e268c
+bool true
+intb 624 94
+intb 1024 336
+gauss 3ff52510ef9d42a8
+int 1219557772
+long 4867860785401942026
+double 3fc36c36eb8090ac
+float 3f5cdf7c
+bool true
+intb 543 295
+intb 1024 73
+gauss 3ff14eb53e968f35
+int 1452844976
+long -8530239041992602043
+double 3feda01241a754c0
+float 3f743316
+bool false
+intb 462 47
+intb 1024 711
+gauss 3ffde89f24e9f215
+int -2073083936
+long 7520833240045234797
+double 3fd8c0356dec53d2
+float 3f133d15
+bool false
+intb 381 360
+intb 1024 891
+gauss bfe83873193fa6a2
+int 1175869989
+long 7713343302898901553
+double 3fdd381a5d65b77a
+float 3d5a4a30
+bool false
+intb 300 103
+intb 1024 686
+gauss 3fd9547a51179178
+int -1577888283
+long -3878619241478457835
+double 3feb2f639170ed15
+float 3eeda392
+bool false
+intb 219 7
+intb 1024 1004
+gauss bfd8a974ecb16d93
+int -1329325315
+long 5230452053771839551
+double 3fc8e268ca25d188
+float 3f157f28
+bool true
+intb 138 81
+intb 1024 768
+gauss 3fcfb756e12d37c3
+int -1246530320
+long -9115298777945301636
+double 3fcdf29369040774
+float 3f729eba
+bool false
+intb 57 34
+intb 1024 250
+gauss 3fc471cabf0a6bb6
+int -1853946194
+long -8242216446636814577
+double 3fe78d692936df2d
+float 3f0364ee
+bool true
+intb 976 87
+intb 1024 162
+gauss 3fed53f61c885c8a
+int 1011866219
+long -1184520307695945552
+double 3fe9be795f30d9de
+float 3f388d90
+bool false
+intb 895 29
+intb 1024 389
+gauss 3ff264023d61d377
+int 1809987956
+long 8364302447327313226
+double 3fe813bf662e5be3
+float 3f10eb84
+bool true
+intb 814 367
+intb 1024 387
+gauss 3fdc20b0de6b2e7e
+int -511335736
+long -7511351565729514455
+double 3fe96fe7349a638f
+float 3d447140
+bool false
+intb 733 483
+intb 1024 689
+gauss bfea837df83e2218
+int -1851931297
+long 1631185590662649715
+double 3feb820b8e1fdd7c
+float 3f23ce49
+bool true
+intb 652 542
+intb 1024 360
+gauss 3ff1704843b77bda
+int 901105362
+long 2537423944823722226
+double 3fc25acd653f99a8
+float 3e843c36
+bool true
+intb 571 475
+intb 1024 406
+gauss bff8dfbb73c4241e
+int 1169230838
+long -5986096210347608664
+double 3f6fe2b14d25a800
+float 3e9610c8
+bool false
+intb 490 126
+intb 1024 369
+gauss bfe6b4e902c4dd7b
+int 1965136841
+long -7863720342050226661
+double 3f629e1b3ec9e400
+float 3ee484be
+bool true
+intb 409 162
+intb 1024 92
+gauss 3ff47f24c137b850
+int 1029275830
+long -415975280669108769
+double 3fd5f71cfc925902
+float 3ebde148
+bool true
+intb 328 300
+intb 1024 994
+gauss 3fd33ec36c5e7872
+int 474567157
+long 2233997495727380798
+double 3fb37c5bc266cf88
+float 3f492891
+bool false
+intb 247 137
+intb 1024 589
+gauss bfefbd53e44ece9c
+int -1079062977
+long -2674216427424860662
+double 3fd2327ca54bc22a
+float 3f393c68
+bool false
+intb 166 96
+intb 1024 128
+gauss bfdd7264867b8c5e
+int 177059842
+long 1767071347518417096
+double 3fe5d5daeeeb164d
+float 3f5c761d
+bool true
+intb 85 7
+intb 1024 285
+gauss 3fb3f1fbd3b3909e
+int 1999441560
+long -6491185130230567259
+double 3fe5a6a60e237afa
+float 3e9e1552
+bool true
+intb 4 2
+intb 1024 269
+gauss 3fe4f3a8e1275ef2
+int 854963005
+long 1446425802878540499
+double 3fd655409b0114be
+float 3d5ac960
+bool false
+intb 923 485
+intb 1024 511
+gauss bfebbf3d807d0e1d
+int 1945260508
+long -4516644615175100544
+double 3fcca4f04617e924
+float 3df302e0
+bool true
+intb 842 824
+intb 1024 316
+gauss 3ff78e52ddb3f047
+int 836621094
+long 361174417169237366
+double 3fde3ceb422740aa
+float 3f15b288
+bool false
+intb 761 678
+intb 1024 271
+gauss 3fdd3ac562694314
+int 462632483
+long 6238714870892084600
+double 3fbc48dcdad4cbf8
+float 3f319ba8
+bool true
+intb 680 640
+intb 1024 976
+gauss 3ff726f108b890fd
+int -1594874711
+long -630438003614442923
+double 3fee3a005837d779
+float 3e69a0d4
+bool true
+intb 599 578
+intb 1024 222
+gauss bfe654e7f9c034d5
+int 614682472
+long 4520948961084382802
+double 3fcbbe4eaf3d4264
+float 3f5d08ac
+bool true
+intb 518 494
+intb 1024 918
+gauss 3ff2d6d620d6dc68
+int -1367867666
+long 3242296724135193853
+double 3fd884eee2ae3f1c
+float 3e968a1a
+bool true
+intb 437 287
+intb 1024 600
+gauss 3fe3956572d0383b
+int -499982657
+long -7684558830216155951
+double 3fe3dfc720e99ad3
+float 3f33cbda
+bool false
+intb 356 98
+intb 1024 544
+gauss bfd2b5f1c2ae633f
+int 2082605566
+long 6904413296859334251
+double 3fea9044cf3acdb0
+float 3f425828
+bool true
+intb 275 185
+intb 1024 134
+gauss bfc4242733784a00
+int 1893135926
+long 7422329584482983654
+double 3fecd4248033485e
+float 3eae8c68
+bool true
+intb 194 91
+intb 1024 773
+gauss bff5a0247e0b4455
+int -1852917521
+long 3886861803308871466
+double 3fd23a931c389af6
+float 3f105b9c
+bool false
+intb 113 112
+intb 1024 553
+gauss bfe25a7c85b383c3
+int 401679861
+long -8485164522768061772
+double 3fe77b39723aca72
+float 3f1338bd
+bool false
+intb 32 10
+intb 1024 936
+gauss bffb2d754d05409f
+int -904168411
+long 8716946566327350500
+double 3fd8594ece8a5a3c
+float 3efd3764
+bool true
+intb 951 493
+intb 1024 590
+gauss 3fe14456ee0944bd
+int 74260800
+long -3352427761094783789
+double 3feaafa3be389fd2
+float 3f778f0c
+bool true
+intb 870 420
+intb 1024 827
+gauss c000e3e110369c15
+int 1350156117
+long -5604995534530515609
+double 3fd54bbe53538632
+float 3eb196c8
+bool true
+intb 789 42
+intb 1024 242
+gauss bfae129553e86999
+int -1675748062
+long 4650189331727403301
+double 3fcda606d897b990
+float 3caa5ce0
+bool false
+intb 708 140
+intb 1024 240
+gauss bff62554353084d6
+int 1156479060
+long -6008660542681067869
+double 3fd6345e40048f9a
+float 3e8b0b8e
+bool false
+intb 627 453
+intb 1024 877
+gauss bfe0109e5f341766
+int 1327528314
+long 8383609529080985462
+double 3fdd10fb72ff287a
+float 3edd8e98
+bool false
+intb 546 453
+intb 1024 460
+gauss bf6517ac4f574235
+int -1692498991
+long 8872834331143749337
+double 3fbec89b173fa078
+float 3f0d534d
+bool false
+intb 465 69
+intb 1024 804
+gauss 3fcf080d369a3e97
+int -187657825
+long -6217661740863715366
+double 3fb8aef263431f98
+float 3f1791b5
+bool true
+intb 384 137
+intb 1024 1
+gauss 3fef14199ef1cf9b
+int 126129108
+long -4976314825132695393
+double 3fd855c49f67abfc
+float 3f7f0783
+bool false
+intb 303 102
+intb 1024 851
+gauss bf646a320d1a684a
+int -17222121
+long -7683744632511084281
+double 3fe3d54785863d38
+float 3d47c5f0
+bool true
+intb 222 196
+intb 1024 760
+gauss 3ff9d5ab83cb923a
+int -1045918950
+long 3850272845379168123
+double 3fd6861e044eef92
+float 3f06d079
+bool true
+intb 141 9
+intb 1024 253
+gauss bfdab2466141ff31
+int 303031061
+long -1024524217123064033
+double 3fec58c8b9634672
+float 3f58964e
+bool true
+intb 60 51
+intb 1024 552
+gauss bff698b947da0a3d
+int -2136584793
+long -4876434520543669940
+double 3fefd1f9c7349213
+float 3edd53c4
+bool true
+intb 979 318
+intb 1024 473
+gauss 3ff200e0f72be88e
+int 1936086968
+long 3120932095317689250
+double 3fb9c27ad590f5e0
+float 3f761520
+bool false
+intb 898 349
+intb 1024 820
+gauss 3feb1953ebfdaf2c
+seed -4942790177534073071
+int 756983663
+long 1030984484069340757
+double 3f70a87f54d20200
+float 3f652665
+bool true
+intb 1 0
+intb 1024 708
+gauss bff3df7b6bc30b16
+int -839381049
+long 5489743948298235498
+double 3feb24d92aef47fc
+float 3f5b8356
+bool true
+intb 920 317
+intb 1024 410
+gauss 3fe03f9bf4d4f271
+int 107182725
+long 595558167896976917
+double 3fe04b0a9faff2c7
+float 3e936d72
+bool false
+intb 839 466
+intb 1024 810
+gauss bfb81a1603e28e5a
+int -743253313
+long -8618340836838028595
+double 3fe29bb1054a3df8
+float 3ec5d87e
+bool true
+intb 758 78
+intb 1024 895
+gauss 3ff0651cda6e7ac1
+int 1833437526
+long -6975324343921434880
+double 3fef665f631977b4
+float 3d1921e0
+bool true
+intb 677 507
+intb 1024 56
+gauss 3fe9af73d3c588fb
+int 247606386
+long -4269482314712371702
+double 3fe4511a14dd2fa9
+float 3ef4d4ba
+bool true
+intb 596 248
+intb 1024 37
+gauss bf76b3699b4d8870
+int 505972434
+long 5914777757095651192
+double 3fe8acf1328b0406
+float 3f4bb302
+bool true
+intb 515 321
+intb 1024 651
+gauss 3ff3d4e3ebbf70f0
+int -1364695455
+long 616947310315955075
+double 3fa100c98b3ca400
+float 3ebc6b32
+bool false
+intb 434 8
+intb 1024 764
+gauss 3fdaa35decea56f8
+int 1223482104
+long 7473753400970478116
+double 3fdf63793b8e4afe
+float 3f62688a
+bool true
+intb 353 237
+intb 1024 360
+gauss bfeab0b818aba90d
+int 1960517120
+long 3867038863528197794
+double 3fd3781cabda6b2e
+float 3eb90f3c
+bool false
+intb 272 88
+intb 1024 382
+gauss 3fc463d1e97e315f
+int 2093749230
+long -3927043295434694997
+double 3fe68087f6e81317
+float 3f7eb254
+bool true
+intb 191 104
+intb 1024 334
+gauss 3fc9fbb32c899d91
+int -1722588478
+long 7085821948136333555
+double 3fe76e3773f589db
+float 3f126d6d
+bool false
+intb 110 50
+intb 1024 699
+gauss 3ff59c52a4f7c6cf
+int -1739525739
+long 6122466222256964164
+double 3fc480d71ffd1ddc
+float 3f113a2f
+bool false
+intb 29 7
+intb 1024 94
+gauss 3ff9feb5ae7ac7ba
+int -800842904
+long -256949595502066212
+double 3f80c635007095c0
+float 3e3da610
+bool true
+intb 948 265
+intb 1024 1023
+gauss bfc921cf2d136478
+int 1908087167
+long -6257404917144253094
+double 3fdd6a292632ce10
+float 3f77790c
+bool false
+intb 867 345
+intb 1024 983
+gauss bfe4e373c0a1e400
+int -1073310718
+long 6390540956451092286
+double 3fe13a12563b1c23
+float 3f50b279
+bool true
+intb 786 472
+intb 1024 572
+gauss 3ff92f1fad13efac
+int 686795693
+long -5570081290678733078
+double 3fe986c9dcbdac9f
+float 3f74923c
+bool false
+intb 705 650
+intb 1024 696
+gauss bff1458c1bfe34e0
+int 365946047
+long -6269927512987071893
+double 3feaadb8ad09bd06
+float 3f6ce50e
+bool false
+intb 624 222
+intb 1024 179
+gauss 3ff9b3bdb68763b7
+int 649516795
+long 1444167433482127600
+double 3fc6b3831e22dca8
+float 3f0d1dda
+bool false
+intb 543 142
+intb 1024 279
+gauss c004a8189f2af303
+int 895926345
+long 5019396788616185182
+double 3fe8ad4584c53f00
+float 3f227ca8
+bool false
+intb 462 207
+intb 1024 595
+gauss 3fb8763da2f82439
+int 1174271828
+long 6742086477917402005
+double 3fdc767b04ec76c6
+float 3e377668
+bool true
+intb 381 243
+intb 1024 894
+gauss bfdc994fbbf3a327
+int -328126309
+long 1932532445734503880
+double 3fe5c42d3d83216b
+float 3f7534f6
+bool false
+intb 300 128
+intb 1024 36
+gauss bff77b521ab50683
+int 416040793
+long 2272117899565276944
+double 3fdd169e13217930
+float 3f45fa67
+bool true
+intb 219 35
+intb 1024 964
+gauss bfd244d0604bc336
+int -1242915737
+long -9026308330851389286
+double 3fe83f5c439b7922
+float 3d20d480
+bool false
+intb 138 116
+intb 1024 928
+gauss bfbb891be4ba085a
+int -1179976909
+long 787392835542784328
+double 3fecbacfc4e48d04
+float 3f10e97b
+bool true
+intb 57 14
+intb 1024 243
+gauss bfd2523323e3afc8
+int 1569722893
+long -413634568867495628
+double 3fcea7794aaacd38
+float 3e89f7e4
+bool true
+intb 976 687
+intb 1024 948
+gauss bfe311ed13976493
+int 1103664417
+long 2730852857247440482
+double 3fa120f2297c0600
+float 3df1bb80
+bool true
+intb 895 628
+intb 1024 264
+gauss 3fd2b081a6a6dd96
+int -1637144988
+long 3879141238873600676
+double 3fe6eddd2ef1aca3
+float 3f0c6f98
+bool false
+intb 814 654
+intb 1024 812
+gauss bfc40eebe8d4fecf
+int -1667376822
+long -1793319029319357683
+double 3fe67798071c5b7c
+float 3e9ee65c
+bool true
+intb 733 517
+intb 1024 315
+gauss 3fac25f5465602fe
+int 436910191
+long -5921287684257846977
+double 3fe295e019e6e6f6
+float 3ea36800
+bool false
+intb 652 346
+intb 1024 741
+gauss 3fce29b17a9b1531
+int -9270110
+long -3599989856604938533
+double 3feada0b259608b7
+float 3f1be3e9
+bool false
+intb 571 132
+intb 1024 152
+gauss bfd759a49c2cc3d4
+int 944902449
+long 8937045585655031376
+double 3fcc7d2e13957998
+float 3f7021a1
+bool false
+intb 490 375
+intb 1024 720
+gauss 3fd107ad46b49abe
+int 1285203638
+long 3501988287537852979
+double 3fda2e87ae0b1e32
+float 3eeeadfc
+bool false
+intb 409 399
+intb 1024 184
+gauss bfcd5944fbcad0cb
+int -1664670192
+long -2561598516285256652
+double 3fe02ccf0c0da7cf
+float 3f51b7c8
+bool true
+intb 328 236
+intb 1024 443
+gauss 3fa67c1d5f8689be
+int -1877703644
+long 7953023645285159623
+double 3fbc8caff2019ed8
+float 3ec8b2ca
+bool true
+intb 247 174
+intb 1024 401
+gauss 3ff60782f63b23c4
+int 357649891
+long 3492237180970622922
+double 3fe3cc002015f18e
+float 3e3b2460
+bool true
+intb 166 10
+intb 1024 941
+gauss bff3077682eea979
+int 459178827
+long -4312734911099920311
+double 3fb876cd9836ab88
+float 3e994370
+bool false
+intb 85 3
+intb 1024 731
+gauss bfcfeecb1fae3a7b
+int 605156136
+long 3778266452115658478
+double 3f9c974a8418b1e0
+float 3f5daea2
+bool true
+intb 4 1
+intb 1024 821
+gauss bff23ad21c7d231e
+int -1254235362
+long -5484185624669530472
+double 3fe1575635b5f44f
+float 3f180fc9
+bool false
+intb 923 515
+intb 1024 544
+gauss bfef10943c74a759
+int 1749177988
+long -480988149335182329
+double 3fdd2c44a9bf18c6
+float 3f3c7903
+bool true
+intb 842 302
+intb 1024 669
+gauss bfe845a02574f54b
+int 1821670040
+long 130660666043805726
+double 3fac7bdc287042b0
+float 3f50207e
+bool true
+intb 761 69
+intb 1024 187
+gauss bfc3a8fd3ec82f08
+int -1309243049
+long -623473953764418089
+double 3feab362ed17c056
+float 3f69a3a6
+bool false
+intb 680 375
+intb 1024 312
+gauss 3fd1de4dbc0deb65
+int -57386907
+long -1530709838304608637
+double 3fe800ab40cc0d76
+float 3e304b18
+bool true
+intb 599 493
+intb 1024 960
+gauss 3fa35f035e0f2778
+int -902316576
+long 24047031853316548
+double 3f97bf47c37d8ea0
+float 3ed79a40
+bool true
+intb 518 267
+intb 1024 100
+gauss 3ff762558f007d09
+int 532156912
+long 691688636129464956
+double 3fcf53172f912054
+float 3f22e516
+bool false
+intb 437 270
+intb 1024 32
+gauss bfe827716a1c7acb
+int 1126546604
+long -5335692251745441007
+double 3f99cddf8f710360
+float 3e7c6ce0
+bool false
+intb 356 240
+intb 1024 332
+gauss bfe15de3b8d6ba37
+int 817911336
+long -8028479597455131940
+double 3fc0ac4b8dd58dc4
+float 3f0e68ca
+bool true
+intb 275 81
+intb 1024 229
+gauss bfed7f82524d64b8
+int -1054736565
+long -1626773524842208316
+double 3fe379396e93eb3d
+float 3e38541c
+bool false
+intb 194 102
+intb 1024 538
+gauss bfc826ff91e9a8aa
+int -720106616
+long 4305320351013513276
+double 3fe9cbf67b109519
+float 3f3d2f77
+bool true
+intb 113 42
+intb 1024 748
+gauss bfeb5043ce8ddea1
+int -1782975479
+long -391771094131224882
+double 3fe6da2ebc47ab23
+float 3f3f108d
+bool false
+intb 32 27
+intb 1024 740
+gauss bff7050b7d981afb
+int 1519008868
+long 3873832434353820362
+double 3fb9c11c3fb0f010
+float 3f484ded
+bool false
+intb 951 567
+intb 1024 506
+gauss 3fcef18053037d18
+int -846825618
+long 5906584481684907793
+double 3fdd0c844a30ac46
+float 3ebee542
+bool false
+intb 870 224
+intb 1024 489
+gauss 3fe1a9cc7d373cd5
+int -2085522866
+long -8168248670782541332
+double 3febe1cb90b67b73
+float 3f1c54a1
+bool true
+intb 789 634
+intb 1024 601
+gauss bfe205afac1aed6e
+int 832242853
+long 8492922933026220829
+double 3fedcf8f860484e1
+float 3e80cb1a
+bool false
+intb 708 112
+intb 1024 56
+gauss c00cbf79a5f33e62
+int 802695893
+long 2291513449521517924
+double 3fc2a19d6e8ee610
+float 3f0d65d4
+bool true
+intb 627 135
+intb 1024 976
+gauss bfd0e85b724f54a3
+int 741870112
+long -7334134514188911941
+double 3fe0697a5707d2fd
+float 3d774210
+bool true
+intb 546 234
+intb 1024 266
+gauss 3f9f07805b25f2e3
+int -1490063067
+long 1141892099541746528
+double 3fc11b59a960f458
+float 39f8a800
+bool true
+intb 465 147
+intb 1024 701
+gauss bfb43aa9421e712a
+int 1542734782
+long -1608508038652585073
+double 3fcdcae82584f388
+float 3ef64b8e
+bool false
+intb 384 5
+intb 1024 933
+gauss 3fc355cca44bf71e
+int 663282135
+long 6628340826374278
+double 3fe38460e9d9581b
+float 3f4f3e05
+bool true
+intb 303 22
+intb 1024 399
+gauss bff4680ca359877c
+int 619279848
+long 4152556284106690415
+double 3fd70bd209f8f2e0
+float 3f6c024b
+bool false
+intb 222 180
+intb 1024 156
+gauss 3fc89f5c44fc8bd2
+int 122263551
+long 8696400182741419176
+double 3fe37afe3efb55b6
+float 3f5bc5d2
+bool false
+intb 141 89
+intb 1024 37
+gauss bfa9db8e6b9783d3
+int -555568989
+long 6637547200625715768
+double 3fb1cdb0d6b8ae18
+float 3daed6c0
+bool true
+intb 60 9
+intb 1024 66
+gauss bfded1c38c5418b2
+int -859205363
+long -793371489658896397
+double 3fd194a51cdf20c4
+float 3e2965b4
+bool true
+intb 979 306
+intb 1024 634
+gauss bfbf650cd502d759
+int -86494496
+long -7660123317323518891
+double 3fe4a4d8af4bef1c
+float 3f09fbf2
+bool false
+intb 898 4
+intb 1024 933
+gauss 3fdc58751bde4388

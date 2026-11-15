@@ -1,0 +1,51 @@
+# Builds the wasm + Svelte viewer and publishes it to GitHub Pages (Settings → Pages → Source: GitHub Actions).
+# The public build: no developer tools; footer links to the exact commit's source and to this repo's issue form.
+name: pages
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+      - uses: Swatinem/rust-cache@v2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: viewer/package-lock.json
+      - id: pages
+        uses: actions/configure-pages@v5
+      - name: Test (native; tests needing the real-world dumps in testdata/pack skip)
+        run: cargo test --release --features json
+      - name: Build viewer
+        working-directory: viewer
+        env:
+          VITE_SITE_URL: ${{ steps.pages.outputs.base_url }}/
+          VITE_SOURCE_URL: ${{ github.server_url }}/${{ github.repository }}/tree/${{ github.sha }}
+          VITE_ISSUES_URL: ${{ github.server_url }}/${{ github.repository }}/issues
+        run: npm ci && npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: viewer/dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

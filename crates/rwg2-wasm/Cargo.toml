@@ -1,0 +1,15 @@
+[package]
+name = "rwg2-wasm"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license = "GPL-3.0-or-later"
+repository = "https://github.com/alfw/gtnh-seed"
+description = "Raw-export WebAssembly module over rwg2-biomes for the GTNH seed viewer (no wasm-bindgen)"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rwg2-biomes = { path = "../rwg2-biomes", features = ["json"] }
+serde_json = "1"

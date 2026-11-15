@@ -1,0 +1,3 @@
+[target.wasm32-wasip1]
+# Program path is resolved relative to the repo root (config-relative).
+runner = "tools/wasi-runner.sh"

@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = ["crates/rwg2-biomes", "crates/rwg2-wasm"]
+
+[workspace.package]
+edition = "2021"
+rust-version = "1.80"
+
+[profile.release]
+# Exactness: never enable fast-math style flags; Rust doesn't contract to FMA on its own.
+lto = true
+codegen-units = 1

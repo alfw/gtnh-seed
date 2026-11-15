@@ -1,0 +1,1 @@
+package net.minecraftforge.common; public class DimensionManager { static final net.minecraft.world.WorldServer W=new net.minecraft.world.WorldServer(); public static net.minecraft.world.WorldServer getWorld(int d){ return W; } }

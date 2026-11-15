@@ -1,0 +1,1 @@
+package net.minecraft.world.gen.structure; public class StructureComponent { protected StructureBoundingBox field_74887_e; public StructureComponent(int x,int z){field_74887_e=new StructureBoundingBox(x,60,z,x+5,70,z+5);} }

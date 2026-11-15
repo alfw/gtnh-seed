@@ -1,0 +1,1 @@
+package rwg2.config; public class ConfigRWG { public static float biomeSizeMultiplier=1f; public static int[] biomeIDs={200,202}; public static String[] names={"a"}; public static boolean enableWorldgenDiagnostics=false; }

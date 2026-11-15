@@ -1,0 +1,45 @@
+name: Bug report
+description: Something on the map, in the 3D view or in a search is wrong or broken.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The **Report a bug** link in the viewer's footer fills in the version, seed and place for you.
+        For "the map says X but my world has Y", check first that the world is GTNH 2.9+ with RWG2 / RWG2_CONTINENTS
+        and was created in that version (About page → Supported worlds), and whether the feature is marked
+        "estimated" there.
+  - type: input
+    id: version
+    attributes:
+      label: Viewer version
+      description: From the footer, e.g. v1.67.0 · 2026-11-12 · 1a2b3c4d
+    validations:
+      required: true
+  - type: input
+    id: pack
+    attributes:
+      label: GTNH version and world type
+      placeholder: 2.10.0, RWG2_CONTINENTS
+    validations:
+      required: true
+  - type: input
+    id: seed
+    attributes:
+      label: Seed
+  - type: input
+    id: place
+    attributes:
+      label: Where (dimension, X, Z, zoom) or a copied link
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: For a wrong prediction, what the game shows (F3 screenshot, block, Y) helps most.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 133 on Windows, Safari on iPhone 15…
