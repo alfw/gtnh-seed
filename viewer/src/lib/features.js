@@ -30,6 +30,8 @@ export function effectiveLayers(layers, advanced) {
 
 /** Build information shown in the footer (vite `define`). */
 export const BUILD = { version: __APP_VERSION__, date: __BUILD_DATE__, source: __SOURCE_ID__ };
+/** Beta while `viewer/package.json`'s version carries a `-beta` pre-release tag (header badge, titles, PNG export). */
+export const BETA = /-beta\b/.test(BUILD.version);
 /** Developer tools (preset searches, "check all"): dev builds, or a release built with `VITE_DEV_TOOLS=1`
  *  (the owner's artifact). Off in a plain `npm run build` (public beta). */
 export const DEV_TOOLS = import.meta.env.DEV || import.meta.env.VITE_DEV_TOOLS === '1';

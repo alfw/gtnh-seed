@@ -36,7 +36,7 @@ const about = await (await p.request.get(BASE + '/about.html')).text();
 const lic = await p.request.get(BASE + '/source/files/THIRD_PARTY_LICENSES.txt.txt');
 const fav = await p.request.get(BASE + '/favicon.svg');
 const expectDev = process.env.SMOKE_EXPECT_DEV === '1';
-const ok = r.simple && /^v\d+\.\d+\.\d+ · \d{4}-\d\d-\d\d · [0-9a-f]{8}$/.test(r.build) && r.dev === expectDev && r.desc
+const ok = r.simple && /^v\d+\.\d+\.\d+(-[0-9A-Za-z.]+)? · \d{4}-\d\d-\d\d · [0-9a-f]{8}$/.test(r.build) && r.dev === expectDev && r.desc
   && about.includes('What is exact') && lic.ok() && (await lic.text()).includes('three') && fav.ok();
 console.log({ ...r, expectDev, about: about.includes('What is exact'), licences: lic.status(), favicon: fav.status() });
 if (!ok) errs.push('first-visit check failed');

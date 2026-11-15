@@ -4,6 +4,8 @@ Seed viewer and seed search for **GT New Horizons 2.9 and 2.10** (Minecraft 1.7.
 `RWG2_CONTINENTS` (the pack default) and `RWG2`). Everything runs in the browser: the world generation is a Rust port
 of the pack's generators compiled to WebAssembly, checked block for block against dumps from a real GTNH instance.
 
+**Status: public beta** (`1.68.0-beta.1`). Predictions are checked against real worlds (see the About page for what is exact and what is estimated); the viewer itself is new, so expect rough edges and please report them.
+
 Repository: <https://github.com/alfw/gtnh-seed> · bug reports: <https://github.com/alfw/gtnh-seed/issues> · hosted build (GitHub Pages): <https://alfw.github.io/gtnh-seed/>.
 
 ## What it shows

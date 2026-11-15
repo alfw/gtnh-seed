@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import { svelte } from '@sveltejs/vite-plugin-svelte';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { createHash } from 'node:crypto';
+import { resolve } from 'node:path';
 
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'));
 // build id = start of the source bundle's sha256 (the bundle is deterministic: same sources → same id), so a bug
@@ -21,9 +22,24 @@ const ogTags = {
   ]),
 };
 
+// beta while the version has a -beta pre-release tag: "(beta)" in the page titles; the About page's
+// <!--beta-->…<!--/beta--> note is kept, otherwise removed from the built copy (public/ files skip Vite's transforms)
+const beta = /-beta\b/.test(pkg.version);
+let outDir = 'dist';
+const betaMarks = {
+  name: 'beta-marks',
+  configResolved: (c) => { outDir = c.build.outDir; },
+  transformIndexHtml: (html) => (beta ? html.replace(/<title>(.*?)<\/title>/, '<title>$1 (beta)</title>').replace(/(property="og:title" content=")([^"]*)/, '$1$2 (beta)') : html),
+  closeBundle() {
+    if (beta) return;
+    const f = resolve(outDir, 'about.html'); // outDir is absolute after configResolved
+    if (existsSync(f)) writeFileSync(f, readFileSync(f, 'utf8').replace(/<!--beta-->[\s\S]*?<!--\/beta-->\n?/, ''));
+  },
+};
+
 export default defineConfig({
   base: './',
-  plugins: [svelte(), ogTags],
+  plugins: [svelte(), ogTags, betaMarks],
   worker: { format: 'es' },
   define: {
     __APP_VERSION__: JSON.stringify(pkg.version),

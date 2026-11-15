@@ -16,7 +16,7 @@
     CLIMATES, WORLD_TYPES, DIMS, GLOBAL_MARKS_KEY, PHONE_MQ, MARK_TYPES, PORTAL_LINKS, DIM_LABEL, SV_DEFAULTS, LAYER_DEFAULTS, NODE_KINDS, NODE_TYPES, CELL, NODE_CELL, LOOT_NAMES, GT_MAT, LOOT_RARE, OTHER_DIM, SV_GROUPS, SV_GROUP_OF, COMPASS, KIND_NAMES, KIND_NOTES, TOWER_ROOMS, TOWER_CHEST_ROOMS, VILLAGE_STYLES, FEATURE_KEYS, LAYER_PRESETS, lootName, mazeConflict,
   } from './lib/constants.js';
   import { buildShown as buildShownPure } from './lib/markers.js';
-  import { DEFAULT_MODE, effectiveLayers, ADVANCED_LAYERS, BUILD, DEV_TOOLS, ISSUES_URL } from './lib/features.js';
+  import { DEFAULT_MODE, effectiveLayers, ADVANCED_LAYERS, BUILD, BETA, DEV_TOOLS, ISSUES_URL } from './lib/features.js';
 
 
   let canvas;
@@ -1149,12 +1149,13 @@
       let y = mapH + pad + line * 0.8;
       g.font = `600 ${13 * dpr}px system-ui, sans-serif`;
       g.fillStyle = '#e8a33d';
-      g.fillText('GTNH Seed Map', pad, y);
+      const brand = BETA ? 'GTNH Seed Map (beta)' : 'GTNH Seed Map';
+      g.fillText(brand, pad, y);
       g.font = `${12 * dpr}px system-ui, sans-serif`;
       g.fillStyle = '#c9d1d9';
       const modeName = ['Biomes', 'Bee climate', 'Terrain', 'Blocks'][mapMode] ?? '';
       const blocks = view.zoom >= 0 ? `${2 ** view.zoom} px/block` : `${2 ** -view.zoom} blocks/px`;
-      g.fillText(`${worldType === 1 ? 'RWG2_CONTINENTS' : 'RWG2'} · ${DIM_LABEL[dim] ?? 'dim ' + dim}${dim === 1 && layers.endKills ? ` (${layers.endKills} resets)` : ''} · ${modeName} · centre ${Math.round(view.x)}, ${Math.round(view.z)} · zoom ${view.zoom} (${blocks}) · GTNH 2.9.0 / RWG2`, pad + g.measureText('GTNH Seed Map').width + 60 * dpr, y);
+      g.fillText(`${worldType === 1 ? 'RWG2_CONTINENTS' : 'RWG2'} · ${DIM_LABEL[dim] ?? 'dim ' + dim}${dim === 1 && layers.endKills ? ` (${layers.endKills} resets)` : ''} · ${modeName} · centre ${Math.round(view.x)}, ${Math.round(view.z)} · zoom ${view.zoom} (${blocks}) · GTNH 2.9.0 / RWG2`, pad + g.measureText(brand).width + 60 * dpr, y);
       for (const s of shots) {
         y += line;
         g.fillStyle = s.tag === 'B' ? '#e8a33d' : '#c9d1d9';
@@ -2430,7 +2431,7 @@
 <div class="app" class:phone>
   <header>
     <div class="brand">
-      <strong>GTNH Seed Map</strong>
+      <strong>GTNH Seed Map{#if BETA}<span class="beta" title="Public beta: predictions are checked against real worlds, but expect rough edges. Report problems with the footer link.">beta</span>{/if}</strong>
       <span class="sub">{pack || 'loading…'}</span>
     </div>
     <label class="seed">
