@@ -1378,14 +1378,23 @@ fn jungle_leaves(
 fn big_tree(w: &mut DecoWorld, r: &mut impl DRng, size: i32, ty: i32, x: i32, y: i32, z: i32) {
     w.mark("bigtree", x, y, z);
     let seed = r.next_long();
-    let size = if size < 0 { 10 } else { size }; // `new DecoBigTree()`: 7 + floor(Math.random() * 7)
+    let rwg209 = w.p.table.rwg2_209;
+    let mut rand = JavaRandom::new(seed);
+    let size = if size > 0 {
+        size
+    } else if rwg209 {
+        7 + rand.next_int_bounded(7) // 2.0.9: `new DecoBigTree()` sizes from the seeded tree Random
+    } else {
+        10 // 2.0.6: 7 + floor(Math.random() * 7), not reproducible
+    };
     let mut t = BigTree {
-        rand: JavaRandom::new(seed),
+        rand,
         base: [x, y, z],
         height_limit: size,
         height: 0,
         leaf_nodes: Vec::new(),
         vanilla: false,
+        rwg2_209: rwg209,
     };
     if ty != 10 && !t.valid(w) {
         return;
@@ -1424,6 +1433,7 @@ pub(crate) fn vanilla_big_tree(w: &mut DecoWorld, r: &mut impl DRng, x: i32, y: 
         height: 0,
         leaf_nodes: Vec::new(),
         vanilla: true,
+        rwg2_209: false,
     };
     if !t.valid(w) {
         return;
@@ -1456,6 +1466,9 @@ struct BigTree {
     leaf_nodes: Vec<[i32; 4]>,
     /// vanilla `WorldGenBigTree` rules (line test = `func_150523_a`, soil dirt / grass / farmland)
     vanilla: bool,
+    /// RWG2 2.0.9 `DecoBigTree` fixes: `checkBlockLine` rounds (+0.5) like `placeBlockLine`; limbs get the log axis
+    /// metadata (4 = x, 8 = z).
+    rwg2_209: bool,
 }
 
 impl BigTree {
@@ -1520,9 +1533,10 @@ impl BigTree {
         let mut i = 0;
         let end = d[m] + step;
         while i != end {
+            let h = if self.rwg2_209 { 0.5 } else { 0.0 };
             p[m] = a[m] + i;
-            p[o1] = (a[o1] as f64 + i as f64 * r1).floor() as i32;
-            p[o2] = (a[o2] as f64 + i as f64 * r2).floor() as i32;
+            p[o1] = (a[o1] as f64 + i as f64 * r1 + h).floor() as i32;
+            p[o2] = (a[o2] as f64 + i as f64 * r2 + h).floor() as i32;
             if !self.passable(w.get(p[0], p[1], p[2])) {
                 break;
             }
@@ -1558,7 +1572,15 @@ impl BigTree {
             p[m] = ((a[m] + i) as f64 + 0.5).floor() as i32;
             p[o1] = (a[o1] as f64 + i as f64 * r1 + 0.5).floor() as i32;
             p[o2] = (a[o2] as f64 + i as f64 * r2 + 0.5).floor() as i32;
-            w.set(p[0], p[1], p[2], block);
+            let mut b = block;
+            if self.rwg2_209 {
+                let (dx, dz) = ((p[0] - a[0]).abs(), (p[2] - a[2]).abs());
+                let mx = dx.max(dz);
+                if mx > 0 {
+                    b = db::mk(db::id(block), if dx == mx { 4 } else { 8 });
+                }
+            }
+            w.set(p[0], p[1], p[2], b);
             i += step;
         }
     }

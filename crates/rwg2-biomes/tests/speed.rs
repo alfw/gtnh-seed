@@ -17,11 +17,11 @@ fn root() -> std::path::PathBuf {
 fn searcher(dim: i32, step: i32, conds: Vec<Cond>) -> Searcher {
     let r = root();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let q = Query {
@@ -291,11 +291,11 @@ fn node_cell_profile() {
     use rwg2_biomes::thaumcraft::{TcGen, TC_GTNH};
     let r = root();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(1337, WorldType::Rwg2Continents, table, RwgConfig::default());
@@ -345,11 +345,11 @@ fn nodes_in_rect_matches_nodes() {
     use rwg2_biomes::thaumcraft::{TcGen, TC_GTNH};
     let r = root();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     for (seed, cx0, cz0) in [
@@ -395,11 +395,11 @@ fn hot_sandy_prevalence() {
     use rwg2_biomes::provider::{BiomeProvider, TableHeights};
     let r = root();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let hs = |b: u16| {
@@ -445,7 +445,7 @@ fn node_cell_profile_dims() {
     use rwg2_biomes::twilight::tf_seed;
     let r = root();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(r.join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(r.join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let tt = TfTerrain::new(tf_seed(1337, ""));
@@ -478,4 +478,10 @@ fn node_cell_profile_dims() {
             nodes.len()
         );
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

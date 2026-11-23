@@ -16,9 +16,8 @@
 use crate::java_random::JavaRandom;
 use std::sync::OnceLock;
 
-const LOOT_JSON: &str = include_str!("../../../data/gtnh-2.9.0/dungeonloot.json");
-/// other `ChestGenHooks` categories (rwg2dump 2.17 `chestloot.json` via `tools/chestloot.py`; `{}` until then)
-const CHEST_JSON: &str = include_str!("../../../data/gtnh-2.9.0/chestloot.json");
+// Tables per pack: `crate::pack::Pack::{dungeon_loot_json, chest_loot_json}`; the accessors below follow
+// `crate::pack::current()`.
 
 #[derive(Clone, Debug)]
 pub struct LootItem {
@@ -85,14 +84,16 @@ impl LootTable {
 
     /// The embedded GTNH dungeon chest table.
     pub fn dungeon() -> &'static LootTable {
-        static T: OnceLock<LootTable> = OnceLock::new();
-        T.get_or_init(|| LootTable::from_json(LOOT_JSON).expect("dungeonloot.json"))
+        static T: [OnceLock<LootTable>; 2] = [OnceLock::new(), OnceLock::new()];
+        let p = crate::pack::current();
+        T[p as usize].get_or_init(|| LootTable::from_json(p.dungeon_loot_json()).expect("dungeonloot.json"))
     }
 
     /// The GTNH `ChestGenHooks("mineshaftCorridor")` table, when `chestloot.json` holds it (rwg2dump 2.17).
     pub fn mineshaft() -> Option<&'static LootTable> {
-        static T: OnceLock<Option<LootTable>> = OnceLock::new();
-        T.get_or_init(|| LootTable::category(CHEST_JSON, "mineshaftCorridor"))
+        static T: [OnceLock<Option<LootTable>>; 2] = [OnceLock::new(), OnceLock::new()];
+        let p = crate::pack::current();
+        T[p as usize].get_or_init(|| LootTable::category(p.chest_loot_json(), "mineshaftCorridor"))
             .as_ref()
     }
 

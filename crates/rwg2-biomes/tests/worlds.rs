@@ -53,24 +53,29 @@ fn root() -> PathBuf {
         .map(|d| PathBuf::from(d).parent().unwrap().to_path_buf())
         .unwrap_or_else(|_| PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("../.."))
 }
+/// Pack data folder (`data/<PACK_DATA>`, default `gtnh-2.9.0`), e.g. `PACK_DATA=gtnh-2.9.1`.
+fn pack_data(name: &str) -> PathBuf {
+    let pack = std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into());
+    root().join("data").join(pack).join(name)
+}
 fn json(name: &str) -> Option<Value> {
     serde_json::from_str(&std::fs::read_to_string(wdir().join(name)).ok()?).ok()
 }
 fn table() -> BiomeTable {
     BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(pack_data("biomes.json")).unwrap(),
     )
     .unwrap()
 }
 fn climate() -> ClimateTable {
     ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(pack_data("climate.json")).unwrap(),
     )
     .unwrap()
 }
 fn pop_gates() -> rwg2_biomes::population::PreGates {
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(pack_data("climate.json")).unwrap(),
     )
     .unwrap();
     rwg2_biomes::population::PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -985,7 +990,7 @@ fn sec_gtores() -> Card {
         return c;
     };
     let gj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/gregtech.json")).unwrap(),
+        &std::fs::read_to_string(pack_data("gregtech.json")).unwrap(),
     )
     .unwrap();
     let table = VeinTable::from_json(&gj.to_string()).unwrap();
@@ -1241,7 +1246,7 @@ fn sec_gtores() -> Card {
     let mut pm = rwg2_biomes::population::PopModel::new(&p, &TableHeights, seed());
     {
         let cj: Value = serde_json::from_str(
-            &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+            &std::fs::read_to_string(pack_data("climate.json")).unwrap(),
         )
         .unwrap();
         pm.gates = rwg2_biomes::population::PreGates::new(
@@ -2958,6 +2963,9 @@ fn run_world(seed: i64, dir: PathBuf) -> Vec<Card> {
 
 #[test]
 fn held_out_worlds() {
+    if std::env::var("PACK_DATA").as_deref() == Ok("gtnh-2.9.1") {
+        rwg2_biomes::pack::set(rwg2_biomes::pack::Pack::Gtnh291);
+    }
     let ws = worlds();
     if ws.is_empty() {
         eprintln!("skip: no worlds in testdata/pack/gtnh-2.9.0/worlds");

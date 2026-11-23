@@ -44,7 +44,7 @@ fn dumps() -> Vec<(i64, PathBuf)> {
 
 fn table() -> BiomeTable {
     BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap()
 }
@@ -413,4 +413,10 @@ fn fit_carvable_top() {
     for (name, (cut, blocked)) in &stats {
         eprintln!("{name:40} cut {cut:4} blocked {blocked:4}");
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

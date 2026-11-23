@@ -15,7 +15,7 @@ fn root() -> PathBuf {
 #[test]
 fn lakes_rect_matches_every_chunk() {
     let t = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let r = if cfg!(target_arch = "wasm32") { 6 } else { 14 };
@@ -55,7 +55,7 @@ fn lakes_rect_matches_every_chunk() {
 #[ignore]
 fn lakes_rect_speed() {
     let t = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(1337, WorldType::Rwg2Continents, t, RwgConfig::default());
@@ -67,4 +67,10 @@ fn lakes_rect_speed() {
         v.len(),
         t0.elapsed().as_secs_f64()
     );
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

@@ -1,9 +1,11 @@
 // Worker pool with a priority queue: newest view requests first, stale ones cancelled before they start.
 import TileWorker from './worker.js?worker';
+import { PACK } from './pack.js';
+import { CFG_STR } from './worldcfg.js';
 
 export class Pool {
   constructor(size = Math.max(2, Math.min(8, (navigator.hardwareConcurrency || 4) - 1))) {
-    this.workers = Array.from({ length: size }, () => ({ w: new TileWorker(), busy: false }));
+    this.workers = Array.from({ length: size }, () => ({ w: new TileWorker({ name: `pack=${PACK.index};cfg=${CFG_STR}` }), busy: false }));
     this.queue = [];
     this.pending = new Map();
     this.nextId = 1;

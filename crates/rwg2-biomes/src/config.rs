@@ -14,6 +14,10 @@ pub struct RwgConfig {
     pub large_island_volcano_chance: f32,
     pub average_landmarks_per_type_and_continent: f32,
     pub biome_size_multiplier: f32,
+    /// RWG2 ≥ 2.0.9 (`ContinentalConfig`): Tainted Land per continent. Only acts with a 2.0.9 biome table
+    /// (`BiomeTable::tainted_land`), so the 2.0.9 default is safe for 2.0.6 packs.
+    pub per_continent_tainted_land: bool,
+    pub average_tainted_land_per_continent: f32,
     pub landmass_offset_x: i32,
     pub landmass_offset_z: i32,
     pub biome_offset_x: i32,
@@ -21,7 +25,7 @@ pub struct RwgConfig {
 }
 
 impl Default for RwgConfig {
-    /// RWG2 2.0.6 defaults (== GTNH 2.9.0 shipped/generated `rwg2.cfg`).
+    /// RWG2 defaults (2.0.6 == GTNH 2.9.0; the 2.0.9 additions take their 2.0.9 defaults).
     fn default() -> Self {
         Self {
             minimum_continent_width: 2700.0,
@@ -35,6 +39,8 @@ impl Default for RwgConfig {
             large_island_volcano_chance: 0.15,
             average_landmarks_per_type_and_continent: 0.25,
             biome_size_multiplier: 1.0,
+            per_continent_tainted_land: true,
+            average_tainted_land_per_continent: 0.75,
             landmass_offset_x: 0,
             landmass_offset_z: 0,
             biome_offset_x: 0,

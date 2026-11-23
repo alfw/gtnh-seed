@@ -1,6 +1,6 @@
 # GTNH Seed Map
 
-Seed viewer and seed search for **GT New Horizons 2.9 and 2.10** (Minecraft 1.7.10, Realistic-World-Gen-2, world types
+Seed viewer and seed search for **GT New Horizons 2.9.1 and 2.9.0** (Minecraft 1.7.10, Realistic-World-Gen-2, world types
 `RWG2_CONTINENTS` (the pack default) and `RWG2`). Everything runs in the browser: the world generation is a Rust port
 of the pack's generators compiled to WebAssembly, checked block for block against dumps from a real GTNH instance.
 
@@ -66,6 +66,7 @@ Tests (data-dependent tests skip when their dumps are missing):
 cargo test --release --features json                 # native
 cargo test --release --target wasm32-wasip1          # wasm (needs wasmtime, see tools/wasi-runner.sh)
 node tools/check-wasm.mjs viewer/src/lib/rwg2.wasm   # browser module vs the pack dump
+node tools/check-wasm.mjs viewer/src/lib/rwg2.wasm testdata/pack/gtnh-2.9.1/heldout/<seed> 1   # 2.9.1 (pack 1)
 ```
 
 Browser smoke tests (Playwright, against a running preview):
@@ -86,7 +87,7 @@ Accuracy audits of the zoomed-out approximations: `tools/audit/*.mjs` and `tools
 | `crates/rwg2-biomes` | The world generation port: biome provider, terrain, surface, caves, population, decoration, structures, dimensions, GregTech, Thaumcraft, dungeons, loot, seed search. Zero dependencies (serde_json behind the `json` feature). |
 | `crates/rwg2-wasm` | Raw C-ABI wasm exports used by the viewer. |
 | `viewer` | Vite + Svelte 5 viewer: canvas map, worker pool, three.js 3D view. |
-| `data/gtnh-2.9.0` | Pack data extracted from a real instance: biome lists, climate, ore veins, fluids, loot tables. |
+| `data/gtnh-2.9.0`, `data/gtnh-2.9.1` | Pack data extracted from a real instance of each pack: biome lists, climate, ore veins, fluids, loot tables. `crates/rwg2-biomes/src/pack.rs` lists the packs and what differs. |
 | `tools/rwg2dump` | Server-side Forge mod that dumps ground truth from a real instance. |
 | `tools/source-bundle.sh`, `tools/source-pages.py` | Build the source bundle shipped with every build. |
 | `tools/third-party-licenses.sh` | Regenerates `THIRD_PARTY_LICENSES.txt` (licences of the bundled libraries). |

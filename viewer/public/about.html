@@ -35,10 +35,17 @@ world generation in your browser.</p>
 
 <h2>Supported worlds</h2>
 <ul>
-  <li><b>GT New Horizons 2.9 and 2.10</b>, world types <b>RWG2_CONTINENTS</b> (the pack default) and <b>RWG2</b>.
-    Pack data comes from 2.9.0, and the predictions are checked against real 2.9.0 and 2.10.0 worlds.</li>
+  <li><b>GT New Horizons 2.9.1</b> (Realistic World Gen 2 2.0.9) and <b>2.9.0</b> (RWG2 2.0.6): pick the pack at the top
+    of the page. World types <b>RWG2_CONTINENTS</b> (the pack default) and <b>RWG2</b>. Each pack's data comes from a
+    real instance of it, and the predictions are checked against real worlds of that pack.</li>
+  <li>The two packs give different worlds for the same seed: 2.9.1 places Tainted Land per continent instead of in
+    the small-biome field, and its dungeon chests can hold one more item (Electro-Magic Tools' The One Ring).</li>
+  <li><b>World settings</b> (the World tab): the continental settings of <code>config/rwg2.cfg</code> (continent,
+    ocean and island widths, ocean fraction, island and volcano chances, landmarks per continent, biome size, Tainted
+    Land per continent). The pack defaults are checked against real worlds; other values run the same code but have
+    not been compared with a real world yet. Climate bands (2.0.9) are not supported.</li>
   <li>Not supported: worlds made before 2.9 that kept their old generator (Realistic World Gen 1), other world types,
-    and modified worldgen configs.</li>
+    and changed configs of the other mods.</li>
   <li>Dimensions: Overworld, Nether, Twilight Forest and the End.</li>
   <li>A new pack release can change generation. It is checked with a dump from the new pack before it is marked as supported.</li>
 </ul>

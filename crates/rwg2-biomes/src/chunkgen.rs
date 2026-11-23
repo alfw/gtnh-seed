@@ -821,6 +821,12 @@ pub struct LavaColumn {
 }
 
 impl LavaColumn {
+    /// `(top, surface)` when the surface funnel runs in this column (`distance < 28`, `surface ≥ 63`, above `top`).
+    pub fn funnel(&self) -> Option<(i32, i32)> {
+        (self.distance < 28.0 && self.surface >= 63 && self.surface > self.top)
+            .then_some((self.top, self.surface))
+    }
+
     /// Block `y` is air after the landmark (`falling_above`: the block above `top` is sand/gravel, which turns
     /// `top` into stone).
     pub fn air(&self, y: i32, falling_above: bool) -> bool {

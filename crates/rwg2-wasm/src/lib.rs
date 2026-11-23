@@ -38,11 +38,17 @@ use rwg2_biomes::provider::{
 };
 
 pub const LAVA_MARKER: u16 = 0xFFFF;
-const BIOMES_JSON: &str = include_str!("../../../data/gtnh-2.9.0/biomes.json");
+/// Biome table per pack (`rwg2_biomes::pack`); everything else embedded below is identical across the supported
+/// packs (`pack-tool diff`: climate, GT veins / fluids unchanged in 2.9.1).
+fn biomes_json() -> &'static str {
+    match rwg2_biomes::pack::current() {
+        rwg2_biomes::pack::Pack::Gtnh290 => include_str!("../../../data/gtnh-2.9.0/biomes.json"),
+        rwg2_biomes::pack::Pack::Gtnh291 => include_str!("../../../data/gtnh-2.9.1/biomes.json"),
+    }
+}
 const GREGTECH_JSON: &str = include_str!("../../../data/gtnh-2.9.0/gregtech.json");
 const GTFLUIDS_JSON: &str = include_str!("../../../data/gtnh-2.9.0/gtfluids.json");
 const CLIMATE_JSON: &str = include_str!("../../../data/gtnh-2.9.0/climate.json");
-const PACK: &str = "GTNH 2.9.0 / RWG2 2.0.6";
 
 thread_local! {
     static TABLE: OnceCell<BiomeTable> = const { OnceCell::new() };
@@ -66,8 +72,62 @@ fn heights() -> &'static dyn Heights {
 
 fn table() -> BiomeTable {
     TABLE.with(|t| {
-        t.get_or_init(|| BiomeTable::from_rwg2dump_json(BIOMES_JSON).expect("embedded biomes.json"))
+        t.get_or_init(|| BiomeTable::from_rwg2dump_json(biomes_json()).expect("embedded biomes.json"))
             .clone()
+    })
+}
+
+/// Select the pack (`rwg2_biomes::pack::Pack` index: 0 = GTNH 2.9.0, 1 = 2.9.1). Call once, right after
+/// instantiating and before anything else: tables and caches are built on first use and not rebuilt (the viewer
+/// instantiates a fresh module per pack). Returns 1 if the index is known.
+#[no_mangle]
+pub extern "C" fn set_pack(i: u32) -> u32 {
+    match rwg2_biomes::pack::Pack::from_index(i) {
+        Some(p) => {
+            rwg2_biomes::pack::set(p);
+            1
+        }
+        None => 0,
+    }
+}
+
+thread_local! {
+    static CONFIG: RefCell<RwgConfig> = RefCell::new(RwgConfig::default());
+}
+
+/// The `rwg2.cfg` values providers are built with (`set_config`; default = the pack's defaults).
+fn config() -> RwgConfig {
+    CONFIG.with(|c| c.borrow().clone())
+}
+
+/// Set one RWG2 config value (`continental rwg` category) by index, before creating providers (the viewer
+/// instantiates a fresh module per setting change, like `set_pack`):
+/// 0 Minimum / 1 Maximum Continent Width, 2 Average / 3 Minimum Ocean Width, 4 Maximum Ocean Fraction,
+/// 5 Minimum / 6 Maximum Island Width, 7 Island Placement Chance, 8 Large Island Volcano Chance,
+/// 9 Average Landmarks Per Type And Continent, 10 Biome Size Multiplier, 11 Per Continent Tainted Land (0 / 1),
+/// 12 Average Tainted Land Per Continent. Values are rounded to `float` like Java's config read. Returns 1 if known.
+#[no_mangle]
+pub extern "C" fn set_config(i: u32, v: f64) -> u32 {
+    CONFIG.with(|c| {
+        let mut c = c.borrow_mut();
+        let f = v as f32;
+        match i {
+            0 => c.minimum_continent_width = f,
+            1 => c.maximum_continent_width = f,
+            2 => c.average_ocean_width = f,
+            3 => c.minimum_ocean_width = f,
+            4 => c.maximum_ocean_fraction = f,
+            5 => c.minimum_island_width = f,
+            6 => c.maximum_island_width = f,
+            7 => c.island_placement_chance = f,
+            8 => c.large_island_volcano_chance = f,
+            9 => c.average_landmarks_per_type_and_continent = f,
+            10 => c.biome_size_multiplier = f,
+            11 => c.per_continent_tainted_land = v != 0.0,
+            12 => c.average_tainted_land_per_continent = f,
+            _ => return 0,
+        }
+        1
     })
 }
 
@@ -78,7 +138,7 @@ pub extern "C" fn create(seed: i64, world_type: u32) -> u32 {
     } else {
         WorldType::Rwg2Continents
     };
-    let p = BiomeProvider::new(seed, wt, table(), RwgConfig::default());
+    let p = BiomeProvider::new(seed, wt, table(), config());
     PROVIDERS.with(|ps| {
         let mut ps = ps.borrow_mut();
         if let Some(i) = ps.iter().position(|p| p.is_none()) {
@@ -816,7 +876,7 @@ pub extern "C" fn inspect(handle: u32, x: i32, z: i32) -> *const f64 {
 ///  temperature,climates:[..],placements:[..]}]}` — only biomes reachable from the provider lists.
 pub fn legend_json() -> String {
     use serde_json::{json, Value};
-    let v: Value = serde_json::from_str(BIOMES_JSON).expect("embedded biomes.json");
+    let v: Value = serde_json::from_str(biomes_json()).expect("embedded biomes.json");
     let t = table();
     let mut uses: std::collections::BTreeMap<
         u16,
@@ -886,7 +946,8 @@ pub fn legend_json() -> String {
         .collect();
     let marker = &v["supportStatics"]["lavaCaveMarkerBiome"];
     json!({
-        "pack": PACK,
+        "pack": rwg2_biomes::pack::current().label(),
+        "packId": rwg2_biomes::pack::current().id(),
         "lavaMarker": { "id": LAVA_MARKER, "genId": marker["id"], "name": marker["name"], "color": marker["color"],
             "forestry": marker["id"].as_u64().and_then(|id| climate().classify(tnoise(), id as u16, 0, 64, 0)).map(|(t, h)| json!([t as u8, h as u8])) },
         "biomes": biomes,
@@ -989,12 +1050,12 @@ pub extern "C" fn legend_len() -> u32 {
 
 #[no_mangle]
 pub extern "C" fn pack_ptr() -> *const u8 {
-    PACK.as_ptr()
+    rwg2_biomes::pack::current().label().as_ptr()
 }
 
 #[no_mangle]
 pub extern "C" fn pack_len() -> u32 {
-    PACK.len() as u32
+    rwg2_biomes::pack::current().label().len() as u32
 }
 
 // ------------------------------------------------------------------------------------------------ search
@@ -1349,7 +1410,7 @@ pub extern "C" fn search(query_len: u32, count: u32) -> *const u8 {
             let mut s = s.borrow_mut();
             if s.as_ref().map(|(t, _)| t.as_str()) != Some(qtext) {
                 match parse_query(qtext) {
-                    Ok(q) => *s = Some((qtext.to_string(), Searcher::new(q, table(), RwgConfig::default(), search_data()))),
+                    Ok(q) => *s = Some((qtext.to_string(), Searcher::new(q, table(), config(), search_data()))),
                     Err(e) => return format!("{{\"error\":{}}}", serde_json::Value::String(e)),
                 }
             }
@@ -3419,7 +3480,7 @@ fn gen_name(gen: u16) -> Option<&'static str> {
     let m = NAMES.with(|n| {
         *n.get_or_init(|| {
             let v: serde_json::Value =
-                serde_json::from_str(BIOMES_JSON).expect("embedded biomes.json");
+                serde_json::from_str(biomes_json()).expect("embedded biomes.json");
             let mut m = std::collections::HashMap::new();
             for b in v["realisticBiomes"].as_array().into_iter().flatten() {
                 if let (Some(id), Some(name)) =

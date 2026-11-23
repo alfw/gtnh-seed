@@ -17,7 +17,7 @@ fn root() -> PathBuf {
 
 fn gates() -> rwg2_biomes::population::PreGates {
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     rwg2_biomes::population::PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -107,11 +107,11 @@ pub struct RingRow {
 
 fn run(seed: i64, path: &PathBuf, spawn: (i32, i32), verbose: bool) -> Vec<RingRow> {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let truth: Value = serde_json::from_str(&std::fs::read_to_string(path).unwrap()).unwrap();
@@ -496,4 +496,10 @@ fn rings_all_worlds() {
             r.seed, r.x, r.z, r.valid, r.p, r.note
         );
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

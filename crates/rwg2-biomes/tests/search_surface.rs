@@ -18,14 +18,14 @@ fn root() -> PathBuf {
 
 fn table() -> BiomeTable {
     BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap()
 }
 
 fn climate() -> ClimateTable {
     ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap()
 }
@@ -241,4 +241,10 @@ fn surface_preset_counts() {
         let hits: Vec<i64> = (1..=60).filter(|&s| sr.check(s).is_some()).collect();
         eprintln!("{name}: {} / 60 {hits:?}", hits.len());
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

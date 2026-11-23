@@ -28,7 +28,7 @@ fn dumps() -> Vec<PathBuf> {
         let Ok(rd) = std::fs::read_dir(d) else { return };
         for e in rd.flatten() {
             let p = e.path();
-            if p.is_dir() {
+            if p.is_dir() && !skip_dump_dir(&p) {
                 walk(&p, out);
             } else if p.file_name().is_some_and(|n| n == "blocks215.json") {
                 out.push(p.parent().unwrap().to_path_buf());
@@ -36,7 +36,7 @@ fn dumps() -> Vec<PathBuf> {
         }
     }
     let mut v = Vec::new();
-    walk(&root().join("testdata/pack"), &mut v);
+    walk(&root().join(dumps_under()), &mut v);
     v.sort();
     v
 }
@@ -126,7 +126,7 @@ fn top_of(a: &Area, names: &[String], post: bool, ci: usize, idx: usize) -> i32 
 fn tree_census_215() {
     let data = load();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     for (seed, _wt, names, areas) in &data {
@@ -204,7 +204,7 @@ fn deco_start_cobble_215() {
     use rwg2_biomes::population::PopModel;
     let data = load();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     for (seed, _wt, names, areas) in &data {
@@ -301,7 +301,7 @@ fn deco_poc_215() {
     use std::collections::{BTreeSet, HashMap};
     let data = load();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     const NAMES: [&str; 22] = [
@@ -682,4 +682,23 @@ fn deco_poc_215() {
             );
         }
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
+}
+
+/// Dump walk root: `DUMPS_UNDER` (e.g. `testdata/pack/gtnh-2.9.1` with `PACK_DATA=gtnh-2.9.1`), else `testdata/pack`
+/// minus the RWG2 2.0.9 pack's folder (its worlds need the 2.0.9 data).
+#[allow(dead_code)]
+fn dumps_under() -> String {
+    std::env::var("DUMPS_UNDER").unwrap_or_else(|_| "testdata/pack".into())
+}
+
+/// Without `DUMPS_UNDER`, the RWG2 2.0.9 pack's dumps (`testdata/pack/gtnh-2.9.1`) are left out of the walk.
+#[allow(dead_code)]
+fn skip_dump_dir(p: &std::path::Path) -> bool {
+    std::env::var("DUMPS_UNDER").is_err() && p.file_name().is_some_and(|n| n == "gtnh-2.9.1")
 }

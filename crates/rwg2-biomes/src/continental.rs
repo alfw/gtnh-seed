@@ -24,6 +24,9 @@ const OVERLAP_CORRECTION_BASE: f64 = 0.75;
 const OVERLAP_CORRECTION_SLOPE: f64 = 0.46;
 const CONTINENT_VOLCANO_SEED_SALT: i64 = 0x082EFA98EC4E6C89;
 const CONTINENT_LAVA_CAVE_SEED_SALT: i64 = 0x6A09E667F3BCC909;
+/// RWG2 2.0.9 per-continent Tainted Land.
+const CONTINENT_TAINTED_LAND_SEED_SALT: i64 = 0x3C6EF372FE94F82B;
+pub const TAINTED_LAND_RADIUS: f64 = 75.0;
 pub const CONTINENTAL_SEED_XOR: i64 = 0x6A09E667F3BCC909;
 
 /// Sentinel used throughout RWG2 for "none" in packed-coordinate APIs.
@@ -49,6 +52,8 @@ pub struct Landform {
     pub lava_cave_center_z: f64,
     pub lava_cave_local_x: f32,
     pub lava_cave_local_z: f32,
+    /// RWG2 2.0.9: inside one of the continent's Tainted Land patches (only with the option on).
+    pub tainted_land: bool,
 }
 
 pub struct ContinentalNoise {
@@ -57,6 +62,8 @@ pub struct ContinentalNoise {
     islands: IslandPointNoise,
     volcanoes: ContinentLandmarkNoise,
     lava_caves: ContinentLandmarkNoise,
+    /// `Some` when per-continent Tainted Land is on with a positive budget.
+    tainted: Option<ContinentLandmarkNoise>,
     minimum_continent_width: f64,
     continent_width_range: f64,
     maximum_island_width: f64,
@@ -74,6 +81,7 @@ pub struct ContinentalNoise {
     island_center: Cell<(f64, f64, f64, f64)>,
     volcano_center: Cell<(f64, f64, f64, f64)>,
     lava_center: Cell<(f64, f64, f64, f64)>,
+    tainted_center: Cell<(f64, f64, f64, f64)>,
 }
 
 impl ContinentalNoise {
@@ -128,6 +136,21 @@ impl ContinentalNoise {
             lm,
             LAVA_CAVE_INFLUENCE_RADIUS,
         );
+        // Constructed unconditionally in Java; only sampled when the option is on and the budget > 0.
+        let tainted = (cfg.per_continent_tainted_land
+            && cfg.average_tainted_land_per_continent > 0.0)
+            .then(|| {
+                ContinentLandmarkNoise::new(
+                    seed,
+                    seed ^ CONTINENT_TAINTED_LAND_SEED_SALT,
+                    &points,
+                    min_cw,
+                    max_cw,
+                    voronoi_radius,
+                    cfg.average_tainted_land_per_continent as f64,
+                    TAINTED_LAND_RADIUS,
+                )
+            });
         let origin = points.sample(0.0, 0.0);
         let nan4 = (f64::NAN, f64::NAN, 0.0, 0.0);
         Self {
@@ -136,6 +159,7 @@ impl ContinentalNoise {
             islands,
             volcanoes,
             lava_caves,
+            tainted,
             minimum_continent_width: min_cw,
             continent_width_range: max_cw - min_cw,
             maximum_island_width: max_iw,
@@ -153,6 +177,7 @@ impl ContinentalNoise {
             island_center: Cell::new(nan4),
             volcano_center: Cell::new(nan4),
             lava_center: Cell::new(nan4),
+            tainted_center: Cell::new(nan4),
         }
     }
 
@@ -327,6 +352,16 @@ impl ContinentalNoise {
                     r.lava_cave_center_z = cz;
                     r.lava_cave_local_x = lx as f32;
                     r.lava_cave_local_z = lz as f32;
+                }
+            }
+        }
+        if continent >= 0.0 {
+            if let Some(t) = &self.tainted {
+                let s = t.sample(&self.points, px, py);
+                if s.distance.is_finite() {
+                    let (_, _, cx, cz) = self.landmark_center(s.x, s.z, &self.tainted_center);
+                    let (lx, lz) = (x as f64 - cx, y as f64 - cz);
+                    r.tainted_land = lx * lx + lz * lz <= TAINTED_LAND_RADIUS * TAINTED_LAND_RADIUS;
                 }
             }
         }

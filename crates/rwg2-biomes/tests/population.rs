@@ -42,14 +42,14 @@ fn check_world(wdir: PathBuf, seed: i64) {
         .map(|b| b.as_str().unwrap().to_string())
         .collect();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
     let h = TableHeights;
     let mut m = PopModel::new(&p, &h, seed);
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     m.gates = PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -404,14 +404,14 @@ fn check_world(wdir: PathBuf, seed: i64) {
 #[test]
 fn population_timing() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let seed = 1337;
     let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
     let h = TableHeights;
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let gates = PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -470,13 +470,13 @@ fn dungeons_near() {
     };
     let a: Vec<i64> = v.split(',').map(|x| x.trim().parse().unwrap()).collect();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(a[0], WorldType::Rwg2Continents, table, RwgConfig::default());
     let h = TableHeights;
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let mut m = PopModel::new(&p, &h, a[0]);
@@ -516,4 +516,10 @@ fn dungeons_near() {
             }
         }
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

@@ -1,5 +1,8 @@
 <script>
   import lootDisplayNames from './lib/lootnames.json';
+  import lootDisplayNames291 from './lib/lootnames-2.9.1.json';
+  import { PACKS, PACK, switchPack } from './lib/pack.js';
+  import { CFG_FIELDS, CFG, CFG_STR, CFG_CUSTOM, cfgValue, switchConfig } from './lib/worldcfg.js';
   import chestDisplayNames from './lib/chestnames.json';
   import { onMount, untrack } from 'svelte';
   import { Pool } from './lib/pool.js';
@@ -197,7 +200,13 @@
   });
 
   // in-game display names of the dungeon table entries (rwg2dump 2.12.0; music discs by registry id)
-  const LOOT_DISPLAY = lootDisplayNames;
+  // dungeon chest table index → name; the table differs per pack (2.9.1: + The One Ring at 57)
+  const LOOT_DISPLAY = PACK.id === '2.9.1' ? lootDisplayNames291 : lootDisplayNames;
+  // World tab: edited settings (applied by reloading, worldcfg.js)
+  const cfgCurrent = () => Object.fromEntries(CFG_FIELDS.map((f) => [f.key, cfgValue(CFG, f)]));
+  const cfgDefaults = () => Object.fromEntries(CFG_FIELDS.map((f) => [f.key, f.def]));
+  let cfgDraft = $state(cfgCurrent());
+  let cfgDirty = $derived(CFG_FIELDS.some((f) => cfgDraft[f.key] !== cfgValue(CFG, f)));
   const MINE_DISPLAY = chestDisplayNames.mineshaftCorridor;
   const featureCells = new Map(); // key → features[]
   // spawn-area oil per seed|worldType: { oil, sq } (kept apart from featureCells so its LRU never drops it)
@@ -740,9 +749,11 @@
       zoom: Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, Number.isFinite(Number(p.get('zoom') ?? 'x')) ? Number(p.get('zoom')) : -1)),
     };
   }
-  /** URL state (also what Copy link shares): seed, world type, dimension, centre, zoom. */
+  /** URL state (also what Copy link shares): pack, world settings, seed, world type, dimension, centre, zoom. */
   function hashParams(seed) {
     const p = new URLSearchParams();
+    p.set('pack', PACK.id);
+    if (CFG_CUSTOM) p.set('cfg', CFG_STR);
     p.set('seed', seed);
     p.set('type', worldType === 0 ? 'RWG2' : 'RWG2_CONTINENTS');
     if (dim) p.set('dim', String(dim));
@@ -755,7 +766,7 @@
   let bugUrl = $derived.by(() => {
     if (!/github\.com\/[^/]+\/[^/]+\/issues\/?$/.test(ISSUES_URL)) return ISSUES_URL;
     const q = new URLSearchParams({ template: 'bug.yml', version: `v${BUILD.version} · ${BUILD.date} · ${BUILD.source}` });
-    q.set('pack', worldType === 0 ? 'RWG2' : 'RWG2_CONTINENTS');
+    q.set('pack', `${PACK.label} (${PACK.id}) · ${worldType === 0 ? 'RWG2' : 'RWG2_CONTINENTS'}${CFG_CUSTOM ? ` · rwg2.cfg ${CFG_STR}` : ''}`);
     if (seedText.trim()) q.set('seed', seedText.trim());
     q.set('place', `${DIMS.find((d) => d.id === dim)?.label ?? `dim ${dim}`}, X ${Math.round(view.x)}, Z ${Math.round(view.z)}, zoom ${Math.round(view.zoom * 4) / 4}`);
     q.set('browser', navigator.userAgent);
@@ -1155,7 +1166,7 @@
       g.fillStyle = '#c9d1d9';
       const modeName = ['Biomes', 'Bee climate', 'Terrain', 'Blocks'][mapMode] ?? '';
       const blocks = view.zoom >= 0 ? `${2 ** view.zoom} px/block` : `${2 ** -view.zoom} blocks/px`;
-      g.fillText(`${worldType === 1 ? 'RWG2_CONTINENTS' : 'RWG2'} · ${DIM_LABEL[dim] ?? 'dim ' + dim}${dim === 1 && layers.endKills ? ` (${layers.endKills} resets)` : ''} · ${modeName} · centre ${Math.round(view.x)}, ${Math.round(view.z)} · zoom ${view.zoom} (${blocks}) · GTNH 2.9.0 / RWG2`, pad + g.measureText(brand).width + 60 * dpr, y);
+      g.fillText(`${worldType === 1 ? 'RWG2_CONTINENTS' : 'RWG2'} · ${DIM_LABEL[dim] ?? 'dim ' + dim}${dim === 1 && layers.endKills ? ` (${layers.endKills} resets)` : ''} · ${modeName} · centre ${Math.round(view.x)}, ${Math.round(view.z)} · zoom ${view.zoom} (${blocks}) · ${pack || PACK.label}${CFG_CUSTOM ? ` · rwg2.cfg ${CFG_STR}` : ''}`, pad + g.measureText(brand).width + 60 * dpr, y);
       for (const s of shots) {
         y += line;
         g.fillStyle = s.tag === 'B' ? '#e8a33d' : '#c9d1d9';
@@ -2313,7 +2324,7 @@
     const p = hashParams(String(seedInfo?.seed ?? seedText)); // dimension included (it was dropped before v1.67)
     const dimName = DIMS.find((d) => d.id === dim)?.label;
     const text = embedded
-      ? `seed ${seedInfo?.seed ?? seedText} · ${type}${dim ? ` · ${dimName ?? `dim ${dim}`}` : ''} · X ${Math.round(view.x)} Z ${Math.round(view.z)}`
+      ? `${PACK.label} · seed ${seedInfo?.seed ?? seedText} · ${type}${dim ? ` · ${dimName ?? `dim ${dim}`}` : ''} · X ${Math.round(view.x)} Z ${Math.round(view.z)}`
       : `${location.origin}${location.pathname}#${p}`;
     try {
       await navigator.clipboard.writeText(text);
@@ -2432,13 +2443,19 @@
   <header>
     <div class="brand">
       <strong>GTNH Seed Map{#if BETA}<span class="beta" title="Public beta: predictions are checked against real worlds, but expect rough edges. Report problems with the footer link.">beta</span>{/if}</strong>
-      <span class="sub">{pack || 'loading…'}</span>
+      <span class="sub">{pack || 'loading…'}{#if CFG_CUSTOM}<span class="beta" title={`Custom rwg2.cfg: ${CFG_STR}`}>custom cfg</span>{/if}</span>
     </div>
     <label class="seed">
       <span>Seed</span>
       <input bind:value={seedText} spellcheck="false" placeholder="number or text" />
       {#if seedInfo?.kind === 'text'}<span class="hint" title="Text seeds use Java String.hashCode()">= {seedInfo.seed}</span>{/if}
       <button onclick={() => (seedText = String(randomSeed()))} title="Random seed">🎲</button>
+    </label>
+    <label title="Which GTNH release the map predicts. Worlds differ between packs (RWG2 version, loot tables); switching reloads the page.">
+      <span>Pack</span>
+      <select value={PACK.id} onchange={(e) => switchPack(e.currentTarget.value, hashParams(seedText.trim()))}>
+        {#each PACKS as k}<option value={k.id} title={k.note}>{k.label}</option>{/each}
+      </select>
     </label>
     <label>
       <span>World type</span>
@@ -2903,10 +2920,34 @@
       {#if phone}<div class="grab" role="separator" aria-orientation="horizontal" onpointerdown={grabDown} onpointermove={grabMove} onpointerup={grabUp} onpointercancel={grabUp} title="Drag up / down · tap: bigger / smaller"><span></span></div>{/if}
       <div class="tabs">
         {#if !phone}<button class="side-hide" onclick={() => (layers.sideHidden = true)} title="Hide the side panel (full-width map)">›</button>{/if}
-        {#each [['legend', 'Legend'], ['layers', 'Layers'], ...(advanced ? [['ores', 'Ores']] : []), ['search', 'Search']] as [k, l]}
+        {#each [['legend', 'Legend'], ['layers', 'Layers'], ...(advanced ? [['ores', 'Ores']] : []), ['search', 'Search'], ['world', CFG_CUSTOM ? 'World ●' : 'World']] as [k, l]}
           <button class:active={tab === k && (!phone || sheet === 'side')} onclick={() => { if (phone) { if (tab === k) openSheet('side'); else { tab = k; if (sheet !== 'side') openSheet('side'); } } else tab = k; }}>{l}</button>
         {/each}
         {#if phone && sheet === 'side'}<button class="sheet-close" onclick={() => (sheet = null)} title="Collapse">▾</button>{/if}
+      </div>
+      <div class="pane world" class:hidden={tab !== 'world'}>
+        <div class="legend-head dim">Pack and <code>config/rwg2.cfg</code> (“continental rwg”) of the world to predict. Applying reloads the page; the settings go into Copy link.</div>
+        <label class="sub">Pack <select value={PACK.id} onchange={(e) => switchPack(e.currentTarget.value, hashParams(seedText.trim()))}>{#each PACKS as k}<option value={k.id}>{k.label}</option>{/each}</select></label>
+        <div class="dim tiny">{PACK.note}</div>
+        {#if CFG_CUSTOM}<div class="warn tiny">Custom settings in force. The defaults are checked against real worlds; other values follow the same code but have not been compared with a real world yet.</div>{/if}
+        <div class="cfg-grid">
+          {#each CFG_FIELDS.filter((f) => !f.since || f.since <= PACK.rwg2) as f (f.key)}
+            <label class="cfg" title={f.help ?? ''}>
+              <span>{f.name}{#if cfgDraft[f.key] !== f.def}<span class="dim"> (default {f.bool ? (f.def ? 'on' : 'off') : f.def})</span>{/if}</span>
+              {#if f.bool}
+                <input type="checkbox" checked={!!cfgDraft[f.key]} onchange={(e) => (cfgDraft = { ...cfgDraft, [f.key]: e.currentTarget.checked ? 1 : 0 })} />
+              {:else}
+                <input type="number" min={f.min} max={f.max} step={f.step} value={cfgDraft[f.key]} onchange={(e) => { const n = Number(e.currentTarget.value); cfgDraft = { ...cfgDraft, [f.key]: Number.isFinite(n) ? Math.min(f.max, Math.max(f.min, n)) : f.def }; }} />
+              {/if}
+            </label>
+          {/each}
+        </div>
+        <div class="dim tiny">Plain RWG2 worlds use only Biome Size Multiplier; the rest shapes RWG2_CONTINENTS. Climate bands (2.0.9) are not supported yet.</div>
+        <div class="legend-opts">
+          <button onclick={() => switchConfig(cfgDraft, hashParams(seedText.trim()))} disabled={!cfgDirty} title="Reload with these settings">Apply</button>
+          <button onclick={() => (cfgDraft = cfgDefaults())} title="Back to the pack's defaults (Apply to use them)">Defaults</button>
+          {#if cfgDirty}<button onclick={() => (cfgDraft = cfgCurrent())}>Undo changes</button>{/if}
+        </div>
       </div>
       <div class="pane" class:hidden={tab !== 'ores'}>
         <div class="legend-head dim">GregTech veins on a 3×3-chunk grid (Overworld). {veinTable?.provisional ? 'Provisional vein data: types/odds right, exact Y pending a pack dump.' : ''}</div>

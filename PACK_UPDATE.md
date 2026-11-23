@@ -101,7 +101,16 @@ Verified on 2.9.0: import of world `977343572691104904` reproduces `data/gtnh-2.
 byte-identical; `biomes.json`, `climate.json`, `gregtech.json` equal as JSON — only `largeTreeSeed` and the `source`
 strings differ), and `gt_enrich.py` reproduces the 2.9.0 colours/names for all 21 veins.
 
-Then point the code at the new data — every hard-coded pack path:
+**Since v1.69 the viewer supports several packs side by side** (`crates/rwg2-biomes/src/pack.rs`). For a pack that
+changes the model, add a `Pack` variant (id, `data_dir`, label, loot JSON), its `biomes.json` in
+`crates/rwg2-wasm/src/lib.rs` `biomes_json()`, an entry in `viewer/src/lib/pack.js` `PACKS` (last = default) and,
+if the dungeon table changed, `viewer/src/lib/lootnames-<id>.json`; gate changed generation code on something the
+new biome table carries (2.9.1: `BiomeTable::rwg2_209`, `tainted_land`), never on a global, so the old pack stays
+exact. Run the suites on the new worlds with `PACK_DATA=gtnh-<v>` + `DUMPS_UNDER` / `WORLDS_DIR` and check-wasm with the
+pack index (`tools/check-wasm.mjs <wasm> <dump> <index>`); add a `tests/pack_<v>.rs` for pack-specific tables. Add
+`data/gtnh-<v>` to `tools/source-bundle.sh`. If nothing model-relevant changed, just relabel the existing pack.
+
+Older single-pack procedure (still the list of hard-coded paths):
 
 ```sh
 grep -rn "gtnh-2.9.0\|GTNH 2.9.0" crates tools viewer/src --include=*.rs --include=*.mjs --include=*.sh --include=*.svelte

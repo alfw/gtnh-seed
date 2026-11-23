@@ -3,7 +3,7 @@
   "license": "GPL-3.0-or-later",
   "repository": { "type": "git", "url": "git+https://github.com/alfw/gtnh-seed.git" },
   "private": true,
-  "version": "1.68.0-beta.1",
+  "version": "1.69.0-beta.1",
   "type": "module",
   "scripts": {
     "wasm": "cd .. && cargo build --release -p rwg2-wasm --target wasm32-unknown-unknown && cp target/wasm32-unknown-unknown/release/rwg2_wasm.wasm viewer/src/lib/rwg2.wasm",

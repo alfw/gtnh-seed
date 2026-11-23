@@ -110,6 +110,19 @@ impl BiomeTable {
                     .class
                     .ends_with("RealisticBiomeIslandVolcano")
             });
+        // RWG2 ≥ 2.0.9 (`supportStatics.taintedLand`): a continental dump's small lists have Tainted Land removed
+        // (`perContinentTaintedLand`). The table keeps the full lists (RWG2 worlds and the option off use them);
+        // the provider drops it again when per-continent placement is active. 2.0.6 registered it last in every
+        // climate's small list.
+        let tainted_land = ss["taintedLand"].as_u64().map(|i| i as BiomeId);
+        let mut small = per("smallBiomes")?;
+        if let (Some(t), Some(true)) = (tainted_land, pl["perContinentTaintedLand"].as_bool()) {
+            for l in small.iter_mut() {
+                if !l.contains(&t) {
+                    l.push(t);
+                }
+            }
+        }
         Ok(BiomeTable {
             core,
             border: per("borderBiomes")?,
@@ -118,7 +131,10 @@ impl BiomeTable {
             very_cold_border: per("veryColdBorderBiomes")?,
             very_hot_border: per("veryHotBorderBiomes")?,
             littoral: per("littoralBiomes")?,
-            small: per("smallBiomes")?,
+            small,
+            tainted_land,
+            // keys new in 2.0.9's ChunkManagerRealistic (climate bands / per-continent Tainted Land)
+            rwg2_209: pl.get("climateWarpStrength").is_some(),
             island: per("islandBiomes")?,
             small_island: per("smallIslandBiomes")?,
             large_island: per("largeIslandBiomes")?,

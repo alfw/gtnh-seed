@@ -32,6 +32,7 @@ pub mod landmark;
 pub mod loot;
 pub mod mineshaft;
 pub mod nether;
+pub mod pack;
 pub mod noise;
 pub mod perlin;
 pub mod poisson;

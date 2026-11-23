@@ -76,7 +76,7 @@ fn grids(filter: impl Fn(&str, &str) -> bool) -> Option<Vec<Grid>> {
 
 #[test]
 fn rwg2_climate_matches_pack() {
-    let Some(gs) = grids(|wt, r| wt == "RWG2" && r != "heights") else {
+    let Some(gs) = grids(|wt, r| wt == "RWG2" && r != "heights" && !r.starts_with("chunks")) else {
         eprintln!("SKIP: no dump at {}", dump_dir().display());
         return;
     };
@@ -129,7 +129,8 @@ fn rwg2_climate_matches_pack() {
 fn rwg2_continents_value_matches_pack() {
     use rwg2_biomes::config::RwgConfig;
     use rwg2_biomes::continental::{ContinentalNoise, CONTINENTAL_SEED_XOR};
-    let Some(gs) = grids(|wt, r| wt == "RWG2_CONTINENTS" && r != "heights") else {
+    let Some(gs) = grids(|wt, r| wt == "RWG2_CONTINENTS" && r != "heights" && !r.starts_with("chunks"))
+    else {
         eprintln!("SKIP: no dump at {}", dump_dir().display());
         return;
     };
@@ -174,7 +175,7 @@ fn table() -> rwg2_biomes::provider::BiomeTable {
 fn check_biomes(world_type: &str) {
     use rwg2_biomes::config::RwgConfig;
     use rwg2_biomes::provider::{BiomeProvider, Heights, NoHeights, TableHeights, WorldType};
-    let Some(gs) = grids(|wt, r| wt == world_type && r != "heights") else {
+    let Some(gs) = grids(|wt, r| wt == world_type && r != "heights" && !r.starts_with("chunks")) else {
         eprintln!("SKIP: no dump at {}", dump_dir().display());
         return;
     };

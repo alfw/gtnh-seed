@@ -22,7 +22,7 @@ fn dumps() -> Vec<(i64, PathBuf)> {
         let Ok(rd) = std::fs::read_dir(d) else { return };
         for e in rd.flatten() {
             let p = e.path();
-            if p.is_dir() {
+            if p.is_dir() && !skip_dump_dir(&p) {
                 walk(&p, out);
             } else if p.file_name().is_some_and(|n| n == "worldchunks.json") {
                 out.push(p.parent().unwrap().to_path_buf());
@@ -30,7 +30,7 @@ fn dumps() -> Vec<(i64, PathBuf)> {
         }
     }
     let mut dirs = Vec::new();
-    walk(&root().join("testdata/pack"), &mut dirs);
+    walk(&root().join(dumps_under()), &mut dirs);
     dirs.sort();
     let mut seen = HashSet::new();
     let mut out = Vec::new();
@@ -60,7 +60,7 @@ fn dumps() -> Vec<(i64, PathBuf)> {
 #[test]
 fn surface_tops_match_worldchunks() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let st = SurfaceTable::new(&table);
@@ -185,7 +185,7 @@ fn surface_tops_match_worldchunks() {
 #[ignore]
 fn surface_speed() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let st = SurfaceTable::new(&table);
@@ -247,11 +247,11 @@ fn surface_speed() {
 #[test]
 fn snow_cover_vs_spawn_walks() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let clim = rwg2_biomes::forestry::ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let st = SurfaceTable::new(&table);
@@ -260,14 +260,14 @@ fn snow_cover_vs_spawn_walks() {
         let Ok(rd) = std::fs::read_dir(d) else { return };
         for e in rd.flatten() {
             let p = e.path();
-            if p.is_dir() {
+            if p.is_dir() && !skip_dump_dir(&p) {
                 walk(&p, out);
             } else if p.file_name().is_some_and(|n| n == "spawn.json") {
                 out.push(p);
             }
         }
     }
-    walk(&root().join("testdata/pack"), &mut files);
+    walk(&root().join(dumps_under()), &mut files);
     files.sort();
     let mut seen = HashSet::new();
     // (real snow, model snow) counts
@@ -343,4 +343,23 @@ fn snow_cover_vs_spawn_walks() {
         total == 0 || wrong * 50 <= total,
         "snow cover regressed: {conf:?}"
     );
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
+}
+
+/// Dump walk root: `DUMPS_UNDER` (e.g. `testdata/pack/gtnh-2.9.1` with `PACK_DATA=gtnh-2.9.1`), else `testdata/pack`
+/// minus the RWG2 2.0.9 pack's folder (its worlds need the 2.0.9 data).
+#[allow(dead_code)]
+fn dumps_under() -> String {
+    std::env::var("DUMPS_UNDER").unwrap_or_else(|_| "testdata/pack".into())
+}
+
+/// Without `DUMPS_UNDER`, the RWG2 2.0.9 pack's dumps (`testdata/pack/gtnh-2.9.1`) are left out of the walk.
+#[allow(dead_code)]
+fn skip_dump_dir(p: &std::path::Path) -> bool {
+    std::env::var("DUMPS_UNDER").is_err() && p.file_name().is_some_and(|n| n == "gtnh-2.9.1")
 }

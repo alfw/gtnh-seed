@@ -37,13 +37,13 @@ fn json(name: &str) -> Option<Value> {
 }
 fn table() -> BiomeTable {
     BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap()
 }
 fn climate() -> ClimateTable {
     ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap()
 }
@@ -827,7 +827,7 @@ fn sec_gtores() -> Card {
         return c;
     };
     let gj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/gregtech.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("gregtech.json"))).unwrap(),
     )
     .unwrap();
     let table = VeinTable::from_json(&gj.to_string()).unwrap();
@@ -1577,4 +1577,10 @@ fn second_world_scorecard() {
             .collect::<Vec<_>>()
             .join("\n")
     );
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

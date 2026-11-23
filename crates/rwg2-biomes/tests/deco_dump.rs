@@ -41,7 +41,7 @@ pub fn dumps(file: &str) -> Vec<PathBuf> {
         let Ok(rd) = std::fs::read_dir(d) else { return };
         for e in rd.flatten() {
             let p = e.path();
-            if p.is_dir() {
+            if p.is_dir() && !skip_dump_dir(&p) {
                 walk(&p, file, out);
             } else if p.file_name().is_some_and(|n| n == file) {
                 out.push(p.parent().unwrap().to_path_buf());
@@ -49,7 +49,7 @@ pub fn dumps(file: &str) -> Vec<PathBuf> {
         }
     }
     let mut v = Vec::new();
-    walk(&root().join("testdata/pack"), file, &mut v);
+    walk(&root().join(dumps_under()), file, &mut v);
     v.sort();
     v
 }
@@ -367,7 +367,7 @@ impl Area {
 
 fn gates() -> PreGates {
     let cj: Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -576,7 +576,7 @@ fn deco_dump_216() {
         return;
     }
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -1124,7 +1124,7 @@ fn state_helpers() {
 #[test]
 fn selftest_layout_and_segments() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(
@@ -1216,7 +1216,7 @@ fn mineshaft_chest_draws_216() {
         return;
     }
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -1349,7 +1349,7 @@ fn mineshaft_pair_order_216() {
         return;
     }
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -1461,7 +1461,7 @@ fn mineshaft_pair_order_216() {
 fn entry_misses_216() {
     let dirs = dumps("deco216.json");
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -1512,7 +1512,7 @@ fn entry_misses_216() {
                 }
                 let g8 = p.biome_gen_id(s.0 * 16 + 8, s.1 * 16 + 8, &h);
                 let cj: Value = serde_json::from_str(
-                    &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+                    &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
                 )
                 .unwrap();
                 let nm = |id: u16| {
@@ -1615,7 +1615,7 @@ fn entry_misses_216() {
 #[test]
 fn post_tail_vs_recorded() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let mut files: Vec<(PathBuf, &str)> = dumps("deco216.json").into_iter().map(|d| (d, "deco216.json")).collect();
@@ -1723,7 +1723,7 @@ fn oil_chain_vs_recorded() {
     use rwg2_biomes::deco::oil;
     use rwg2_biomes::java_random::JavaRandom;
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let files = dumps("deco216.json");
@@ -1812,6 +1812,10 @@ fn oil_chain_vs_recorded() {
                     real = oil::dm(&mut r, seed, &mut gen, &rwg2_biomes::deco::oil_row, cx, cz);
                     c[6] += 1;
                     c[5] += (r.state() == ice) as u32;
+                    if r.state() != ice && std::env::var("DM_MISS").is_ok() {
+                        let g = w.gen_id(cx * 16 + 8, cz * 16 + 8);
+                        eprintln!("  DM miss {name} chunk {cx},{cz} gen {g} model {real:?}");
+                    }
                     if real.is_some() {
                         c[7] += 1;
                     }
@@ -1864,4 +1868,23 @@ fn oil_chain_vs_recorded() {
     eprintln!("deposits model vs real (even chunks): same {}, real only {}, model only {}, differ {}", dep[0], dep[1], dep[2], dep[3]);
     assert_eq!(c[0], c[1], "Galacticraft listener");
     assert_eq!(c[5], c[6], "DreamMaster listener");
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
+}
+
+/// Dump walk root: `DUMPS_UNDER` (e.g. `testdata/pack/gtnh-2.9.1` with `PACK_DATA=gtnh-2.9.1`), else `testdata/pack`
+/// minus the RWG2 2.0.9 pack's folder (its worlds need the 2.0.9 data).
+#[allow(dead_code)]
+fn dumps_under() -> String {
+    std::env::var("DUMPS_UNDER").unwrap_or_else(|_| "testdata/pack".into())
+}
+
+/// Without `DUMPS_UNDER`, the RWG2 2.0.9 pack's dumps (`testdata/pack/gtnh-2.9.1`) are left out of the walk.
+#[allow(dead_code)]
+fn skip_dump_dir(p: &std::path::Path) -> bool {
+    std::env::var("DUMPS_UNDER").is_err() && p.file_name().is_some_and(|n| n == "gtnh-2.9.1")
 }

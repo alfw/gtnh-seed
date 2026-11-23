@@ -32,11 +32,11 @@ fn load(path: &str) -> Option<serde_json::Value> {
 
 fn tables() -> (BiomeTable, ClimateTable) {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     (table, climate)
@@ -582,4 +582,10 @@ fn silverwood_rolls_1337() {
     eprintln!("real PURE nodes {real:?}");
     assert_eq!((seen.len(), real.len()), (6, 3));
     assert!(real.iter().all(|r| seen.contains(&(r.0, r.2))));
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

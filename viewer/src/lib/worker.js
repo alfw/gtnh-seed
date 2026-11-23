@@ -1,11 +1,20 @@
 // Tile worker: one wasm instance, one provider per (seed, worldType).
 import wasmUrl from './rwg2.wasm?url';
+import { parseCfg, CFG_FIELDS } from './worldcfg.js';
 
 let ex = null;
 const ready = (async () => {
   const bytes = await (await fetch(wasmUrl)).arrayBuffer(); // no instantiateStreaming: tolerate any MIME type
   const { instance } = await WebAssembly.instantiate(bytes, {});
   ex = instance.exports;
+  // pack index from the pool (`new Worker(…, { name: 'pack=N' })`); before any other call (tables build on first use)
+  ex.set_pack?.(Number(/pack=(\d+)/.exec(self.name ?? '')?.[1] ?? 0));
+  // world settings (`cfg=key:value,…`, worldcfg.js), also before any provider is built
+  const cfg = /cfg=([^;]*)/.exec(self.name ?? '')?.[1] ?? '';
+  if (cfg && ex.set_config) {
+    const c = parseCfg(cfg);
+    for (const f of CFG_FIELDS) if (c[f.key] !== undefined) ex.set_config(f.i, c[f.key]);
+  }
 })();
 
 let current = { key: null, handle: -1 };

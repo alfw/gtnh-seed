@@ -1,5 +1,5 @@
 // Renders dump regions through the browser module (raw exports) and diffs against rwg2dump grids.
-// usage: node tools/check-wasm.mjs [wasm] [dumpDir]
+// usage: node tools/check-wasm.mjs [wasm] [dumpDir] [packIndex]   (pack 1 = next: testdata/pack/gtnh-2.9.1/heldout/<seed>)
 import fs from 'node:fs';
 // defaults are relative to the repo root, arguments to the current directory
 const root = new URL('..', import.meta.url).pathname;
@@ -7,6 +7,8 @@ const wasmPath = process.argv[2] ?? `${root}target/wasm32-unknown-unknown/releas
 const dump = process.argv[3] ?? `${root}testdata/pack/gtnh-2.9.0/dump`;
 const { instance } = await WebAssembly.instantiate(fs.readFileSync(wasmPath), {});
 const ex = instance.exports;
+const packIndex = Number(process.argv[4] ?? 0);
+if (ex.set_pack && !ex.set_pack(packIndex)) throw new Error(`unknown pack ${packIndex}`);
 const lp = ex.legend_ptr(), ll = ex.legend_len(); // call first: may grow memory and detach old buffers
 const legend = JSON.parse(new TextDecoder().decode(new Uint8Array(ex.memory.buffer, lp, ll)));
 console.log(`legend: ${legend.biomes.length} biomes, pack "${legend.pack}"`);

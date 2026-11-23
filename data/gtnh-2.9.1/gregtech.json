@@ -1,0 +1,719 @@
+{
+  "source": "rwg2dump 2.19.2 gregtech.json (GTNH next, GregTech 5.09.54.275): WorldgenGTOreLayer.sList, Overworld stone veins in registry order",
+  "provisional": false,
+  "config": {
+    "oreveinPercentage": 100,
+    "oreveinAttempts": 64,
+    "oreveinMaxPlacementAttempts": 8,
+    "pattern": "EQUAL_SPACING"
+  },
+  "veins": [
+    {
+      "name": "ore.mix.lignite",
+      "weight": 160,
+      "minY": 80,
+      "maxY": 210,
+      "size": 32,
+      "density": 7,
+      "primaryId": 538,
+      "ores": [
+        "Lignite",
+        "Lignite",
+        "Lignite",
+        "Coal"
+      ],
+      "oreIds": [
+        538,
+        538,
+        538,
+        535
+      ],
+      "displayName": "Lignite Coal",
+      "oreNames": [
+        "Lignite Coal",
+        "Coal"
+      ],
+      "iconRgb": "#644646",
+      "oreRgb": [
+        "#644646",
+        "#464646"
+      ]
+    },
+    {
+      "name": "ore.mix.coal",
+      "weight": 80,
+      "minY": 30,
+      "maxY": 80,
+      "size": 32,
+      "density": 5,
+      "primaryId": 535,
+      "ores": [
+        "Coal",
+        "Coal",
+        "Coal",
+        "Lignite"
+      ],
+      "oreIds": [
+        535,
+        535,
+        535,
+        538
+      ],
+      "displayName": "Coal",
+      "oreNames": [
+        "Coal",
+        "Lignite Coal"
+      ],
+      "iconRgb": "#464646",
+      "oreRgb": [
+        "#464646",
+        "#644646"
+      ]
+    },
+    {
+      "name": "ore.mix.magnetite",
+      "weight": 160,
+      "minY": 60,
+      "maxY": 180,
+      "size": 32,
+      "density": 2,
+      "primaryId": 870,
+      "ores": [
+        "Magnetite",
+        "Magnetite",
+        "Iron",
+        "VanadiumMagnetite"
+      ],
+      "oreIds": [
+        870,
+        870,
+        32,
+        923
+      ],
+      "displayName": "Magnetite",
+      "oreNames": [
+        "Magnetite",
+        "Iron",
+        "Vanadium Magnetite"
+      ],
+      "iconRgb": "#1e1e1e",
+      "oreRgb": [
+        "#1e1e1e",
+        "#c8c8c8",
+        "#23233c"
+      ]
+    },
+    {
+      "name": "ore.mix.gold",
+      "weight": 160,
+      "minY": 30,
+      "maxY": 60,
+      "size": 32,
+      "density": 2,
+      "primaryId": 870,
+      "ores": [
+        "Magnetite",
+        "Magnetite",
+        "VanadiumMagnetite",
+        "Gold"
+      ],
+      "oreIds": [
+        870,
+        870,
+        923,
+        86
+      ],
+      "displayName": "Magnetite & Gold",
+      "oreNames": [
+        "Magnetite",
+        "Vanadium Magnetite",
+        "Gold"
+      ],
+      "iconRgb": "#ffff1e",
+      "oreRgb": [
+        "#1e1e1e",
+        "#23233c",
+        "#ffff1e"
+      ]
+    },
+    {
+      "name": "ore.mix.iron",
+      "weight": 120,
+      "minY": 10,
+      "maxY": 40,
+      "size": 24,
+      "density": 3,
+      "primaryId": 930,
+      "ores": [
+        "BrownLimonite",
+        "YellowLimonite",
+        "BandedIron",
+        "Malachite"
+      ],
+      "oreIds": [
+        930,
+        931,
+        917,
+        871
+      ],
+      "displayName": "Brown Limonite & Iron",
+      "oreNames": [
+        "Brown Limonite",
+        "Yellow Limonite",
+        "Banded Iron",
+        "Malachite"
+      ],
+      "iconRgb": "#c8c8c8",
+      "oreRgb": [
+        "#c86400",
+        "#c8c800",
+        "#915a5a",
+        "#055f05"
+      ]
+    },
+    {
+      "name": "ore.mix.cassiterite",
+      "weight": 50,
+      "minY": 60,
+      "maxY": 220,
+      "size": 24,
+      "density": 4,
+      "primaryId": 57,
+      "ores": [
+        "Tin",
+        "Tin",
+        "Cassiterite",
+        "Tin"
+      ],
+      "oreIds": [
+        57,
+        57,
+        824,
+        57
+      ],
+      "displayName": "Tin & Cassiterite",
+      "oreNames": [
+        "Tin",
+        "Cassiterite"
+      ],
+      "iconRgb": "#dcdcdc",
+      "oreRgb": [
+        "#dcdcdc",
+        "#dcdcdc"
+      ]
+    },
+    {
+      "name": "ore.mix.copper",
+      "weight": 80,
+      "minY": 5,
+      "maxY": 60,
+      "size": 24,
+      "density": 3,
+      "primaryId": 855,
+      "ores": [
+        "Chalcopyrite",
+        "Iron",
+        "Pyrite",
+        "Copper"
+      ],
+      "oreIds": [
+        855,
+        32,
+        834,
+        35
+      ],
+      "displayName": "Chalcopyrite & Copper",
+      "oreNames": [
+        "Chalcopyrite",
+        "Iron",
+        "Pyrite",
+        "Copper"
+      ],
+      "iconRgb": "#ff6400",
+      "oreRgb": [
+        "#a07828",
+        "#c8c8c8",
+        "#967828",
+        "#ff6400"
+      ]
+    },
+    {
+      "name": "ore.mix.salts",
+      "weight": 50,
+      "minY": 50,
+      "maxY": 70,
+      "size": 24,
+      "density": 2,
+      "primaryId": 944,
+      "ores": [
+        "RockSalt",
+        "Salt",
+        "Lepidolite",
+        "Spodumene"
+      ],
+      "oreIds": [
+        944,
+        817,
+        907,
+        920
+      ],
+      "displayName": "Rock Salt & Salt",
+      "oreNames": [
+        "Rock Salt",
+        "Salt",
+        "Lepidolite",
+        "Spodumene"
+      ],
+      "iconRgb": "#fafafa",
+      "oreRgb": [
+        "#f0c8c8",
+        "#fafafa",
+        "#f0328c",
+        "#beaaaa"
+      ]
+    },
+    {
+      "name": "ore.mix.redstone",
+      "weight": 60,
+      "minY": 5,
+      "maxY": 40,
+      "size": 24,
+      "density": 2,
+      "primaryId": 810,
+      "ores": [
+        "Redstone",
+        "Redstone",
+        "Ruby",
+        "Cinnabar"
+      ],
+      "oreIds": [
+        810,
+        810,
+        502,
+        826
+      ],
+      "displayName": "Redstone",
+      "oreNames": [
+        "Redstone",
+        "Ruby",
+        "Cinnabar"
+      ],
+      "iconRgb": "#c80000",
+      "oreRgb": [
+        "#c80000",
+        "#ff6464",
+        "#960000"
+      ]
+    },
+    {
+      "name": "ore.mix.soapstone",
+      "weight": 40,
+      "minY": 20,
+      "maxY": 50,
+      "size": 16,
+      "density": 2,
+      "primaryId": 877,
+      "ores": [
+        "Soapstone",
+        "Talc",
+        "Glauconite",
+        "Pentlandite"
+      ],
+      "oreIds": [
+        877,
+        902,
+        933,
+        909
+      ],
+      "displayName": "Soapstone",
+      "oreNames": [
+        "Soapstone",
+        "Talc",
+        "Glauconite",
+        "Pentlandite"
+      ],
+      "iconRgb": "#5f915f",
+      "oreRgb": [
+        "#5f915f",
+        "#5ab45a",
+        "#82b43c",
+        "#a59605"
+      ]
+    },
+    {
+      "name": "ore.mix.manganese",
+      "weight": 20,
+      "minY": 20,
+      "maxY": 30,
+      "size": 16,
+      "density": 2,
+      "primaryId": 831,
+      "ores": [
+        "Grossular",
+        "Spessartine",
+        "Pyrolusite",
+        "Tantalite"
+      ],
+      "oreIds": [
+        831,
+        838,
+        943,
+        921
+      ],
+      "displayName": "Grossular & Manganese",
+      "oreNames": [
+        "Grossular",
+        "Spessartine",
+        "Pyrolusite",
+        "Tantalite"
+      ],
+      "iconRgb": "#fafafa",
+      "oreRgb": [
+        "#c86400",
+        "#ff6464",
+        "#9696aa",
+        "#915028"
+      ]
+    },
+    {
+      "name": "ore.mix.diamond",
+      "weight": 40,
+      "minY": 5,
+      "maxY": 20,
+      "size": 16,
+      "density": 1,
+      "primaryId": 865,
+      "ores": [
+        "Graphite",
+        "Graphite",
+        "Diamond",
+        "Coal"
+      ],
+      "oreIds": [
+        865,
+        865,
+        500,
+        535
+      ],
+      "displayName": "Graphite & Diamond",
+      "oreNames": [
+        "Graphite",
+        "Diamond",
+        "Coal"
+      ],
+      "iconRgb": "#c8ffff",
+      "oreRgb": [
+        "#808080",
+        "#c8ffff",
+        "#464646"
+      ]
+    },
+    {
+      "name": "ore.mix.apatite",
+      "weight": 60,
+      "minY": 40,
+      "maxY": 60,
+      "size": 16,
+      "density": 2,
+      "primaryId": 530,
+      "ores": [
+        "Apatite",
+        "Apatite",
+        "TricalciumPhosphate",
+        "Pyrochlore"
+      ],
+      "oreIds": [
+        530,
+        530,
+        534,
+        607
+      ],
+      "displayName": "Apatite",
+      "oreNames": [
+        "Apatite",
+        "Tricalcium Phosphate",
+        "Pyrochlore"
+      ],
+      "iconRgb": "#c8c8ff",
+      "oreRgb": [
+        "#c8c8ff",
+        "#ffff00",
+        "#2b1100"
+      ]
+    },
+    {
+      "name": "ore.mix.lapis",
+      "weight": 40,
+      "minY": 20,
+      "maxY": 50,
+      "size": 16,
+      "density": 4,
+      "primaryId": 524,
+      "ores": [
+        "Lazurite",
+        "Sodalite",
+        "Lapis",
+        "Calcite"
+      ],
+      "oreIds": [
+        524,
+        525,
+        526,
+        823
+      ],
+      "displayName": "Lazurite & Lapis",
+      "oreNames": [
+        "Lazurite",
+        "Sodalite",
+        "Lapis",
+        "Calcite"
+      ],
+      "iconRgb": "#4646dc",
+      "oreRgb": [
+        "#6478ff",
+        "#1414ff",
+        "#4646dc",
+        "#fae6dc"
+      ]
+    },
+    {
+      "name": "ore.mix.oilsand",
+      "weight": 40,
+      "minY": 50,
+      "maxY": 80,
+      "size": 16,
+      "density": 5,
+      "primaryId": 878,
+      "ores": [
+        "Oilsands",
+        "Oilsands",
+        "Oilsands",
+        "Oilsands"
+      ],
+      "oreIds": [
+        878,
+        878,
+        878,
+        878
+      ],
+      "displayName": "Oilsands",
+      "oreNames": [
+        "Oilsands"
+      ],
+      "iconRgb": "#0a0a0a",
+      "oreRgb": [
+        "#0a0a0a"
+      ]
+    },
+    {
+      "name": "ore.mix.coppertin",
+      "weight": 80,
+      "minY": 80,
+      "maxY": 200,
+      "size": 24,
+      "density": 3,
+      "primaryId": 855,
+      "ores": [
+        "Chalcopyrite",
+        "Vermiculite",
+        "Cassiterite",
+        "Alunite"
+      ],
+      "oreIds": [
+        855,
+        932,
+        824,
+        911
+      ],
+      "displayName": "Chalcopyrite & Vermiculite",
+      "oreNames": [
+        "Chalcopyrite",
+        "Vermiculite",
+        "Cassiterite",
+        "Alunite"
+      ],
+      "iconRgb": "#c8b40f",
+      "oreRgb": [
+        "#a07828",
+        "#c8b40f",
+        "#dcdcdc",
+        "#e1b441"
+      ]
+    },
+    {
+      "name": "ore.mix.mineralsand",
+      "weight": 80,
+      "minY": 50,
+      "maxY": 60,
+      "size": 24,
+      "density": 3,
+      "primaryId": 935,
+      "ores": [
+        "BasalticMineralSand",
+        "GraniticMineralSand",
+        "FullersEarth",
+        "Gypsum"
+      ],
+      "oreIds": [
+        935,
+        936,
+        928,
+        934
+      ],
+      "displayName": "Basaltic Mineral Sand",
+      "oreNames": [
+        "Basaltic Mineral Sand",
+        "Granitic Mineral Sand",
+        "Fullers Earth",
+        "Gypsum"
+      ],
+      "iconRgb": "#283228",
+      "oreRgb": [
+        "#283228",
+        "#283c3c",
+        "#a0a078",
+        "#e6e6fa"
+      ]
+    },
+    {
+      "name": "ore.mix.garnettin",
+      "weight": 80,
+      "minY": 50,
+      "maxY": 60,
+      "size": 24,
+      "density": 3,
+      "primaryId": 937,
+      "ores": [
+        "CassiteriteSand",
+        "GarnetSand",
+        "Asbestos",
+        "Diatomite"
+      ],
+      "oreIds": [
+        937,
+        938,
+        946,
+        948
+      ],
+      "displayName": "Cassiterite Sand & Tin",
+      "oreNames": [
+        "Cassiterite Sand",
+        "Garnet Sand",
+        "Asbestos",
+        "Diatomite"
+      ],
+      "iconRgb": "#dcdcdc",
+      "oreRgb": [
+        "#dcdcdc",
+        "#c86400",
+        "#e6e6e6",
+        "#e1e1e1"
+      ]
+    },
+    {
+      "name": "ore.mix.kaolinitezeolite",
+      "weight": 60,
+      "minY": 50,
+      "maxY": 70,
+      "size": 16,
+      "density": 4,
+      "primaryId": 929,
+      "ores": [
+        "Kaolinite",
+        "Zeolite",
+        "FullersEarth",
+        "GlauconiteSand"
+      ],
+      "oreIds": [
+        929,
+        916,
+        928,
+        949
+      ],
+      "displayName": "Kaolinite",
+      "oreNames": [
+        "Kaolinite",
+        "Zeolite",
+        "Fullers Earth",
+        "Glauconite Sand"
+      ],
+      "iconRgb": "#f5ebeb",
+      "oreRgb": [
+        "#f5ebeb",
+        "#f0e6e6",
+        "#a0a078",
+        "#82b43c"
+      ]
+    },
+    {
+      "name": "ore.mix.mica",
+      "weight": 20,
+      "minY": 20,
+      "maxY": 40,
+      "size": 16,
+      "density": 2,
+      "primaryId": 924,
+      "ores": [
+        "Kyanite",
+        "Mica",
+        "Cassiterite",
+        "Pollucite"
+      ],
+      "oreIds": [
+        924,
+        901,
+        824,
+        919
+      ],
+      "displayName": "Kyanite & Mica",
+      "oreNames": [
+        "Kyanite",
+        "Mica",
+        "Cassiterite",
+        "Pollucite"
+      ],
+      "iconRgb": "#c3c3cd",
+      "oreRgb": [
+        "#6e6efa",
+        "#c3c3cd",
+        "#dcdcdc",
+        "#f0d2d2"
+      ]
+    },
+    {
+      "name": "ore.mix.dolomite",
+      "weight": 40,
+      "minY": 150,
+      "maxY": 200,
+      "size": 24,
+      "density": 4,
+      "primaryId": 914,
+      "ores": [
+        "Dolomite",
+        "Wollastonite",
+        "Trona",
+        "Andradite"
+      ],
+      "oreIds": [
+        914,
+        915,
+        903,
+        821
+      ],
+      "displayName": "Dolomite",
+      "oreNames": [
+        "Dolomite",
+        "Wollastonite",
+        "Trona",
+        "Andradite"
+      ],
+      "iconRgb": "#e1cdcd",
+      "oreRgb": [
+        "#e1cdcd",
+        "#f0f0f0",
+        "#87875f",
+        "#967800"
+      ]
+    }
+  ]
+}

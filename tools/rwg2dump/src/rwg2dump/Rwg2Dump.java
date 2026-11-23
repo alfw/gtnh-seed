@@ -48,7 +48,7 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
         acceptableRemoteVersions = "*")
 public class Rwg2Dump {
 
-    static final String VERSION = "2.19.1";
+    static final String VERSION = "2.19.2";
     static final int FORMAT = 2;
 
     static final long[] DEFAULT_SEEDS = { 0L, 1L, -1L, 42L, 123456789L, Long.MIN_VALUE, Long.MAX_VALUE,
@@ -586,8 +586,24 @@ public class Rwg2Dump {
             }
             j.close('}');
 
-            j.key("configRWG");
-            statics(j, Class.forName("rwg2.config.ConfigRWG", true, cl));
+            // RWG2 2.0.9 moved the values out of ConfigRWG into per-category GTNHLib config classes. `configRWG`
+            // keeps the merged field map (same names as before); `configClasses` records which class held each.
+            j.key("configRWG").open('{');
+            List<String> found = new ArrayList<String>();
+            for (String cn : RWG_CONFIG_CLASSES) {
+                Class<?> c;
+                try {
+                    c = Class.forName("rwg2.config." + cn, true, cl);
+                } catch (ClassNotFoundException e) {
+                    continue;
+                }
+                found.add(cn);
+                staticFields(j, c);
+            }
+            j.close('}');
+            j.key("configClasses").open('[');
+            for (String cn : found) j.str(cn);
+            j.close(']');
             j.close('}');
             writeText(new File(out, "biomes.json"), j.toString());
         }
@@ -676,8 +692,17 @@ public class Rwg2Dump {
             j.close(']');
         }
 
+        static final String[] RWG_CONFIG_CLASSES = { "ConfigRWG", "ContinentalConfig", "ClimateBandConfig",
+                "SettingsConfig", "MigrationConfig", "LandmarkDecorationsConfig", "BiomeIdConfig", "DebugConfig" };
+
         void statics(Json j, Class<?> c) throws Exception {
             j.open('{');
+            staticFields(j, c);
+            j.close('}');
+        }
+
+        /** Primitive / String / primitive-array statics of `c` as keys of the object `j` currently has open. */
+        void staticFields(Json j, Class<?> c) throws Exception {
             for (Field f : c.getDeclaredFields()) {
                 if (!Modifier.isStatic(f.getModifiers())) continue;
                 f.setAccessible(true);
@@ -696,7 +721,6 @@ public class Rwg2Dump {
                     j.close(']');
                 }
             }
-            j.close('}');
         }
 
         // ---------------------------------------------------------------- env / manifest

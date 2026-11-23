@@ -1827,6 +1827,14 @@ pub fn surface_chunk(
                     LavaBlock::Stone => col[y] = STONE,
                 }
             }
+            // RWG2 2.0.9: sand / gravel resting on the funnel's air (the neck's ledge underside) becomes stone.
+            if let (true, Some((ltop, surf))) = (p.table.rwg2_209, l.funnel()) {
+                for y in (ltop + 1).max(0) as usize..(surf as usize).min(255) {
+                    if col[y] == AIR && matches!(col[y + 1], SAND | RED_SAND | GRAVEL) {
+                        col[y + 1] = STONE;
+                    }
+                }
+            }
         }
         top[idx] = (0..256)
             .rev()

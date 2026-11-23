@@ -450,3 +450,10 @@ aside li > .vfind { width: auto; }
 .phone aside { background: #14191f; }
 .phone .pane:has(> .layer-list) { overflow-y: auto; overscroll-behavior: contain; }
 .phone .pane > .layer-list { overflow: visible; flex: none; }
+
+/* World tab (pack + rwg2.cfg) */
+.pane.world .cfg-grid { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; }
+.pane.world label.cfg { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.pane.world label.cfg > span { flex: 1; min-width: 0; }
+.pane.world label.cfg input[type='number'] { width: 7em; }
+.pane.world .warn { color: #e0a040; margin: 6px 0; }

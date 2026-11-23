@@ -21,11 +21,11 @@ fn key(f: &TcFeature) -> String {
 #[test]
 fn structures_in_rect_matches_full_replay() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let (mut full_ms, mut fast_ms, mut rings_ms, mut n) = (0.0, 0.0, 0.0, 0);
@@ -97,4 +97,10 @@ fn structures_in_rect_matches_full_replay() {
         }
     }
     println!("tc structures: {n} records; full replay {full_ms:.0} ms, skip path {fast_ms:.0} ms, rings only {rings_ms:.0} ms");
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

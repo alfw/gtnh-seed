@@ -87,6 +87,7 @@ export const LOOT_ITEMS = [
   ['rings', 'Thaumcraft rings / Vis Stone', ['item.ItemRingRunic', 'item.ItemBaubleBlanks@3', 'item.ItemBaubleBlanks@4', 'item.ItemBaubleBlanks@5', 'item.ItemBaubleBlanks@6', 'item.ItemBaubleBlanks@7', 'item.ItemBaubleBlanks@8', 'item.ItemAmuletVis']],
   ['lootbag', 'Rare Treasure bag', ['item.ItemLootBag@2']],
   ['sigil', 'Division Sigil', ['divisionSigil']],
+  ['onering', 'The One Ring (GTNH 2.9.1)', ['item.EMT.item.bauble@0']],
   ['disc', 'Music disc (monster rooms)', ['item.record']],
   ['diamondArmor', 'Diamond armour (monster rooms)', ['Diamond@']],
   ['horse', 'Horse armour', ['item.horsearmor']],

@@ -77,14 +77,14 @@ fn chest_loot_probes_217() {
     fn walk(d: &std::path::Path, out: &mut Vec<std::path::PathBuf>) {
         for e in std::fs::read_dir(d).into_iter().flatten().flatten() {
             let p = e.path();
-            if p.is_dir() {
+            if p.is_dir() && !skip_dump_dir(&p) {
                 walk(&p, out);
             } else if p.file_name().is_some_and(|n| n == "chestloot.json") {
                 out.push(p);
             }
         }
     }
-    walk(&root.join("testdata/pack"), &mut files);
+    walk(&root.join(dumps_under()), &mut files);
     if files.is_empty() {
         eprintln!("skip: no rwg2dump 2.17 chestloot.json under testdata/pack");
         return;
@@ -156,4 +156,17 @@ fn chest_loot_probes_217() {
             }
         }
     }
+}
+
+/// Dump walk root: `DUMPS_UNDER` (e.g. `testdata/pack/gtnh-2.9.1` with `PACK_DATA=gtnh-2.9.1`), else `testdata/pack`
+/// minus the RWG2 2.0.9 pack's folder (its worlds need the 2.0.9 data).
+#[allow(dead_code)]
+fn dumps_under() -> String {
+    std::env::var("DUMPS_UNDER").unwrap_or_else(|_| "testdata/pack".into())
+}
+
+/// Without `DUMPS_UNDER`, the RWG2 2.0.9 pack's dumps (`testdata/pack/gtnh-2.9.1`) are left out of the walk.
+#[allow(dead_code)]
+fn skip_dump_dir(p: &std::path::Path) -> bool {
+    std::env::var("DUMPS_UNDER").is_err() && p.file_name().is_some_and(|n| n == "gtnh-2.9.1")
 }

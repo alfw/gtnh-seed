@@ -18,7 +18,7 @@ fn root() -> PathBuf {
 #[test]
 fn oil_variants_explain_test_columns() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let (mut cols, mut explained, mut fountain, mut worlds, mut strict) = (0, 0, 0, 0, 0);
@@ -125,7 +125,7 @@ fn oil_variants_explain_test_columns() {
 
 fn gates() -> rwg2_biomes::population::PreGates {
     let cj: Value =
-        serde_json::from_str(&std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap()).unwrap();
+        serde_json::from_str(&std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap()).unwrap();
     rwg2_biomes::population::PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
         (
             b["id"].as_u64().unwrap() as u16,
@@ -143,7 +143,7 @@ fn gates() -> rwg2_biomes::population::PreGates {
 fn spawn_area_oil_vs_test_columns() {
     use rwg2_biomes::gtorder::{spawn_populated, LoadSim};
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -251,7 +251,7 @@ fn spawn_area_oil_vs_test_columns() {
 #[ignore]
 fn region_oil_vs_test_columns() {
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let g = gates();
@@ -372,4 +372,10 @@ fn region_oil_vs_test_columns() {
     eprintln!(
         "group replays: deposits {pred}, covering {covering}, confirmed {confirmed}; real oil columns predicted {real_expl}/{real_cols}; by confidence quarter (covering, real) {by_conf:?}"
     );
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

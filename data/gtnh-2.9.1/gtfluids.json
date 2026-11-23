@@ -1,0 +1,22 @@
+{
+ "source": "Confirmed by rwg2dump 2.6 on GTNH 2.9.0 (live table, Guava 17 HashBiMap order, 2401/2401 pristine chunk amounts exact). GT5-Unofficial 5.09.54.265 code defaults (GTUODimensionList.setOverworldValues); GTNH 2.9.0 ships no config/GregTech/UndergroundFluids.cfg, so new worlds generate it from these. An existing UndergroundFluids.cfg (server-edited) overrides; replace with a rwg2dump gtFluids() export to confirm.",
+ "provisional": false,
+ "gtVersion": "5.09.54.265",
+ "divider": 5000,
+ "fieldChunks": 8,
+ "blacklist": [-1, 1],
+ "dimensions": {
+  "0": {
+   "name": "Overworld",
+   "order": "config",
+   "orderNote": "config (insertion) order; getRandomFluid walks HashBiMap order = Guava 17 buckets: liquid_light_oil, liquid_medium_oil, oil, gas_natural_gas, liquid_heavy_oil. A dump lists HashBiMap order with \"order\": \"hashbimap\".",
+   "fluids": [
+    {"name": "naturalGas", "registry": "gas_natural_gas",   "displayName": "Natural Gas", "rgb": "#00ffff", "minAmount": 10, "maxAmount": 350, "chance": 20, "decreasePerOperation": 5},
+    {"name": "lightOil",   "registry": "liquid_light_oil",  "displayName": "Light Oil",   "rgb": "#ffff00", "minAmount": 10, "maxAmount": 350, "chance": 20, "decreasePerOperation": 5},
+    {"name": "mediumOil",  "registry": "liquid_medium_oil", "displayName": "Raw Oil",     "rgb": "#00ff00", "minAmount": 0,  "maxAmount": 625, "chance": 20, "decreasePerOperation": 5},
+    {"name": "heavyOil",   "registry": "liquid_heavy_oil",  "displayName": "Heavy Oil",   "rgb": "#0a0a0a", "minAmount": 0,  "maxAmount": 625, "chance": 20, "decreasePerOperation": 5},
+    {"name": "oil",        "registry": "oil",               "displayName": "Oil",         "rgb": "#000000", "minAmount": 0,  "maxAmount": 625, "chance": 20, "decreasePerOperation": 5}
+   ]
+  }
+ }
+}

@@ -38,11 +38,11 @@ fn check(dir: &str) {
     let all = d["mineshaftGenerator"]["starts"].as_array().unwrap();
     let starts: Vec<&serde_json::Value> = all.iter().filter(inside).collect();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
@@ -168,4 +168,10 @@ fn layout_cost() {
         st.len(),
         t.elapsed() / st.len() as u32
     );
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

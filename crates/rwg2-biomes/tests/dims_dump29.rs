@@ -149,7 +149,7 @@ fn twilight_terrain_vs_dump29() {
 
 fn tables() -> rwg2_biomes::forestry::ClimateTable {
     rwg2_biomes::forestry::ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap()
 }
@@ -332,4 +332,10 @@ fn tf_top_names_vs_dump29() {
     }
     eprintln!("tf top names {ok}/{n}; misses {miss:?}");
     assert_eq!(ok, n, "TF top names: {miss:?}");
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

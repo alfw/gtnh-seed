@@ -12,7 +12,7 @@ fn root() -> std::path::PathBuf {
 
 #[test]
 fn builtin_table_matches_climate_json() {
-    let s = std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap();
+    let s = std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap();
     let derived = VillageBiomes::from_climate_json(&s, GTNH_290_SPAWN_BIOME_NAMES).unwrap();
     let builtin = VillageBiomes::gtnh_2_9_0();
     let n = derived.allowed.len().max(builtin.allowed.len());
@@ -91,7 +91,7 @@ fn check_dump(dir: &str) {
     want.sort_by_key(|w| (w.0, w.1));
 
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
@@ -216,7 +216,7 @@ fn villages_scale_dump281() {
     let d: serde_json::Value = serde_json::from_str(&s).unwrap();
     let seed: i64 = d["worldSeed"].as_str().unwrap().parse().unwrap();
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
@@ -256,4 +256,10 @@ fn villages_scale_dump281() {
         d["candidates"].as_array().unwrap().len()
     );
     assert_eq!(verdict_ok, d["candidates"].as_array().unwrap().len());
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

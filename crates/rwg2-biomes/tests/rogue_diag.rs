@@ -59,7 +59,7 @@ fn load(dir: &str) -> Option<(i64, Vec<Anchor>)> {
 
 fn gates() -> rwg2_biomes::population::PreGates {
     let cj: serde_json::Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     rwg2_biomes::population::PreGates::new(cj["biomes"].as_array().unwrap().iter().map(|b| {
@@ -76,7 +76,7 @@ fn gates() -> rwg2_biomes::population::PreGates {
 
 fn names() -> Vec<String> {
     let c: serde_json::Value = serde_json::from_str(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let mut v = vec![String::new(); 70000];
@@ -101,11 +101,11 @@ struct Score {
 fn run(dir: &str, verbose: bool) -> Option<(Score, Score)> {
     let (seed, anchors) = load(dir)?;
     let table = BiomeTable::from_rwg2dump_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
     )
     .unwrap();
     let climate = ClimateTable::from_json(
-        &std::fs::read_to_string(root().join("data/gtnh-2.9.0/climate.json")).unwrap(),
+        &std::fs::read_to_string(root().join(pack_rel("climate.json"))).unwrap(),
     )
     .unwrap();
     let nm = names();
@@ -257,7 +257,7 @@ fn rogue_prepop_ground() {
         let tblk = &bin[n * 3..n * 5];
         let gy = &bin[n * 5..n * 6];
         let table = BiomeTable::from_rwg2dump_json(
-            &std::fs::read_to_string(root().join("data/gtnh-2.9.0/biomes.json")).unwrap(),
+            &std::fs::read_to_string(root().join(pack_rel("biomes.json"))).unwrap(),
         )
         .unwrap();
         let p = BiomeProvider::new(seed, WorldType::Rwg2Continents, table, RwgConfig::default());
@@ -287,4 +287,10 @@ fn rogue_prepop_ground() {
         }
         eprintln!("{dir}: pre-population ground y {ok}/{tot}; misses by (real top block, model - real): {hist:?}");
     }
+}
+
+/// `data/<PACK_DATA>/<name>` relative to the repo (`PACK_DATA` default `gtnh-2.9.0`; `gtnh-2.9.1` = RWG2 2.0.9 pack).
+#[allow(dead_code)]
+fn pack_rel(name: &str) -> String {
+    format!("data/{}/{name}", std::env::var("PACK_DATA").unwrap_or_else(|_| "gtnh-2.9.0".into()))
 }

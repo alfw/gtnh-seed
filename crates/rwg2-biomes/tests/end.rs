@@ -117,7 +117,7 @@ fn end_islands_towers_enumeration() {
 #[test]
 fn end_structures_vs_hee() {
     use rwg2_biomes::end::*;
-    let base = root().join("testdata/pack");
+    let base = root().join(dumps_under());
     let mut found = 0;
     for set in ["gtnh-2.10.0/heldout", "gtnh-2.10.0/tune", "gtnh-2.11.0"] {
         let Ok(rd) = std::fs::read_dir(base.join(set)) else {
@@ -295,7 +295,7 @@ fn end_island_shapes_and_de() {
 #[test]
 fn end_generated_vs_model() {
     use rwg2_biomes::end::*;
-    let base = root().join("testdata/pack");
+    let base = root().join(dumps_under());
     for set in ["gtnh-2.10.0/heldout", "gtnh-2.10.0/tune", "gtnh-2.11.0"] {
         let Ok(rd) = std::fs::read_dir(base.join(set)) else {
             continue;
@@ -639,4 +639,11 @@ fn island_compact_interior_matches_blocks() {
         assert_eq!(a.base, b.base);
         assert!(a.cols == b.cols, "island {cx},{cz}");
     }
+}
+
+/// Dump walk root: `DUMPS_UNDER` (e.g. `testdata/pack/gtnh-2.9.1` with `PACK_DATA=gtnh-2.9.1`), else `testdata/pack`
+/// minus the RWG2 2.0.9 pack's folder (its worlds need the 2.0.9 data).
+#[allow(dead_code)]
+fn dumps_under() -> String {
+    std::env::var("DUMPS_UNDER").unwrap_or_else(|_| "testdata/pack".into())
 }

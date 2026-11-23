@@ -78,6 +78,10 @@ pub struct BiomeTable {
     pub volcano_island: Option<BiomeId>,
     /// `Support.lavaCaveMarkerBiome` (gen/vanilla id).
     pub lava_cave_marker_gen_id: Option<u16>,
+    /// `Support.taintedLand` (RWG2 ≥ 2.0.9 dumps only; `None` = 2.0.6, no per-continent placement).
+    pub tainted_land: Option<BiomeId>,
+    /// Table from RWG2 ≥ 2.0.9 (generation-code fixes keyed on it: `DecoBigTree`, lava-cave funnel ledge).
+    pub rwg2_209: bool,
     /// Per RWG id: how `rNoise` is computed (from a v2 dump). Empty if unknown (v1 dump).
     pub heights: Vec<crate::terrain::HeightModel>,
 }
@@ -151,6 +155,10 @@ pub struct BiomeProvider {
     small_points: PoissonPointNoise,
     pub(crate) continents: Option<ContinentalNoise>,
     biome_width: f32,
+    /// RWG2 2.0.9 `perContinentTaintedLand`: Tainted Land from the continent budget, not the small-biome field.
+    per_continent_tainted: Option<BiomeId>,
+    /// `smallBiomes` as the provider uses them (Tainted Land removed when `per_continent_tainted`).
+    small: PerClimate,
     volcano_eligibility: RefCell<FxMap<i64, bool>>,
     lava_eligibility: RefCell<FxMap<i64, bool>>,
     /// Count of gate decisions that fell back to "assume open" because a height was unknown.
@@ -170,7 +178,18 @@ impl BiomeProvider {
         climate.biome_offset_z = cfg.biome_offset_z;
         let mut cell = CellNoise::new(seed, 0);
         cell.set_use_distance(true);
+        let per_continent_tainted = table
+            .tainted_land
+            .filter(|_| continental && cfg.per_continent_tainted_land);
+        let mut small = table.small.clone();
+        if let Some(t) = per_continent_tainted {
+            for l in small.iter_mut() {
+                l.retain(|&b| b != t); // `without`: the list only ever holds it once
+            }
+        }
         Self {
+            per_continent_tainted,
+            small,
             seed,
             continental,
             perlin: PerlinNoise::new(seed),
@@ -672,9 +691,14 @@ impl BiomeProvider {
 
     /// `getLandBiomeAt(x, z, climate)`.
     pub(crate) fn land_biome(&self, x: i32, z: i32, climate: u8) -> BiomeId {
+        if let (Some(t), Some(c)) = (self.per_continent_tainted, &self.continents) {
+            if c.landform(self.lx(x), self.lz(z)).tainted_land {
+                return t;
+            }
+        }
         let (p1, p2) = (self.bx(x), self.bz(z));
         let ci = climate as usize - 1;
-        let small = &self.table.small[ci];
+        let small = &self.small[ci];
         if !small.is_empty() {
             let pt = self.small_points.sample(p1 as f64, p2 as f64);
             if pt.distance < SMALL_BIOME_RADIUS {

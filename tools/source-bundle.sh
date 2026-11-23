@@ -12,7 +12,7 @@ trap 'rm -rf "$stage"' EXIT
 tar --exclude='viewer/src/lib/rwg2.wasm' -cf - LICENSE README.md Cargo.toml Cargo.lock \
   crates/rwg2-biomes/Cargo.toml crates/rwg2-biomes/src crates/rwg2-biomes/tests \
   crates/rwg2-wasm/Cargo.toml crates/rwg2-wasm/src crates/rwg2-wasm/tests \
-  data/gtnh-2.9.0 \
+  data/gtnh-2.9.0 data/gtnh-2.9.1 \
   viewer/index.html viewer/package.json viewer/package-lock.json viewer/vite.config.js viewer/src \
   viewer/public/about.html viewer/public/favicon.svg THIRD_PARTY_LICENSES.txt tools/third-party-licenses.sh tools/og-image.mjs \
   tools/source-bundle.sh tools/source-pages.py | tar -xf - -C "$stage"
